@@ -1,0 +1,476 @@
+[
+  {
+    "function": "integrate(2*x + 1, x)",
+    "type": "Automático",
+    "date": "2026-04-08 11:23:08",
+    "timestamp": 1775665388.114493
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 11:25:46",
+    "timestamp": 1775665546.764765
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 11:27:44",
+    "timestamp": 1775665664.136256
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 11:27:45",
+    "timestamp": 1775665665.322322
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 11:27:45",
+    "timestamp": 1775665665.663167
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 11:27:45",
+    "timestamp": 1775665665.904838
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:06",
+    "timestamp": 1775665686.50519
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:07",
+    "timestamp": 1775665687.233568
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:07",
+    "timestamp": 1775665687.4108
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:07",
+    "timestamp": 1775665687.561932
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:07",
+    "timestamp": 1775665687.726297
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:07",
+    "timestamp": 1775665687.885778
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:08",
+    "timestamp": 1775665688.061292
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:08",
+    "timestamp": 1775665688.221486
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:08",
+    "timestamp": 1775665688.380619
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:08",
+    "timestamp": 1775665688.538148
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:08",
+    "timestamp": 1775665688.718954
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:08",
+    "timestamp": 1775665688.897525
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:09",
+    "timestamp": 1775665689.06329
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:09",
+    "timestamp": 1775665689.227591
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:09",
+    "timestamp": 1775665689.391706
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:09",
+    "timestamp": 1775665689.593106
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:09",
+    "timestamp": 1775665689.755855
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:09",
+    "timestamp": 1775665689.937998
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:10",
+    "timestamp": 1775665690.116209
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:10",
+    "timestamp": 1775665690.285473
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:10",
+    "timestamp": 1775665690.451256
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:10",
+    "timestamp": 1775665690.620869
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:10",
+    "timestamp": 1775665690.807367
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:10",
+    "timestamp": 1775665690.974777
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:11",
+    "timestamp": 1775665691.129131
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:11",
+    "timestamp": 1775665691.294595
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Directa",
+    "date": "2026-04-08 11:28:11",
+    "timestamp": 1775665691.517792
+  },
+  {
+    "function": "integrate(atan(x))",
+    "type": "Por Partes",
+    "date": "2026-04-08 11:29:44",
+    "timestamp": 1775665784.955633
+  },
+  {
+    "function": "integrate(atan(x))",
+    "type": "Por Partes",
+    "date": "2026-04-08 11:30:11",
+    "timestamp": 1775665811.008516
+  },
+  {
+    "function": "integrate(atan(x))",
+    "type": "Por Partes",
+    "date": "2026-04-08 11:30:13",
+    "timestamp": 1775665813.211513
+  },
+  {
+    "function": "integrate(atan(z))",
+    "type": "Por Partes",
+    "date": "2026-04-08 11:30:42",
+    "timestamp": 1775665842.787665
+  },
+  {
+    "function": "integrate(atan(z))",
+    "type": "Por Partes",
+    "date": "2026-04-08 11:30:49",
+    "timestamp": 1775665849.942171
+  },
+  {
+    "function": "integrate(atan(z))",
+    "type": "Por Partes",
+    "date": "2026-04-08 11:31:01",
+    "timestamp": 1775665861.077153
+  },
+  {
+    "function": "integrate(atan(y))",
+    "type": "Por Partes",
+    "date": "2026-04-08 11:31:07",
+    "timestamp": 1775665867.418322
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-08 11:41:01",
+    "timestamp": 1775666461.234365
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 11:41:30",
+    "timestamp": 1775666490.279249
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 11:46:42",
+    "timestamp": 1775666802.229144
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 11:47:15",
+    "timestamp": 1775666835.809126
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 11:49:46",
+    "timestamp": 1775666986.489093
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 11:50:17",
+    "timestamp": 1775667017.219158
+  },
+  {
+    "function": "integrate(atan(x))",
+    "type": "Por Partes",
+    "date": "2026-04-08 11:50:48",
+    "timestamp": 1775667048.078773
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 15:51:53",
+    "timestamp": 1775681513.615748
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 16:08:55",
+    "timestamp": 1775682535.562369
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Por Partes",
+    "date": "2026-04-08 16:17:33",
+    "timestamp": 1775683053.362988
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 16:18:38",
+    "timestamp": 1775683118.063975
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Por Partes",
+    "date": "2026-04-08 16:19:13",
+    "timestamp": 1775683153.213806
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 16:19:23",
+    "timestamp": 1775683163.079034
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-08 16:37:24",
+    "timestamp": 1775684244.19407
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-08 16:38:45",
+    "timestamp": 1775684325.820238
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-08 16:42:26",
+    "timestamp": 1775684546.900422
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-08 16:47:05",
+    "timestamp": 1775684825.026486
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-08 16:47:41",
+    "timestamp": 1775684861.305451
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-08 16:52:10",
+    "timestamp": 1775685130.749224
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-08 16:54:50",
+    "timestamp": 1775685290.440019
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-08 16:58:15",
+    "timestamp": 1775685495.046716
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-08 17:05:36",
+    "timestamp": 1775685936.938197
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-09 06:21:01",
+    "timestamp": 1775733661.719913
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-09 08:45:02",
+    "timestamp": 1775742302.360557
+  },
+  {
+    "function": "integrate(atan(x))",
+    "type": "Automático",
+    "date": "2026-04-09 08:47:54",
+    "timestamp": 1775742474.832651
+  },
+  {
+    "function": "integrate(atan(x))",
+    "type": "Automático",
+    "date": "2026-04-09 08:53:57",
+    "timestamp": 1775742837.038291
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Por Partes",
+    "date": "2026-04-09 08:54:28",
+    "timestamp": 1775742868.923431
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-09 09:13:50",
+    "timestamp": 1775744030.062585
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-09 09:16:31",
+    "timestamp": 1775744191.892066
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-09 09:20:06",
+    "timestamp": 1775744406.305873
+  },
+  {
+    "function": "y**2 + 3*y + 2",
+    "type": "Automático",
+    "date": "2026-04-09 09:25:40",
+    "timestamp": 1775744740.567618
+  },
+  {
+    "function": "y**2 + 3*yft + 2",
+    "type": "Automático",
+    "date": "2026-04-09 09:40:57",
+    "timestamp": 1775745657.802647
+  },
+  {
+    "function": "y**2 + 3*y + 2",
+    "type": "Automático",
+    "date": "2026-04-09 09:41:06",
+    "timestamp": 1775745666.802565
+  },
+  {
+    "function": "x**1",
+    "type": "Automático",
+    "date": "2026-04-09 11:35:24",
+    "timestamp": 1775752524.232339
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-09 11:36:37",
+    "timestamp": 1775752597.148448
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-09 11:39:46",
+    "timestamp": 1775752786.8203
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-09 11:45:47",
+    "timestamp": 1775753147.011333
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-09 12:01:05",
+    "timestamp": 1775754065.502049
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-09 12:45:33",
+    "timestamp": 1775756733.429156
+  }
+]

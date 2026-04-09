@@ -1,0 +1,57 @@
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 1.26.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'integral', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx', 'latex': '\\int x**2 + 3*x + 2 dx'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int x**2 + 3*x + 2 dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'decomposition', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx = \\int x**2 dx + \\int 3*x dx + \\int 2 dx', 'latex': '\\int x**2 + 3*x + 2 dx = \\int x**2 dx + \\int 3*x dx + \\int 2 dx'}
+INFO:ui.professional_main_window:Step 2 latex_content: \int x**2 + 3*x + 2 dx = \int x**2 dx + \int 3*x dx + \int 2 dx
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int x**2 dx = x**3/3', 'latex': '\\int x**2 dx = x**3/3'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int x**2 dx = x**3/3
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int 3*x dx = 3*x**2/2', 'latex': '\\int 3*x dx = 3*x**2/2'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int 3*x dx = 3*x**2/2
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int 2 dx = 2*x', 'latex': '\\int 2 dx = 2*x'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int 2 dx = 2*x
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'construction', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C', 'latex': '\\int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': '', 'content': 'x**3/3 + 3*x**2/2 + 2*x', 'latex': 'x**3/3 + 3*x**2/2 + 2*x'}
+INFO:ui.professional_main_window:Step 7 latex_content: x**3/3 + 3*x**2/2 + 2*x
+INFO:ui.professional_main_window:Processing step 8: <class 'dict'> - {'type': 'method_step', 'title': 'Método heurístico', 'expression': '∫ x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x', 'method': 'heurisch'}
+INFO:ui.professional_main_window:Step 8 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 3 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 7 rendering completed successfully
+INFO:__main__:Application closed normally

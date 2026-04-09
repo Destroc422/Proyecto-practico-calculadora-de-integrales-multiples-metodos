@@ -1,0 +1,1490 @@
+2026-03-26 20:41:42,215 - __main__ - INFO - ==================================================
+2026-03-26 20:41:42,216 - __main__ - INFO - Starting LaTeX Integral Calculator - Professional Rendering...
+2026-03-26 20:41:42,216 - __main__ - INFO - ==================================================
+2026-03-26 20:41:43,828 - __main__ - INFO - Creating LaTeX calculator instance...
+2026-03-26 20:41:43,835 - utils.latex_renderer - INFO - LaTeX rendering enabled
+2026-03-26 20:41:44,294 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 20:41:44,304 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:41:44,469 - ui.latex_calculator - INFO - LaTeX Integral Calculator initialized
+2026-03-26 20:41:44,472 - __main__ - INFO - ==================================================
+2026-03-26 20:41:52,997 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:41:53,785 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:41:53,787 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:41:53,794 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:41:53,823 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:41:53,832 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:41:53,841 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:41:53,852 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:41:53,861 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:41:53,870 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:41:53,879 - ui.latex_calculator - ERROR - Error in LaTeX verification: 'Add' object has no attribute 'latex'
+2026-03-26 20:41:56,920 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:41:56,927 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:41:56,929 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:41:56,936 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:41:56,942 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:41:56,952 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:41:56,962 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:41:56,971 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:41:56,981 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:41:56,990 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:41:56,999 - ui.latex_calculator - ERROR - Error in LaTeX verification: 'Add' object has no attribute 'latex'
+2026-03-26 20:42:06,850 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:06,861 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:07,463 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:07,472 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:07,625 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:07,633 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:07,792 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:07,800 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:07,951 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:07,960 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:40,347 - utils.validators - INFO - Expression validated successfully: a*d*s
+2026-03-26 20:42:40,351 - core.parser - INFO - Successfully parsed: asd -> a*d*s
+2026-03-26 20:42:40,361 - utils.validators - INFO - Expression validated successfully: a*d*s
+2026-03-26 20:42:40,365 - core.parser - INFO - Successfully parsed: asd -> a*d*s
+2026-03-26 20:42:40,445 - utils.validators - INFO - Expression validated successfully: a*d*s
+2026-03-26 20:42:40,448 - core.parser - INFO - Successfully parsed: asd -> a*d*s
+2026-03-26 20:42:40,870 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:40,879 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:40,896 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:40,905 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:40,969 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 20:42:40,977 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:48:18,557 - __main__ - INFO - ==================================================
+2026-03-26 20:48:18,557 - __main__ - INFO - Starting LaTeX Integral Calculator - Professional Rendering...
+2026-03-26 20:48:18,557 - __main__ - INFO - ==================================================
+2026-03-26 20:48:20,049 - __main__ - ERROR - Import error: cannot import name 'LaTeXIntegralCalculator' from 'ui.latex_calculator' (C:\Users\capit\OneDrive\Desktop\Parciales\integral_app\ui\latex_calculator.py)
+2026-03-26 20:48:20,050 - __main__ - ERROR - Full traceback:
+2026-03-26 20:48:20,050 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\capit\OneDrive\Desktop\Parciales\integral_app\main.py", line 99, in main
+    from ui.latex_calculator import LaTeXIntegralCalculator
+ImportError: cannot import name 'LaTeXIntegralCalculator' from 'ui.latex_calculator' (C:\Users\capit\OneDrive\Desktop\Parciales\integral_app\ui\latex_calculator.py)
+
+2026-03-26 20:51:36,780 - __main__ - INFO - ==================================================
+2026-03-26 20:51:36,780 - __main__ - INFO - Starting LaTeX Integral Calculator - Professional Rendering...
+2026-03-26 20:51:36,780 - __main__ - INFO - ==================================================
+2026-03-26 20:51:38,332 - __main__ - INFO - Creating LaTeX calculator instance...
+2026-03-26 20:51:38,800 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:38,815 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:38,824 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:38,981 - ui.latex_calculator - INFO - Final LaTeX Integral Calculator initialized successfully
+2026-03-26 20:51:38,985 - __main__ - INFO - ==================================================
+2026-03-26 20:51:43,093 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:43,864 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:43,866 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:43,872 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:43,894 - ui.latex_calculator - INFO - Displaying working LaTeX results
+2026-03-26 20:51:43,897 - ui.latex_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 20:51:43,898 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:43,907 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:43,916 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:43,926 - ui.latex_calculator - INFO - Displaying 5 steps
+2026-03-26 20:51:43,927 - ui.latex_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 20:51:43,928 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:43,936 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:43,945 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:43,955 - ui.latex_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 20:51:43,955 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:43,964 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:43,974 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:43,984 - ui.latex_calculator - INFO - Working LaTeX results displayed successfully
+2026-03-26 20:51:45,632 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:45,639 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:45,641 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:45,649 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:45,652 - ui.latex_calculator - INFO - Displaying working LaTeX results
+2026-03-26 20:51:45,656 - ui.latex_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 20:51:45,656 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:45,666 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:45,675 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:45,684 - ui.latex_calculator - INFO - Displaying 5 steps
+2026-03-26 20:51:45,685 - ui.latex_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 20:51:45,686 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:45,697 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:45,706 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:45,716 - ui.latex_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 20:51:45,716 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:45,737 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:45,746 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:45,756 - ui.latex_calculator - INFO - Working LaTeX results displayed successfully
+2026-03-26 20:51:46,088 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:46,096 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:46,098 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:46,105 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:46,109 - ui.latex_calculator - INFO - Displaying working LaTeX results
+2026-03-26 20:51:46,112 - ui.latex_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 20:51:46,112 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:46,121 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,130 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,139 - ui.latex_calculator - INFO - Displaying 5 steps
+2026-03-26 20:51:46,140 - ui.latex_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 20:51:46,141 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:46,149 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,159 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,168 - ui.latex_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 20:51:46,168 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:46,177 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,186 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,196 - ui.latex_calculator - INFO - Working LaTeX results displayed successfully
+2026-03-26 20:51:46,544 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:46,552 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:46,554 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:46,561 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:46,564 - ui.latex_calculator - INFO - Displaying working LaTeX results
+2026-03-26 20:51:46,569 - ui.latex_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 20:51:46,569 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:46,578 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,587 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,595 - ui.latex_calculator - INFO - Displaying 5 steps
+2026-03-26 20:51:46,596 - ui.latex_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 20:51:46,597 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:46,606 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,615 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,624 - ui.latex_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 20:51:46,624 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:46,633 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,642 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,652 - ui.latex_calculator - INFO - Working LaTeX results displayed successfully
+2026-03-26 20:51:46,928 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:46,935 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:46,937 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:46,944 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:46,947 - ui.latex_calculator - INFO - Displaying working LaTeX results
+2026-03-26 20:51:46,951 - ui.latex_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 20:51:46,951 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:46,960 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,969 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,977 - ui.latex_calculator - INFO - Displaying 5 steps
+2026-03-26 20:51:46,978 - ui.latex_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 20:51:46,979 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:46,987 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:46,998 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:47,007 - ui.latex_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 20:51:47,007 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:47,016 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:47,026 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:47,036 - ui.latex_calculator - INFO - Working LaTeX results displayed successfully
+2026-03-26 20:51:47,481 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:47,488 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:47,490 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:47,497 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:47,500 - ui.latex_calculator - INFO - Displaying working LaTeX results
+2026-03-26 20:51:47,505 - ui.latex_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 20:51:47,506 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:47,514 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:47,524 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:47,532 - ui.latex_calculator - INFO - Displaying 5 steps
+2026-03-26 20:51:47,533 - ui.latex_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 20:51:47,534 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:47,543 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:47,552 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:47,561 - ui.latex_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 20:51:47,561 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:47,570 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:47,580 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:47,589 - ui.latex_calculator - INFO - Working LaTeX results displayed successfully
+2026-03-26 20:51:50,369 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:50,376 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:50,378 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:50,385 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:50,388 - ui.latex_calculator - INFO - Displaying working LaTeX results
+2026-03-26 20:51:50,393 - ui.latex_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 20:51:50,393 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:50,402 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:50,412 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:50,420 - ui.latex_calculator - INFO - Displaying 5 steps
+2026-03-26 20:51:50,421 - ui.latex_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 20:51:50,421 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:50,430 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:50,439 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:50,448 - ui.latex_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 20:51:50,449 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:50,457 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:50,466 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:50,475 - ui.latex_calculator - INFO - Working LaTeX results displayed successfully
+2026-03-26 20:51:51,016 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:51,023 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:51,026 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 20:51:51,033 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 20:51:51,036 - ui.latex_calculator - INFO - Displaying working LaTeX results
+2026-03-26 20:51:51,041 - ui.latex_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 20:51:51,041 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:51,051 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:51,060 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:51,068 - ui.latex_calculator - INFO - Displaying 5 steps
+2026-03-26 20:51:51,070 - ui.latex_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 20:51:51,070 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:51,079 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:51,088 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:51,097 - ui.latex_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 20:51:51,098 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 20:51:51,107 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:51,115 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 20:51:51,125 - ui.latex_calculator - INFO - Working LaTeX results displayed successfully
+2026-03-26 21:01:45,292 - __main__ - INFO - ==================================================
+2026-03-26 21:01:45,292 - __main__ - INFO - Starting LaTeX Integral Calculator - Professional Rendering...
+2026-03-26 21:01:45,293 - __main__ - INFO - ==================================================
+2026-03-26 21:01:46,777 - ui.simple_ui_fix - INFO - Calculator display methods patched successfully
+2026-03-26 21:01:46,850 - __main__ - INFO - Creating LaTeX calculator instance...
+2026-03-26 21:01:47,391 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:01:47,406 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 21:01:47,415 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:01:47,505 - ui.simple_ui_fix - INFO - Calculator display methods patched successfully
+2026-03-26 21:01:47,505 - ui.reorganized_calculator - INFO - Reorganized LaTeX Integral Calculator initialized successfully
+2026-03-26 21:01:47,508 - __main__ - INFO - ==================================================
+2026-03-26 21:02:05,204 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:02:05,976 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:02:05,978 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:02:05,984 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:02:06,005 - ui.reorganized_calculator - INFO - Displaying working LaTeX results
+2026-03-26 21:02:06,008 - ui.reorganized_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 21:02:06,009 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:02:06,018 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:02:06,029 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:02:06,038 - ui.reorganized_calculator - INFO - Displaying 5 steps
+2026-03-26 21:02:06,039 - ui.reorganized_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 21:02:06,039 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:02:06,048 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:02:06,058 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:02:06,067 - ui.reorganized_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 21:02:06,067 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:02:06,077 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:02:06,086 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:02:06,098 - ui.reorganized_calculator - INFO - Working LaTeX results displayed successfully
+2026-03-26 21:08:52,115 - __main__ - INFO - ==================================================
+2026-03-26 21:08:52,115 - __main__ - INFO - Starting LaTeX Integral Calculator - Professional Rendering...
+2026-03-26 21:08:52,115 - __main__ - INFO - ==================================================
+2026-03-26 21:08:53,603 - ui.simple_ui_fix - INFO - Calculator display methods patched successfully
+2026-03-26 21:08:53,671 - __main__ - INFO - Creating LaTeX calculator instance...
+2026-03-26 21:08:54,218 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:08:54,234 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 21:08:54,243 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:08:54,331 - ui.simple_ui_fix - INFO - Calculator display methods patched successfully
+2026-03-26 21:08:54,331 - ui.fixed_layout_calculator - INFO - Fixed Layout LaTeX Integral Calculator initialized successfully
+2026-03-26 21:08:54,334 - __main__ - INFO - ==================================================
+2026-03-26 21:09:03,348 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:09:04,135 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:09:04,137 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:09:04,143 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:09:04,290 - ui.fixed_layout_calculator - ERROR - Error plotting function: Failed to process string with tex because latex could not be found
+2026-03-26 21:09:07,737 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:09:07,745 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:09:07,747 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:09:07,754 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:09:07,774 - ui.fixed_layout_calculator - INFO - Displaying working LaTeX results
+2026-03-26 21:09:07,776 - ui.fixed_layout_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 21:09:07,777 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:09:07,787 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:09:07,797 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:09:07,806 - ui.fixed_layout_calculator - INFO - Displaying 5 steps
+2026-03-26 21:09:07,807 - ui.fixed_layout_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 21:09:07,808 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:09:07,819 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:09:07,829 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:09:07,850 - ui.fixed_layout_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 21:09:07,851 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:09:07,861 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:09:07,870 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:09:07,880 - ui.fixed_layout_calculator - INFO - Working LaTeX results displayed successfully
+2026-03-26 21:09:15,042 - __main__ - INFO - Application closed normally
+2026-03-26 21:11:16,479 - __main__ - INFO - ==================================================
+2026-03-26 21:11:16,480 - __main__ - INFO - Starting LaTeX Integral Calculator - Professional Rendering...
+2026-03-26 21:11:16,480 - __main__ - INFO - ==================================================
+2026-03-26 21:11:17,916 - ui.simple_ui_fix - INFO - Calculator display methods patched successfully
+2026-03-26 21:11:17,985 - __main__ - INFO - Creating LaTeX calculator instance...
+2026-03-26 21:11:18,523 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:11:18,538 - utils.latex_renderer - ERROR - Error rendering preview: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:18,547 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:18,582 - ui.simple_ui_fix - INFO - Calculator display methods patched successfully
+2026-03-26 21:11:18,622 - ui.multi_window_calculator - INFO - Results window created
+2026-03-26 21:11:18,635 - ui.multi_window_calculator - INFO - Graph window created
+2026-03-26 21:11:18,635 - ui.multi_window_calculator - INFO - Separate windows created successfully
+2026-03-26 21:11:18,635 - ui.multi_window_calculator - INFO - Multi-Window LaTeX Integral Calculator initialized successfully
+2026-03-26 21:11:18,639 - __main__ - INFO - ==================================================
+2026-03-26 21:11:23,869 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:11:24,654 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:11:24,656 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:11:24,663 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:11:24,687 - ui.multi_window_calculator - INFO - Displaying results in separate window
+2026-03-26 21:11:24,687 - ui.multi_window_calculator - INFO - Displaying results in separate window
+2026-03-26 21:11:24,689 - ui.multi_window_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 21:11:24,689 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:11:24,699 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:24,710 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:24,718 - ui.multi_window_calculator - INFO - Displaying 5 steps
+2026-03-26 21:11:24,719 - ui.multi_window_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 21:11:24,720 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:11:24,729 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:24,738 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:24,748 - ui.multi_window_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 21:11:24,748 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:11:24,757 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:24,766 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:24,777 - ui.multi_window_calculator - INFO - Results displayed successfully in separate window
+2026-03-26 21:11:24,778 - ui.multi_window_calculator - ERROR - Error displaying results: 'MultiWindowLaTeXCalculator' object has no attribute 'info_label'
+2026-03-26 21:11:28,864 - ui.multi_window_calculator - INFO - Results window hidden
+2026-03-26 21:11:31,665 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:11:31,672 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:11:31,683 - ui.multi_window_calculator - INFO - Results window shown
+2026-03-26 21:11:31,685 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:11:31,692 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:11:31,698 - ui.multi_window_calculator - INFO - Displaying results in separate window
+2026-03-26 21:11:31,699 - ui.multi_window_calculator - INFO - Displaying results in separate window
+2026-03-26 21:11:31,704 - ui.multi_window_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 21:11:31,705 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:11:31,715 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:31,725 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:31,736 - ui.multi_window_calculator - INFO - Displaying 5 steps
+2026-03-26 21:11:31,737 - ui.multi_window_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 21:11:31,738 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:11:31,759 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:31,769 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:31,779 - ui.multi_window_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 21:11:31,779 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:11:31,788 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:31,798 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:31,808 - ui.multi_window_calculator - INFO - Results displayed successfully in separate window
+2026-03-26 21:11:31,808 - ui.multi_window_calculator - ERROR - Error displaying results: 'MultiWindowLaTeXCalculator' object has no attribute 'info_label'
+2026-03-26 21:11:52,119 - ui.multi_window_calculator - INFO - Results window hidden
+2026-03-26 21:11:53,407 - ui.multi_window_calculator - INFO - Results window shown
+2026-03-26 21:11:55,202 - ui.multi_window_calculator - INFO - Results window hidden
+2026-03-26 21:11:56,448 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:11:56,456 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:11:56,466 - ui.multi_window_calculator - INFO - Results window shown
+2026-03-26 21:11:56,468 - utils.validators - INFO - Expression validated successfully: x**2 + 3*x + 2
+2026-03-26 21:11:56,475 - core.parser - INFO - Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+2026-03-26 21:11:56,480 - ui.multi_window_calculator - INFO - Displaying results in separate window
+2026-03-26 21:11:56,480 - ui.multi_window_calculator - INFO - Displaying results in separate window
+2026-03-26 21:11:56,484 - ui.multi_window_calculator - INFO - Displaying result: x**3/3 + 3*x**2/2 + 2*x
+2026-03-26 21:11:56,484 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:11:56,493 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:56,502 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:56,511 - ui.multi_window_calculator - INFO - Displaying 5 steps
+2026-03-26 21:11:56,512 - ui.multi_window_calculator - INFO - Displaying step 3: Integral(x**2 + 3*x + 2, x)
+2026-03-26 21:11:56,513 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:11:56,523 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:56,532 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:56,542 - ui.multi_window_calculator - INFO - Displaying verification: d/dx(x**3/3 + 3*x**2/2 + 2*x) = x**2 + 3*x + 2
+2026-03-26 21:11:56,542 - utils.latex_renderer - ERROR - Error cleaning LaTeX: nothing to repeat at position 0
+2026-03-26 21:11:56,551 - utils.latex_renderer - ERROR - Error rendering expression: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:56,560 - utils.latex_renderer - ERROR - Error rendering error text: Failed to process string with tex because latex could not be found
+2026-03-26 21:11:56,570 - ui.multi_window_calculator - INFO - Results displayed successfully in separate window
+2026-03-26 21:11:56,570 - ui.multi_window_calculator - ERROR - Error displaying results: 'MultiWindowLaTeXCalculator' object has no attribute 'info_label'
+2026-03-26 21:12:01,358 - ui.multi_window_calculator - INFO - Results window hidden
+2026-03-26 21:15:06,143 - __main__ - INFO - Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.main_window:Results window created successfully
+INFO:ui.main_window:Graph window created successfully
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+INFO:ui.main_window:Professional Integral Calculator initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: integrate( , x)x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*( , x)x^2 + 3*x + 2
+ERROR:core.parser:Failed to parse expression 'integrate( , x)x**2 + 3*x + 2': Sympify of expression 'could not parse 'i*nt*eg*ra*te*( , x)x^2 + 3*x + 2'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate( , x)x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*( , x)x^2 + 3*x + 2
+ERROR:core.parser:Failed to parse expression 'integrate( , x)x**2 + 3*x + 2': Sympify of expression 'could not parse 'i*nt*eg*ra*te*( , x)x^2 + 3*x + 2'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate( , x)x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*( , x)x^2 + 3*x + 2
+ERROR:core.parser:Failed to parse expression 'integrate( , x)x**2 + 3*x + 2': Sympify of expression 'could not parse 'i*nt*eg*ra*te*( , x)x^2 + 3*x + 2'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate( , )x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*( , )x^2 + 3*x + 2
+ERROR:core.parser:Failed to parse expression 'integrate( , )x**2 + 3*x + 2': Sympify of expression 'could not parse 'i*nt*eg*ra*te*( , )x^2 + 3*x + 2'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate( ,)x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*( ,)x^2 + 3*x + 2
+ERROR:core.parser:Failed to parse expression 'integrate( ,)x**2 + 3*x + 2': Sympify of expression 'could not parse 'i*nt*eg*ra*te*( ,)x^2 + 3*x + 2'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate( )x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*( )x^2 + 3*x + 2
+ERROR:core.parser:Failed to parse expression 'integrate( )x**2 + 3*x + 2': Sympify of expression 'could not parse 'i*nt*eg*ra*te*( )x^2 + 3*x + 2'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x + 2
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2 + 3*x + 2': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x + 2'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x + 2
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2 + 3*x + 2': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x + 2'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2 + 3*x +
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x +
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2 + 3*x +': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x +'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2 + 3*x +
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x +
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2 + 3*x +': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x +'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2 + 3*x
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2 + 3*x': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2 + 3*x
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2 + 3*x': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2 + 3*
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2 + 3*': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2 + 3
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2 + 3': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 + 3'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2 +
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 +
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2 +': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 +'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2 +
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 +
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2 +': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2 +'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**2
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**2': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^2'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x**
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x**': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x^'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x*
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x*
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x*': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )x
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )x
+ERROR:core.parser:Failed to parse expression 'integrate(x**2 + 3*x + 2 )x': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(x^2 + 3*x + 2 )x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )
+INFO:core.parser:Successfully parsed: integrate(x**2 + 3*x + 2 ) -> eg*i*nt*ra*te*(x**2 + 3*x + 2)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )
+INFO:core.parser:Successfully parsed: integrate(x**2 + 3*x + 2 ) -> eg*i*nt*ra*te*(x**2 + 3*x + 2)
+INFO:core.parser:Parsing expression: integrate(x**2 + 3*x + 2 )
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(x^2 + 3*x + 2 )
+INFO:core.parser:Successfully parsed: integrate(x**2 + 3*x + 2 ) -> eg*i*nt*ra*te*(x**2 + 3*x + 2)
+INFO:core.parser:Parsing expression: integrate( , (x, , ))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*( , (x, , ))
+ERROR:core.parser:Failed to parse expression 'integrate( , (x, , ))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*( , (x, , ))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate( , (x, , ))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*( , (x, , ))
+ERROR:core.parser:Failed to parse expression 'integrate( , (x, , ))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*( , (x, , ))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate( , (x, , ))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*( , (x, , ))
+ERROR:core.parser:Failed to parse expression 'integrate( , (x, , ))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*( , (x, , ))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(59/x**2, (x, 1, 4))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(59/x^2, (x, 1, 4))
+ERROR:core.parser:Failed to parse expression 'integrate(59/x**2, (x, 1, 4))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integrate(59/x**2, (x, 1, 4))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(59/x^2, (x, 1, 4))
+ERROR:core.parser:Failed to parse expression 'integrate(59/x**2, (x, 1, 4))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integrate(59/x**2, (x, 1, 4))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(59/x^2, (x, 1, 4))
+ERROR:core.parser:Failed to parse expression 'integrate(59/x**2, (x, 1, 4))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integrate(59/x**2, (x, 1, 4))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(59/x^2, (x, 1, 4))
+ERROR:core.parser:Failed to parse expression 'integrate(59/x**2, (x, 1, 4))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integratesin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integratesin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integratesin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integratesin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate9sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te9*s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate9sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te9*s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integratesin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integratesin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat(esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*(e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat(esin(x), (x, 0, pi))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integrat(esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*(e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat(esin(x), (x, 0, pi))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integrat(esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*(e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat(esin(x), (x, 0, pi))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integrat(esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*(e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat(esin(x), (x, 0, pi))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integrat(esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*(e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat(esin(x), (x, 0, pi))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integratesin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integratesin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrat(esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*(e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat(esin(x), (x, 0, pi))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integrat()esin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrat()esin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*t*()e*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integratesin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integratesin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate9sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te9*s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate9sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te9*s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integratesin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integratesin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integratesin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integratesin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*si*n*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x, (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x, (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x, (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x, (x, 0, p*i))'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(sin(x, (x, 0, pi)
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x, (x, 0, p*i)
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x, (x, 0, pi)': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x, (x, 0, p*i)'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(sin(x, (x, 0, pi
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x, (x, 0, p*i
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x, (x, 0, pi': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x, (x, 0, p*i'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(sin(x, (x, 0, p
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x, (x, 0, p
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x, (x, 0, p': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x, (x, 0, p'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(sin(x, (x, 0,
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x, (x, 0,
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x, (x, 0,': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x, (x, 0,'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(sin(x, (x, 0,
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x, (x, 0,
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x, (x, 0,': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x, (x, 0,'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(sin(x, (x, 0
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x, (x, 0
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x, (x, 0': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x, (x, 0'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(sin(x, (x,
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x, (x,
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x, (x,': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x, (x,'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(sin(x, (x,
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x, (x,
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x, (x,': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x, (x,'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(sin(x, (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x, (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x, (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x, (x, 0, p*i))'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(sin(x, (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x, (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x, (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x, (x, 0, p*i))'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, p))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, p))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, ))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, ))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, ))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, ))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi)_)
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i)_)
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi)_)': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i)_)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi)_)
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i)_)
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi)_)': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i)_)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi)))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i)))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi)))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i)))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi)))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i)))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi)))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i)))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi))': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i))'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(sin(x), (x, 0, pi)
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i)
+ERROR:core.parser:Failed to parse expression 'integrate(sin(x), (x, 0, pi)': Sympify of expression 'could not parse 'i*nt*eg*ra*te*(s*in*(x), (x, 0, p*i)'' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.parser:Parsing expression: integrate(59/x^2, (x, 1, 4))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(59/x^2, (x, 1, 4))
+ERROR:core.parser:Failed to parse expression 'integrate(59/x^2, (x, 1, 4))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integrate(59/x^2, (x, 1, 4))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(59/x^2, (x, 1, 4))
+ERROR:core.parser:Failed to parse expression 'integrate(59/x^2, (x, 1, 4))': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: integrate(59/x^2, (x, 1, 4))
+INFO:core.parser:Cleaned expression: i*nt*eg*ra*te*(59/x^2, (x, 1, 4))
+ERROR:core.parser:Failed to parse expression 'integrate(59/x^2, (x, 1, 4))': can't multiply sequence by non-int of type 'Mul'
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.main_window:Results window created successfully
+INFO:ui.main_window:Graph window created successfully
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+INFO:ui.main_window:Professional Integral Calculator initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.main_window:Displaying results in separate windows
+INFO:ui.main_window:=== STARTING DISPLAY_RESULTS_IN_WINDOW ===
+INFO:ui.main_window:Results window shown, lifted, and forced to front
+INFO:ui.main_window:Clearing previous results from notebook with 4 children
+INFO:ui.main_window:Recreating result tabs
+INFO:ui.main_window:Result tabs recreated, notebook now has 4 children
+INFO:ui.main_window:Extracted data from IntegrationResult: func=x**2 + 3*x + 2, result=x*(2*x**2 + 9*x + 12)/6, steps=2, limits=None
+INFO:ui.main_window:=== DISPLAYING RESULT TAB ===
+INFO:ui.main_window:latex_result_frame exists, has 1 children
+INFO:ui.main_window:Cleared latex_result_frame
+INFO:ui.main_window:Creating text display for result: Integral indefinida
+INFO:ui.main_window:Created title label
+INFO:ui.main_window:Created function label
+INFO:ui.main_window:Created result label
+INFO:ui.main_window:Result frame now has 3 children
+INFO:ui.main_window:=== DISPLAYING STEPS TAB ===
+INFO:ui.main_window:latex_steps_frame exists, has 2 steps to display
+INFO:ui.main_window:Cleared latex_steps_frame
+INFO:ui.main_window:Processing step 1: Análisis de la función
+INFO:ui.main_window:Created text display for step 1
+INFO:ui.main_window:Processing step 2: Integración directa
+INFO:ui.main_window:Created text display for step 2
+INFO:ui.main_window:=== DISPLAYING VERIFICATION TAB ===
+INFO:ui.main_window:latex_verify_frame exists
+INFO:ui.main_window:Cleared latex_verify_frame
+INFO:ui.main_window:Verification result: d/dx(x*(2*x**2 + 9*x + 12)/6) = x**2/3 + x*(4*x + 9)/6 + 3*x/2 + 2 - Verificacion Exitosa
+INFO:ui.main_window:Created text display for verification
+INFO:ui.main_window:=== DISPLAYING TEXT MODE TAB ===
+INFO:ui.main_window:text_result_display exists, filling with data
+INFO:ui.main_window:Text mode tab filled with data
+INFO:ui.main_window:=== RESULTS DISPLAY COMPLETED ===
+ERROR:ui.main_window:Error displaying graph in window: 'IntegrationResult' object has no attribute 'get'
+INFO:ui.main_window:Results displayed successfully
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.main_window:Results window created successfully
+INFO:ui.main_window:Graph window created successfully
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+INFO:ui.main_window:Professional Integral Calculator initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.main_window:Displaying results in separate windows
+INFO:ui.main_window:=== STARTING DISPLAY_RESULTS_IN_WINDOW ===
+INFO:ui.main_window:Results window shown, lifted, and forced to front
+INFO:ui.main_window:Clearing previous results from notebook with 4 children
+INFO:ui.main_window:Recreating result tabs
+INFO:ui.main_window:Result tabs recreated, notebook now has 4 children
+INFO:ui.main_window:Extracted data from IntegrationResult: func=x**2 + 3*x + 2, result=x*(2*x**2 + 9*x + 12)/6, steps=2, limits=None
+INFO:ui.main_window:=== DISPLAYING RESULT TAB ===
+INFO:ui.main_window:latex_result_frame exists, has 1 children
+INFO:ui.main_window:Cleared latex_result_frame
+INFO:ui.main_window:Creating text display for result: Integral indefinida
+INFO:ui.main_window:Created title label
+INFO:ui.main_window:Created function label
+INFO:ui.main_window:Created result label
+INFO:ui.main_window:Result frame now has 3 children
+INFO:ui.main_window:=== DISPLAYING STEPS TAB ===
+INFO:ui.main_window:latex_steps_frame exists, has 2 steps to display
+INFO:ui.main_window:Cleared latex_steps_frame
+INFO:ui.main_window:Processing step 1: Análisis de la función
+INFO:ui.main_window:Created text display for step 1
+INFO:ui.main_window:Processing step 2: Integración directa
+INFO:ui.main_window:Created text display for step 2
+INFO:ui.main_window:=== DISPLAYING VERIFICATION TAB ===
+INFO:ui.main_window:latex_verify_frame exists
+INFO:ui.main_window:Cleared latex_verify_frame
+INFO:ui.main_window:Verification result: d/dx(x*(2*x**2 + 9*x + 12)/6) = x**2/3 + x*(4*x + 9)/6 + 3*x/2 + 2 - Verificacion Exitosa
+INFO:ui.main_window:Created text display for verification
+INFO:ui.main_window:=== DISPLAYING TEXT MODE TAB ===
+INFO:ui.main_window:text_result_display exists, filling with data
+INFO:ui.main_window:Text mode tab filled with data
+INFO:ui.main_window:=== RESULTS DISPLAY COMPLETED ===
+ERROR:ui.main_window:Error displaying graph in window: 'IntegrationResult' object has no attribute 'get'
+INFO:ui.main_window:Results displayed successfully
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.main_window:Results window created successfully
+INFO:ui.main_window:Graph window created successfully
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+INFO:ui.main_window:Professional Integral Calculator initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.main_window:Displaying results in separate windows
+INFO:ui.main_window:=== STARTING DISPLAY_RESULTS_IN_WINDOW ===
+INFO:ui.main_window:Results window shown, lifted, and forced to front
+INFO:ui.main_window:Clearing previous results from notebook with 4 children
+INFO:ui.main_window:Recreating result tabs
+INFO:ui.main_window:Result tabs recreated, notebook now has 4 children
+INFO:ui.main_window:Extracted data from IntegrationResult: func=x**2 + 3*x + 2, result=x*(2*x**2 + 9*x + 12)/6, steps=2, limits=None
+INFO:ui.main_window:=== DISPLAYING RESULT TAB ===
+INFO:ui.main_window:latex_result_frame exists, has 1 children
+INFO:ui.main_window:Cleared latex_result_frame
+INFO:ui.main_window:Creating text display for result: Integral indefinida
+INFO:ui.main_window:Created title label
+INFO:ui.main_window:Created function label
+INFO:ui.main_window:Created result label
+INFO:ui.main_window:Result frame now has 3 children
+INFO:ui.main_window:=== DISPLAYING STEPS TAB ===
+INFO:ui.main_window:latex_steps_frame exists, has 2 steps to display
+INFO:ui.main_window:Cleared latex_steps_frame
+INFO:ui.main_window:Processing step 1: Análisis de la función
+INFO:ui.main_window:Created text display for step 1
+INFO:ui.main_window:Processing step 2: Integración directa
+INFO:ui.main_window:Created text display for step 2
+INFO:ui.main_window:=== DISPLAYING VERIFICATION TAB ===
+INFO:ui.main_window:latex_verify_frame exists
+INFO:ui.main_window:Cleared latex_verify_frame
+INFO:ui.main_window:Verification result: d/dx(x*(2*x**2 + 9*x + 12)/6) = x**2/3 + x*(4*x + 9)/6 + 3*x/2 + 2 - Verificacion Exitosa
+INFO:ui.main_window:Created text display for verification
+INFO:ui.main_window:=== DISPLAYING TEXT MODE TAB ===
+INFO:ui.main_window:text_result_display exists, filling with data
+INFO:ui.main_window:Text mode tab filled with data
+INFO:ui.main_window:=== RESULTS DISPLAY COMPLETED ===
+ERROR:ui.main_window:Error displaying graph in window: 'IntegrationResult' object has no attribute 'get'
+INFO:ui.main_window:Results displayed successfully
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.main_window:Results window created successfully
+INFO:ui.main_window:Graph window created successfully
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+INFO:ui.main_window:Professional Integral Calculator initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.main_window:Displaying results in separate windows
+INFO:ui.main_window:=== STARTING DISPLAY_RESULTS_IN_WINDOW ===
+INFO:ui.main_window:Results window shown, lifted, and forced to front
+INFO:ui.main_window:Clearing previous results from notebook with 4 children
+INFO:ui.main_window:Recreating result tabs
+INFO:ui.main_window:Result tabs recreated, notebook now has 4 children
+INFO:ui.main_window:Extracted data from IntegrationResult: func=x**2 + 3*x + 2, result=x*(2*x**2 + 9*x + 12)/6, steps=2, limits=None
+INFO:ui.main_window:=== DISPLAYING RESULT TAB ===
+INFO:ui.main_window:latex_result_frame exists, has 1 children
+INFO:ui.main_window:Cleared latex_result_frame
+INFO:ui.main_window:Creating text display for result: Integral indefinida
+INFO:ui.main_window:Created title label
+INFO:ui.main_window:Created function label
+INFO:ui.main_window:Created result label
+INFO:ui.main_window:Result frame now has 3 children
+INFO:ui.main_window:=== DISPLAYING STEPS TAB ===
+INFO:ui.main_window:latex_steps_frame exists, has 2 steps to display
+INFO:ui.main_window:Cleared latex_steps_frame
+INFO:ui.main_window:Processing step 1: Análisis de la función
+INFO:ui.main_window:Created text display for step 1
+INFO:ui.main_window:Processing step 2: Integración directa
+INFO:ui.main_window:Created text display for step 2
+INFO:ui.main_window:=== DISPLAYING VERIFICATION TAB ===
+INFO:ui.main_window:latex_verify_frame exists
+INFO:ui.main_window:Cleared latex_verify_frame
+INFO:ui.main_window:Verification result: d/dx(x*(2*x**2 + 9*x + 12)/6) = x**2/3 + x*(4*x + 9)/6 + 3*x/2 + 2 - Verificacion Exitosa
+INFO:ui.main_window:Created text display for verification
+INFO:ui.main_window:=== DISPLAYING TEXT MODE TAB ===
+INFO:ui.main_window:text_result_display exists, filling with data
+INFO:ui.main_window:Text mode tab filled with data
+INFO:ui.main_window:=== RESULTS DISPLAY COMPLETED ===
+ERROR:ui.main_window:Error displaying graph in window: 'IntegrationResult' object has no attribute 'get'
+INFO:ui.main_window:Results displayed successfully
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.main_window:Displaying results in separate windows
+INFO:ui.main_window:=== STARTING DISPLAY_RESULTS_IN_WINDOW ===
+INFO:ui.main_window:Results window shown, lifted, and forced to front
+INFO:ui.main_window:Clearing previous results from notebook with 4 children
+INFO:ui.main_window:Recreating result tabs
+INFO:ui.main_window:Result tabs recreated, notebook now has 4 children
+INFO:ui.main_window:Extracted data from IntegrationResult: func=x**2 + 3*x + 2, result=x*(2*x**2 + 9*x + 12)/6, steps=2, limits=None
+INFO:ui.main_window:=== DISPLAYING RESULT TAB ===
+INFO:ui.main_window:latex_result_frame exists, has 1 children
+INFO:ui.main_window:Cleared latex_result_frame
+INFO:ui.main_window:Creating text display for result: Integral indefinida
+INFO:ui.main_window:Created title label
+INFO:ui.main_window:Created function label
+INFO:ui.main_window:Created result label
+INFO:ui.main_window:Result frame now has 3 children
+INFO:ui.main_window:=== DISPLAYING STEPS TAB ===
+INFO:ui.main_window:latex_steps_frame exists, has 2 steps to display
+INFO:ui.main_window:Cleared latex_steps_frame
+INFO:ui.main_window:Processing step 1: Análisis de la función
+INFO:ui.main_window:Created text display for step 1
+INFO:ui.main_window:Processing step 2: Integración directa
+INFO:ui.main_window:Created text display for step 2
+INFO:ui.main_window:=== DISPLAYING VERIFICATION TAB ===
+INFO:ui.main_window:latex_verify_frame exists
+INFO:ui.main_window:Cleared latex_verify_frame
+INFO:ui.main_window:Verification result: d/dx(x*(2*x**2 + 9*x + 12)/6) = x**2/3 + x*(4*x + 9)/6 + 3*x/2 + 2 - Verificacion Exitosa
+INFO:ui.main_window:Created text display for verification
+INFO:ui.main_window:=== DISPLAYING TEXT MODE TAB ===
+INFO:ui.main_window:text_result_display exists, filling with data
+INFO:ui.main_window:Text mode tab filled with data
+INFO:ui.main_window:=== RESULTS DISPLAY COMPLETED ===
+ERROR:ui.main_window:Error displaying graph in window: 'IntegrationResult' object has no attribute 'get'
+INFO:ui.main_window:Results displayed successfully
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.main_window:Displaying results in separate windows
+INFO:ui.main_window:=== STARTING DISPLAY_RESULTS_IN_WINDOW ===
+INFO:ui.main_window:Results window shown, lifted, and forced to front
+INFO:ui.main_window:Clearing previous results from notebook with 4 children
+INFO:ui.main_window:Recreating result tabs
+INFO:ui.main_window:Result tabs recreated, notebook now has 4 children
+INFO:ui.main_window:Extracted data from IntegrationResult: func=x**2 + 3*x + 2, result=x*(2*x**2 + 9*x + 12)/6, steps=2, limits=None
+INFO:ui.main_window:=== DISPLAYING RESULT TAB ===
+INFO:ui.main_window:latex_result_frame exists, has 1 children
+INFO:ui.main_window:Cleared latex_result_frame
+INFO:ui.main_window:Creating text display for result: Integral indefinida
+INFO:ui.main_window:Created title label
+INFO:ui.main_window:Created function label
+INFO:ui.main_window:Created result label
+INFO:ui.main_window:Result frame now has 3 children
+INFO:ui.main_window:=== DISPLAYING STEPS TAB ===
+INFO:ui.main_window:latex_steps_frame exists, has 2 steps to display
+INFO:ui.main_window:Cleared latex_steps_frame
+INFO:ui.main_window:Processing step 1: Análisis de la función
+INFO:ui.main_window:Created text display for step 1
+INFO:ui.main_window:Processing step 2: Integración directa
+INFO:ui.main_window:Created text display for step 2
+INFO:ui.main_window:=== DISPLAYING VERIFICATION TAB ===
+INFO:ui.main_window:latex_verify_frame exists
+INFO:ui.main_window:Cleared latex_verify_frame
+INFO:ui.main_window:Verification result: d/dx(x*(2*x**2 + 9*x + 12)/6) = x**2/3 + x*(4*x + 9)/6 + 3*x/2 + 2 - Verificacion Exitosa
+INFO:ui.main_window:Created text display for verification
+INFO:ui.main_window:=== DISPLAYING TEXT MODE TAB ===
+INFO:ui.main_window:text_result_display exists, filling with data
+INFO:ui.main_window:Text mode tab filled with data
+INFO:ui.main_window:=== RESULTS DISPLAY COMPLETED ===
+ERROR:ui.main_window:Error displaying graph in window: 'IntegrationResult' object has no attribute 'get'
+INFO:ui.main_window:Results displayed successfully
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.main_window:Results window created successfully
+INFO:ui.main_window:Graph window created successfully
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+INFO:ui.main_window:Professional Integral Calculator initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.main_window:Displaying results in separate windows
+INFO:ui.main_window:=== STARTING DISPLAY_RESULTS_IN_WINDOW ===
+INFO:ui.main_window:Results window shown, lifted, and forced to front
+INFO:ui.main_window:Clearing previous results from notebook with 4 children
+INFO:ui.main_window:Recreating result tabs
+INFO:ui.main_window:Result tabs recreated, notebook now has 4 children
+INFO:ui.main_window:Extracted data from IntegrationResult: func=x**2 + 3*x + 2, result=x*(2*x**2 + 9*x + 12)/6, steps=2, limits=None
+INFO:ui.main_window:=== DISPLAYING RESULT TAB ===
+INFO:ui.main_window:latex_result_frame exists, has 1 children
+INFO:ui.main_window:Cleared latex_result_frame
+INFO:ui.main_window:Creating text display for result: Integral indefinida
+INFO:ui.main_window:Created title label
+INFO:ui.main_window:Created function label
+INFO:ui.main_window:Created result label
+INFO:ui.main_window:Result frame now has 3 children
+INFO:ui.main_window:=== DISPLAYING STEPS TAB ===
+INFO:ui.main_window:latex_steps_frame exists, has 2 steps to display
+INFO:ui.main_window:Cleared latex_steps_frame
+INFO:ui.main_window:Processing step 1: Análisis de la función
+INFO:ui.main_window:Created text display for step 1
+INFO:ui.main_window:Processing step 2: Integración directa
+INFO:ui.main_window:Created text display for step 2
+INFO:ui.main_window:=== DISPLAYING VERIFICATION TAB ===
+INFO:ui.main_window:latex_verify_frame exists
+INFO:ui.main_window:Cleared latex_verify_frame
+INFO:ui.main_window:Verification result: d/dx(x*(2*x**2 + 9*x + 12)/6) = x**2/3 + x*(4*x + 9)/6 + 3*x/2 + 2 - Verificacion Exitosa
+INFO:ui.main_window:Created text display for verification
+INFO:ui.main_window:=== DISPLAYING TEXT MODE TAB ===
+INFO:ui.main_window:text_result_display exists, filling with data
+INFO:ui.main_window:Text mode tab filled with data
+INFO:ui.main_window:=== RESULTS DISPLAY COMPLETED ===
+ERROR:ui.main_window:Error displaying graph in window: 'IntegrationResult' object has no attribute 'get'
+INFO:ui.main_window:Results displayed successfully
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.main_window:Results window created successfully
+INFO:ui.main_window:Graph window created successfully
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+INFO:ui.main_window:Professional Integral Calculator initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+ERROR:ui.main_window:Error redoing input: nothing to redo
+INFO:core.parser:Parsing expression: x**2 + 3*x + 20
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 20
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 20 -> x**2 + 3*x + 20
+INFO:core.parser:Parsing expression: 0
+INFO:core.parser:Cleaned expression: 0
+WARNING:core.parser:Expression does not contain variable x
+INFO:core.parser:Successfully parsed: 0 -> 0
+ERROR:ui.main_window:Error redoing input: nothing to redo
+ERROR:ui.main_window:Error redoing input: nothing to redo
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.main_window:Results window created successfully
+INFO:ui.main_window:Graph window created successfully
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+INFO:ui.main_window:Professional Integral Calculator initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+ERROR:ui.main_window:Error applying theme: 'ThemeManager' object has no attribute 'get_theme_colors'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.main_window:Displaying results in separate windows
+INFO:ui.main_window:=== STARTING DISPLAY_RESULTS_IN_WINDOW ===
+INFO:ui.main_window:Results window shown, lifted, and forced to front
+INFO:ui.main_window:Clearing previous results from notebook with 4 children
+INFO:ui.main_window:Recreating result tabs
+INFO:ui.main_window:Result tabs recreated, notebook now has 4 children
+INFO:ui.main_window:Extracted data from IntegrationResult: func=x**2 + 3*x + 2, result=x*(2*x**2 + 9*x + 12)/6, steps=2, limits=None
+INFO:ui.main_window:=== DISPLAYING RESULT TAB ===
+INFO:ui.main_window:latex_result_frame exists, has 1 children
+INFO:ui.main_window:Cleared latex_result_frame
+INFO:ui.main_window:Creating text display for result: Integral indefinida
+INFO:ui.main_window:Created title label
+INFO:ui.main_window:Created function label
+INFO:ui.main_window:Created result label
+INFO:ui.main_window:Result frame now has 3 children
+INFO:ui.main_window:=== DISPLAYING STEPS TAB ===
+INFO:ui.main_window:latex_steps_frame exists, has 2 steps to display
+INFO:ui.main_window:Cleared latex_steps_frame
+INFO:ui.main_window:Processing step 1: Análisis de la función
+INFO:ui.main_window:Created text display for step 1
+INFO:ui.main_window:Processing step 2: Integración directa
+INFO:ui.main_window:Created text display for step 2
+INFO:ui.main_window:=== DISPLAYING VERIFICATION TAB ===
+INFO:ui.main_window:latex_verify_frame exists
+INFO:ui.main_window:Cleared latex_verify_frame
+INFO:ui.main_window:Verification result: d/dx(x*(2*x**2 + 9*x + 12)/6) = x**2/3 + x*(4*x + 9)/6 + 3*x/2 + 2 - Verificacion Exitosa
+INFO:ui.main_window:Created text display for verification
+INFO:ui.main_window:=== DISPLAYING TEXT MODE TAB ===
+INFO:ui.main_window:text_result_display exists, filling with data
+INFO:ui.main_window:Text mode tab filled with data
+INFO:ui.main_window:=== RESULTS DISPLAY COMPLETED ===
+ERROR:ui.main_window:Error displaying graph in window: 'IntegrationResult' object has no attribute 'get'
+INFO:ui.main_window:Results displayed successfully
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2integrate( , x)
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2*i*nt*eg*ra*te*( , x)
+ERROR:core.parser:Failed to parse expression 'x**2 + 3*x + 2integrate( , x)': Sympify of expression 'could not parse 'x^2 + 3*x + 2*i*nt*eg*ra*te*( , x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2integrate(12 , x)
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2*i*nt*eg*ra*te*(12 , x)
+ERROR:core.parser:Failed to parse expression 'x**2 + 3*x + 2integrate(12 , x)': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2integrate(12 , x)
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2*i*nt*eg*ra*te*(12 , x)
+ERROR:core.parser:Failed to parse expression 'x**2 + 3*x + 2integrate(12 , x)': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2integrate(1 , x)
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2*i*nt*eg*ra*te*(1 , x)
+ERROR:core.parser:Failed to parse expression 'x**2 + 3*x + 2integrate(1 , x)': can't multiply sequence by non-int of type 'Mul'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2integrate( , x)
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2*i*nt*eg*ra*te*( , x)
+ERROR:core.parser:Failed to parse expression 'x**2 + 3*x + 2integrate( , x)': Sympify of expression 'could not parse 'x^2 + 3*x + 2*i*nt*eg*ra*te*( , x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2integrate , x)
+INFO:core.parser:Cleaned expression: x^2 + 3*x + 2*i*nt*eg*ra*te , x)
+ERROR:core.parser:Failed to parse expression 'x**2 + 3*x + 2integrate , x)': Sympify of expression 'could not parse 'x^2 + 3*x + 2*i*nt*eg*ra*te , x)'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:__main__:Application closed normally
