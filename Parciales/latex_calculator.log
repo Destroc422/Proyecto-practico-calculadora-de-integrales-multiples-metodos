@@ -1488,3 +1488,1210 @@ INFO:core.parser:Cleaned expression: x^2 + 3*x + 2*i*nt*eg*ra*te , x)
 ERROR:core.parser:Failed to parse expression 'x**2 + 3*x + 2integrate , x)': Sympify of expression 'could not parse 'x^2 + 3*x + 2*i*nt*eg*ra*te , x)'' failed, because of exception being raised:
 SyntaxError: unmatched ')' (<string>, line 1)
 INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+ERROR:ui.professional_main_window:Error adjusting window size: '_tkinter.tkapp' object has no attribute 'winfo_minsize'
+INFO:core.parser:Parsing expression: integrate(3x**2 + x-5)
+INFO:core.parser:Cleaned expression: integrate(3x**2 + x-5)
+ERROR:core.parser:Failed to parse expression 'integrate(3x**2 + x-5)': Sympify of expression 'could not parse 'integrate(3x**2 + x-5)'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error calculating integral: Cannot parse expression 'integrate(3x**2 + x-5)': Sympify of expression 'could not parse 'integrate(3x**2 + x-5)'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(3x**2 + x - 5)
+INFO:core.parser:Cleaned expression: integrate(3x**2 + x - 5)
+ERROR:core.parser:Failed to parse expression 'integrate(3x**2 + x - 5)': Sympify of expression 'could not parse 'integrate(3x**2 + x - 5)'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error calculating integral: Cannot parse expression 'integrate(3x**2 + x - 5)': Sympify of expression 'could not parse 'integrate(3x**2 + x - 5)'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(3 x**2 + x - 5)
+INFO:core.parser:Cleaned expression: integrate(3 x**2 + x - 5)
+ERROR:core.parser:Failed to parse expression 'integrate(3 x**2 + x - 5)': Sympify of expression 'could not parse 'integrate(3 x**2 + x - 5)'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error calculating integral: Cannot parse expression 'integrate(3 x**2 + x - 5)': Sympify of expression 'could not parse 'integrate(3 x**2 + x - 5)'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:core.parser:Parsing expression: 2(2x + 4)**5
+INFO:core.parser:Cleaned expression: 2(2x + 4)**5
+ERROR:core.parser:Failed to parse expression '2(2x + 4)**5': Sympify of expression 'could not parse '2(2x + 4)**5'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error calculating integral: Cannot parse expression '2(2x + 4)**5': Sympify of expression 'could not parse '2(2x + 4)**5'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate((2x + 4)**5)
+INFO:core.parser:Cleaned expression: integrate((2x + 4)**5)
+ERROR:core.parser:Failed to parse expression 'integrate((2x + 4)**5)': Sympify of expression 'could not parse 'integrate((2x + 4)**5)'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error calculating integral: Cannot parse expression 'integrate((2x + 4)**5)': Sympify of expression 'could not parse 'integrate((2x + 4)**5)'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'integral', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx', 'latex': '\\int x**2 + 3*x + 2 dx'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int x**2 + 3*x + 2 dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'decomposition', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx = \\int x**2 dx + \\int 3*x dx + \\int 2 dx', 'latex': '\\int x**2 + 3*x + 2 dx = \\int x**2 dx + \\int 3*x dx + \\int 2 dx'}
+INFO:ui.professional_main_window:Step 2 latex_content: \int x**2 + 3*x + 2 dx = \int x**2 dx + \int 3*x dx + \int 2 dx
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int x**2 dx = x**3/3', 'latex': '\\int x**2 dx = x**3/3'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int x**2 dx = x**3/3
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int 3*x dx = 3*x**2/2', 'latex': '\\int 3*x dx = 3*x**2/2'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int 3*x dx = 3*x**2/2
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int 2 dx = 2*x', 'latex': '\\int 2 dx = 2*x'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int 2 dx = 2*x
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'construction', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C', 'latex': '\\int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': '', 'content': 'x**3/3 + 3*x**2/2 + 2*x', 'latex': 'x**3/3 + 3*x**2/2 + 2*x'}
+INFO:ui.professional_main_window:Step 7 latex_content: x**3/3 + 3*x**2/2 + 2*x
+INFO:ui.professional_main_window:Processing step 8: <class 'dict'> - {'type': 'method_step', 'title': 'Método heurístico', 'expression': '∫ x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x', 'method': 'heurisch'}
+INFO:ui.professional_main_window:Step 8 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 3 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 7 rendering completed successfully
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'integral', 'title': '', 'content': '\\int_{0}^{2} x**2 + 3*x + 2 dx', 'latex': '\\int_{0}^{2} x**2 + 3*x + 2 dx'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int_{0}^{2} x**2 + 3*x + 2 dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'decomposition', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx = \\int x**2 dx + \\int 3*x dx + \\int 2 dx', 'latex': '\\int x**2 + 3*x + 2 dx = \\int x**2 dx + \\int 3*x dx + \\int 2 dx'}
+INFO:ui.professional_main_window:Step 2 latex_content: \int x**2 + 3*x + 2 dx = \int x**2 dx + \int 3*x dx + \int 2 dx
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int x**2 dx = x**3/3', 'latex': '\\int x**2 dx = x**3/3'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int x**2 dx = x**3/3
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int 3*x dx = 3*x**2/2', 'latex': '\\int 3*x dx = 3*x**2/2'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int 3*x dx = 3*x**2/2
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int 2 dx = 2*x', 'latex': '\\int 2 dx = 2*x'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int 2 dx = 2*x
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'construction', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C', 'latex': '\\int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': '', 'content': 'x**3/3 + 3*x**2/2 + 2*x', 'latex': 'x**3/3 + 3*x**2/2 + 2*x'}
+INFO:ui.professional_main_window:Step 7 latex_content: x**3/3 + 3*x**2/2 + 2*x
+INFO:ui.professional_main_window:Processing step 8: <class 'dict'> - {'type': 'method_step', 'title': 'Método heurístico', 'expression': '∫ x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x', 'method': 'heurisch'}
+INFO:ui.professional_main_window:Step 8 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 3 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 7 rendering completed successfully
+INFO:core.parser:Parsing expression: 3*x**2 + x - 5
+INFO:core.parser:Cleaned expression: 3*x**2 + x - 5
+INFO:core.parser:Successfully parsed: 3*x**2 + x - 5 -> 3*x**2 + x - 5
+INFO:core.integrator:Integrating: 3*x**2 + x - 5 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + x - 10)/2
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'integral', 'title': '', 'content': '\\int_{0}^{2} 3*x**2 + x - 5 dx', 'latex': '\\int_{0}^{2} 3*x**2 + x - 5 dx'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int_{0}^{2} 3*x**2 + x - 5 dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'decomposition', 'title': '', 'content': '\\int 3*x**2 + x - 5 dx = \\int 3*x**2 dx + \\int x dx + \\int -5 dx', 'latex': '\\int 3*x**2 + x - 5 dx = \\int 3*x**2 dx + \\int x dx + \\int -5 dx'}
+INFO:ui.professional_main_window:Step 2 latex_content: \int 3*x**2 + x - 5 dx = \int 3*x**2 dx + \int x dx + \int -5 dx
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int 3*x**2 dx = x**3', 'latex': '\\int 3*x**2 dx = x**3'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int 3*x**2 dx = x**3
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int x dx = x**2/2', 'latex': '\\int x dx = x**2/2'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int x dx = x**2/2
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int -5 dx = -5*x', 'latex': '\\int -5 dx = -5*x'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int -5 dx = -5*x
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'construction', 'title': '', 'content': '\\int 3*x**2 + x - 5 dx = x**3 + x**2/2 + -5*x + C', 'latex': '\\int 3*x**2 + x - 5 dx = x**3 + x**2/2 + -5*x + C'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int 3*x**2 + x - 5 dx = x**3 + x**2/2 + -5*x + C
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': '', 'content': 'x**3 + x**2/2 - 5*x', 'latex': 'x**3 + x**2/2 - 5*x'}
+INFO:ui.professional_main_window:Step 7 latex_content: x**3 + x**2/2 - 5*x
+INFO:ui.professional_main_window:Processing step 8: <class 'dict'> - {'type': 'method_step', 'title': 'Método heurístico', 'expression': '∫ 3*x**2 + x - 5 dx = x**3 + x**2/2 - 5*x', 'method': 'heurisch'}
+INFO:ui.professional_main_window:Step 8 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: 3*x**2 + x - 5
+INFO:core.parser:Cleaned expression: 3*x**2 + x - 5
+INFO:core.parser:Successfully parsed: 3*x**2 + x - 5 -> 3*x**2 + x - 5
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 3 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 7 rendering completed successfully
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'integral', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx', 'latex': '\\int x**2 + 3*x + 2 dx'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int x**2 + 3*x + 2 dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'decomposition', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx = \\int x**2 dx + \\int 3*x dx + \\int 2 dx', 'latex': '\\int x**2 + 3*x + 2 dx = \\int x**2 dx + \\int 3*x dx + \\int 2 dx'}
+INFO:ui.professional_main_window:Step 2 latex_content: \int x**2 + 3*x + 2 dx = \int x**2 dx + \int 3*x dx + \int 2 dx
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int x**2 dx = x**3/3', 'latex': '\\int x**2 dx = x**3/3'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int x**2 dx = x**3/3
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int 3*x dx = 3*x**2/2', 'latex': '\\int 3*x dx = 3*x**2/2'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int 3*x dx = 3*x**2/2
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int 2 dx = 2*x', 'latex': '\\int 2 dx = 2*x'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int 2 dx = 2*x
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'construction', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C', 'latex': '\\int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': '', 'content': 'x**3/3 + 3*x**2/2 + 2*x', 'latex': 'x**3/3 + 3*x**2/2 + 2*x'}
+INFO:ui.professional_main_window:Step 7 latex_content: x**3/3 + 3*x**2/2 + 2*x
+INFO:ui.professional_main_window:Processing step 8: <class 'dict'> - {'type': 'method_step', 'title': 'Método heurístico', 'expression': '∫ x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x', 'method': 'heurisch'}
+INFO:ui.professional_main_window:Step 8 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 3 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 7 rendering completed successfully
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:ui.word_equation_editor:Word Equation Editor initialized
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:ui.word_equation_editor:Word Equation Editor initialized
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:ui.word_equation_editor:Word Equation Editor initialized
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:ui.word_equation_editor:Word Equation Editor initialized
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:ui.word_equation_editor:Word Equation Editor initialized
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.word_equation_engine:Parsing Word equation: 
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:core.word_equation_engine:Parsing Word equation: 
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse '': Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:core.word_equation_engine:Parsing Word equation: 
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:core.word_equation_engine:Parsing Word equation: 
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse '': Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+ERROR:ui.professional_main_window:Error setting up professional input section: unknown color name "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+ERROR:ui.professional_main_window:Error setting up left panel: unknown color name "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+ERROR:ui.professional_main_window:Error creating professional layout: unknown color name "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+ERROR:ui.professional_main_window:Error setting up professional UI: unknown color name "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+ERROR:__main__:Fatal error: unknown color name "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+ERROR:__main__:Full traceback:
+ERROR:__main__:Traceback (most recent call last):
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\main.py", line 116, in main
+    app = ProfessionalIntegralCalculator(root)
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 56, in __init__
+    self.setup_professional_ui()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 123, in setup_professional_ui
+    self.create_professional_layout()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 251, in create_professional_layout
+    self.setup_left_panel()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 276, in setup_left_panel
+    self.setup_professional_input_section()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 394, in setup_professional_input_section
+    editor_header = tk.Frame(editor_container, bg='linear-gradient(135deg, #667eea 0%, #764ba2 100%)', height=55)
+  File "C:\Users\capit\AppData\Local\Python\pythoncore-3.14-64\Lib\tkinter\__init__.py", line 3368, in __init__
+    Widget.__init__(self, master, 'frame', cnf, {}, extra)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\capit\AppData\Local\Python\pythoncore-3.14-64\Lib\tkinter\__init__.py", line 2805, in __init__
+    self.tk.call(
+    ~~~~~~~~~~~~^
+        (widgetName, self._w) + extra + self._options(cnf))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_tkinter.TclError: unknown color name "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:ui.word_equation_editor:Word Equation Editor initialized
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:core.word_equation_engine:Parsing Word equation: int x^2 dx
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*(x)**(2) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.enhanced_word_panel:Enhanced Word Panel initialized successfully
+INFO:core.word_equation_engine:Parsing Word equation: int x^2 dx
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*(x)**(2) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+ERROR:ui.professional_main_window:Error adjusting window size: '_tkinter.tkapp' object has no attribute 'winfo_minsize'
+INFO:core.word_equation_engine:Parsing Word equation: 
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse '': Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:core.word_equation_engine:Parsing Word equation: ()/()
+ERROR:core.word_equation_engine:Error parsing Word equation: unsupported operand type(s) for /: 'tuple' and 'tuple'
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: ()/()
+ERROR:core.word_equation_engine:Error parsing Word equation: unsupported operand type(s) for /: 'tuple' and 'tuple'
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse '()/()': unsupported operand type(s) for /: 'tuple' and 'tuple'
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: ()/(
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse '()/('' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse '()/(': Sympify of expression 'could not parse '()/('' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.word_equation_engine:Parsing Word equation: ()/
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse '()/'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: ()/
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse '()/'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse '()/': Sympify of expression 'could not parse '()/'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: ()
+INFO:core.word_equation_engine:Successfully parsed: () -> ()
+INFO:ui.professional_main_window:Word equation validated: ()
+INFO:core.word_equation_engine:Parsing Word equation: (
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse '('' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.word_equation_engine:Parsing Word equation: (
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse '('' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse '(': Sympify of expression 'could not parse '('' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:core.word_equation_engine:Parsing Word equation: 
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse '': Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:core.word_equation_engine:Parsing Word equation: 
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse '': Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:core.word_equation_engine:Parsing Word equation: 
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse '': Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:core.word_equation_engine:Parsing Word equation: int (x) d()
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*(x) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x) d()
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*(x) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x) d()': Sympify of expression 'could not parse 'int*(x) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/) d()
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*(x/) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/) d()': Sympify of expression 'could not parse 'int*(x/) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d()
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d()
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/2) d()': Sympify of expression 'could not parse 'int*((x)/(2)) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(xd)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(xd)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(xd)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(xd)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/2) d(xd)': Sympify of expression 'could not parse 'int*((x)/(2)) d*(xd)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(xd)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(xd)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/2) d(xd)': Sympify of expression 'could not parse 'int*((x)/(2)) d*(xd)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/2) d(x)': Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d()
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/2) d()': Sympify of expression 'could not parse 'int*((x)/(2)) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(xd)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(xd)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/2) d(xd)': Sympify of expression 'could not parse 'int*((x)/(2)) d*(xd)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(xd)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(xd)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(xd)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(xd)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/2) d(xd)': Sympify of expression 'could not parse 'int*((x)/(2)) d*(xd)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/2) d(x)': Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d()
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/2) d()': Sympify of expression 'could not parse 'int*((x)/(2)) d*()'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/2) d(x)': Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.word_equation_engine:Parsing Word equation: int (x/ 2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/ 2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/ 2) d(x)': Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x/2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x/2) d(x)': Sympify of expression 'could not parse 'int*((x)/(2)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*(x2) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x2) d(x)': Sympify of expression 'could not parse 'int*(x2) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.word_equation_engine:Parsing Word equation: int (x2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*(x2) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x2) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*(x2) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x2) d(x)': Sympify of expression 'could not parse 'int*(x2) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.word_equation_engine:Parsing Word equation: int (x2/) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*(x2/) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x2/) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*(x2/) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x2/) d(x)': Sympify of expression 'could not parse 'int*(x2/) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.word_equation_engine:Parsing Word equation: int (x2/32) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x2)/(32)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x2/32) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x2)/(32)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x2/32) d(x)': Sympify of expression 'could not parse 'int*((x2)/(32)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.enhanced_word_panel:Error showing suggestions: 'WordEquationEngine' object has no attribute 'get_suggestions'
+INFO:core.word_equation_engine:Parsing Word equation: int (x2/32) d(x)
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse 'int*((x2)/(32)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse 'int (x2/32) d(x)': Sympify of expression 'could not parse 'int*((x2)/(32)) d*(x)'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.parser:Parsing expression: integrate(integrate(integrate(integrate(integrate(integrate(integrate(integrate(
+INFO:core.parser:Cleaned expression: integrate(integrate(integrate(integrate(integrate(integrate(integrate(integrate(
+ERROR:core.parser:Failed to parse expression 'integrate(integrate(integrate(integrate(integrate(integrate(integrate(integrate(': Sympify of expression 'could not parse 'integrate(integrate(integrate(integrate(integrate(integrate(integrate(integrate('' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+ERROR:ui.professional_main_window:Error calculating integral: Cannot parse expression 'integrate(integrate(integrate(integrate(integrate(integrate(integrate(integrate(': Sympify of expression 'could not parse 'integrate(integrate(integrate(integrate(integrate(integrate(integrate(integrate('' failed, because of exception being raised:
+TokenError: ('unexpected EOF in multi-line statement', (1, 0))
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:core.word_equation_engine:Parsing Word equation: int x^2 dx
+ERROR:core.word_equation_engine:Error parsing Word equation: can't multiply sequence by non-int of type 'function'
+INFO:ui.enhanced_word_panel:Enhanced Word Panel initialized successfully
+INFO:core.word_equation_engine:Parsing Word equation: int x^2 dx
+ERROR:core.word_equation_engine:Error parsing Word equation: can't multiply sequence by non-int of type 'function'
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.word_equation_engine:Parsing Word equation: 
+ERROR:core.word_equation_engine:Error parsing Word equation: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+WARNING:ui.professional_main_window:Invalid Word equation: Cannot parse '': Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:ui.math_keyboard:Mathematical keyboard initialized
+INFO:core.word_equation_engine:Parsing Word equation: int x^2 dx
+ERROR:core.word_equation_engine:Error parsing Word equation: can't multiply sequence by non-int of type 'function'
+INFO:ui.enhanced_word_panel:Enhanced Word Panel initialized successfully
+INFO:core.word_equation_engine:Parsing Word equation: int x^2 dx
+ERROR:core.word_equation_engine:Error parsing Word equation: can't multiply sequence by non-int of type 'function'
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:ui.math_keyboard:Mathematical keyboard initialized
+INFO:core.word_equation_engine:Parsing Word equation: int x^2 dx
+ERROR:core.word_equation_engine:Error in SymPy parsing: can't multiply sequence by non-int of type 'function'
+ERROR:core.word_equation_engine:Error parsing Word equation: Cannot parse 'integrate*((x)**(2), x)': can't multiply sequence by non-int of type 'function'
+INFO:ui.enhanced_word_panel:Enhanced Word Panel initialized successfully
+INFO:core.word_equation_engine:Parsing Word equation: int x^2 dx
+ERROR:core.word_equation_engine:Error in SymPy parsing: can't multiply sequence by non-int of type 'function'
+ERROR:core.word_equation_engine:Error parsing Word equation: Cannot parse 'integrate*((x)**(2), x)': can't multiply sequence by non-int of type 'function'
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.word_equation_engine:Word Equation Engine initialized
+INFO:ui.math_keyboard:Mathematical keyboard initialized
+INFO:core.word_equation_engine:Parsing Word equation: int x^2 dx
+ERROR:core.word_equation_engine:Error in SymPy parsing: can't multiply sequence by non-int of type 'function'
+ERROR:core.word_equation_engine:Error parsing Word equation: Cannot parse 'integrate*(x**2, x)': can't multiply sequence by non-int of type 'function'
+INFO:ui.enhanced_word_panel:Enhanced Word Panel initialized successfully
+INFO:core.word_equation_engine:Parsing Word equation: int x^2 dx
+ERROR:core.word_equation_engine:Error in SymPy parsing: can't multiply sequence by non-int of type 'function'
+ERROR:core.word_equation_engine:Error parsing Word equation: Cannot parse 'integrate*(x**2, x)': can't multiply sequence by non-int of type 'function'
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+ERROR:ui.professional_main_window:Error inserting symbol: 'ProfessionalIntegralCalculator' object has no attribute 'editor_text'
+ERROR:ui.professional_main_window:Error inserting symbol: 'ProfessionalIntegralCalculator' object has no attribute 'editor_text'
+INFO:core.parser:Parsing expression: int x^2 dx
+INFO:core.parser:Cleaned expression: int x^2 dx
+ERROR:core.parser:Failed to parse expression 'int x^2 dx': Sympify of expression 'could not parse 'int x^2 dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+ERROR:ui.professional_main_window:Error calculating integral: Cannot parse expression 'int x^2 dx': Sympify of expression 'could not parse 'int x^2 dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'integral', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx', 'latex': '\\int x**2 + 3*x + 2 dx'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int x**2 + 3*x + 2 dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'decomposition', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx = \\int x**2 dx + \\int 3*x dx + \\int 2 dx', 'latex': '\\int x**2 + 3*x + 2 dx = \\int x**2 dx + \\int 3*x dx + \\int 2 dx'}
+INFO:ui.professional_main_window:Step 2 latex_content: \int x**2 + 3*x + 2 dx = \int x**2 dx + \int 3*x dx + \int 2 dx
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int x**2 dx = x**3/3', 'latex': '\\int x**2 dx = x**3/3'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int x**2 dx = x**3/3
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int 3*x dx = 3*x**2/2', 'latex': '\\int 3*x dx = 3*x**2/2'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int 3*x dx = 3*x**2/2
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'integration', 'title': '', 'content': '\\int 2 dx = 2*x', 'latex': '\\int 2 dx = 2*x'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int 2 dx = 2*x
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'construction', 'title': '', 'content': '\\int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C', 'latex': '\\int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x + C
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': '', 'content': 'x**3/3 + 3*x**2/2 + 2*x', 'latex': 'x**3/3 + 3*x**2/2 + 2*x'}
+INFO:ui.professional_main_window:Step 7 latex_content: x**3/3 + 3*x**2/2 + 2*x
+INFO:ui.professional_main_window:Processing step 8: <class 'dict'> - {'type': 'method_step', 'title': 'Método heurístico', 'expression': '∫ x**2 + 3*x + 2 dx = x**3/3 + 3*x**2/2 + 2*x', 'method': 'heurisch'}
+INFO:ui.professional_main_window:Step 8 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 3 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 7 rendering completed successfully
+ERROR:ui.professional_main_window:Error adjusting window size: '_tkinter.tkapp' object has no attribute 'winfo_minsize'
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.advanced_math_engine:Advanced Math Engine initialized successfully
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.advanced_math_engine:Solving integral: x**2 + 3*x + 2 with respect to x
+INFO:core.advanced_math_engine:Parsed expression: x**2 + 3*x + 2
+INFO:core.advanced_math_engine:Calculated integral: x*(2*x**2 + 9*x + 12)/6
+INFO:core.advanced_math_engine:Calculated integral: x*(2*x**2 + 9*x + 12)/6
+INFO:core.advanced_math_engine:Verification completed: confidence=1.0
+INFO:core.advanced_math_engine:Successfully solved integral: x**2 + 3*x + 2
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'analysis', 'title': 'Analizando la expresión: x^{2} + 3 x + 2', 'expression': 'x^{2} + 3 x + 2', 'method': 'rational', 'explanation': 'Se detecta una función racional en x. Se puede usar descomposición en fracciones parciales.'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método seleccionado: Fracciones Parciales', 'expression': '', 'method': 'rational', 'explanation': 'Las fracciones parciales descomponen funciones racionales en términos más simples que se pueden integrar fácilmente.'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'step', 'title': 'Aplicar método general de integración', 'expression': '$\\int x^{2} + 3 x + 2 \\, dx$', 'method': 'rational', 'explanation': 'Se utilizan técnicas simbólicas avanzadas'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'result', 'title': 'Resultado final', 'expression': '$\\int x^{2} + 3 x + 2 \\, dx = \\frac{x \\left(2 x^{2} + 9 x + 12\\right)}{6} + C$', 'method': 'rational', 'explanation': 'Se añade la constante de integración C'}
+INFO:ui.professional_main_window:Step 4 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:__main__:Application closed normally

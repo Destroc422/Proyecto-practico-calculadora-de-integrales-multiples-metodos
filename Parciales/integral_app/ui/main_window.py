@@ -16,10 +16,13 @@ import sympy as sp
 # Core modules
 from core.integrator import ProfessionalIntegrator, IntegrationMethod, IntegrationError
 from core.parser import ProfessionalMathParser, ParseError
+from core.microsoft_math_engine import MicrosoftMathEngine
 
 # UI modules
 from ui.theme_manager import ThemeManager
 from ui.latex_renderer import ProfessionalLaTeXRenderer
+from ui.advanced_math_editor import AdvancedMathEditor
+from ui.steps_display_panel import StepsDisplayPanel
 
 # Graph and utilities
 from graph.plotter import ProfessionalPlotter
@@ -67,10 +70,12 @@ class ProfessionalIntegralCalculator:
             self.theme_manager = ThemeManager()
             self.integrator = ProfessionalIntegrator()
             self.parser = ProfessionalMathParser()
+            self.math_engine = MicrosoftMathEngine()
             self.plotter = ProfessionalPlotter()
             self.history_manager = HistoryManager()
             self.latex_renderer = ProfessionalLaTeXRenderer()
             self.validator = ExpressionValidator()
+            self.steps_display = None  # Will be initialized when needed
             
             # Mathematical symbols
             self.symbols = {
@@ -152,6 +157,7 @@ class ProfessionalIntegralCalculator:
             self.create_ultra_modern_button(nav_frame, " Guardar", self.save_result, '#27ae60')
             self.create_ultra_modern_button(nav_frame, " Historial", self.show_history, '#f39c12')
             self.create_ultra_modern_button(nav_frame, " Exportar", self.export_report, '#9b59b6')
+            self.create_ultra_modern_button(nav_frame, " Math Editor", self.toggle_math_editor, '#e67e22')
             
             # Animated separator
             separator = tk.Frame(gradient_frame, bg='#e94560', width=3, height=40)
@@ -324,8 +330,8 @@ class ProfessionalIntegralCalculator:
             editor_frame = ttk.LabelFrame(parent, text="📝 Editor Matemático", padding=6)
             editor_frame.pack(fill="x", pady=(0, 6))
             
-            # Create math editor
-            self.create_math_editor(editor_frame)
+            # Create advanced math editor
+            self.advanced_editor = AdvancedMathEditor(editor_frame, self.on_expression_change)
             
             # Quick actions frame with modern styling
             actions_frame = tk.Frame(parent, bg='#ecf0f1')
@@ -729,6 +735,92 @@ class ProfessionalIntegralCalculator:
         except Exception as e:
             logger.error(f"Error exporting graph: {str(e)}")
             messagebox.showerror("Error", f"No se pudo exportar la gráfica: {str(e)}")
+    
+    def on_expression_change(self, expression: str):
+        """Handle expression change from advanced math editor"""
+        try:
+            self.current_function = expression
+            
+            # Validate using the math engine
+            is_valid, error = self.math_engine.validate_expression(expression)
+            
+            if is_valid:
+                # Parse the expression
+                parsed_expr = self.math_engine.parse_natural_math(expression)
+                logger.info(f"Expression parsed successfully: {parsed_expr}")
+            else:
+                logger.warning(f"Invalid expression: {error}")
+                
+        except Exception as e:
+            logger.error(f"Error handling expression change: {str(e)}")
+    
+    def toggle_math_editor(self):
+        """Toggle between standard and advanced math editor"""
+        try:
+            # This would show/hide the advanced editor or switch modes
+            if hasattr(self, 'advanced_editor'):
+                # Get current expression from advanced editor
+                current_expr = self.advanced_editor.get_expression()
+                
+                # Show a dialog with options
+                result = messagebox.askyesno(
+                    "Editor Matemático Avanzado", 
+                    "¿Usar el Editor Matemático Avanzado con Microsoft Mathematics?\n\n"
+                    "Características:\n"
+                    "· Entrada natural (x², sin, cos, etc.)\n"
+                    "· Autocompletado inteligente\n"
+                    "· Paleta de símbolos completa\n"
+                    "· Validación en tiempo real",
+                    icon='question'
+                )
+                
+                if result:
+                    self.update_status("Editor Matemático Avanzado activado", '#e67e22')
+                else:
+                    self.update_status("Editor estándar", '#3498db')
+            else:
+                messagebox.showinfo("Información", "El editor avanzado ya está integrado")
+                
+        except Exception as e:
+            logger.error(f"Error toggling math editor: {str(e)}")
+            messagebox.showerror("Error", f"No se pudo cambiar el editor: {str(e)}")
+    
+    def get_current_expression(self) -> str:
+        """Get current expression from advanced editor"""
+        if hasattr(self, 'advanced_editor'):
+            return self.advanced_editor.get_expression()
+        elif hasattr(self, 'editor_text'):
+            return self.editor_text.get("1.0", tk.END).strip()
+        return ""
+    
+    def set_current_expression(self, expression: str):
+        """Set current expression in the active editor"""
+        try:
+            if hasattr(self, 'advanced_editor'):
+                self.advanced_editor.set_expression(expression)
+            elif hasattr(self, 'editor_text'):
+                self.editor_text.delete("1.0", tk.END)
+                self.editor_text.insert("1.0", expression)
+            
+            self.current_function = expression
+            
+        except Exception as e:
+            logger.error(f"Error setting expression: {str(e)}")
+    
+    def get_parsed_expression(self):
+        """Get parsed SymPy expression from current editor"""
+        try:
+            if hasattr(self, 'advanced_editor'):
+                return self.advanced_editor.get_parsed_expression()
+            else:
+                expr_str = self.get_current_expression()
+                if expr_str:
+                    return self.math_engine.parse_natural_math(expr_str)
+            return None
+            
+        except Exception as e:
+            logger.error(f"Error getting parsed expression: {str(e)}")
+            return None
     
     def create_modern_scientific_keypad(self, parent):
         """Create modern scientific keypad with enhanced visual design"""
@@ -1403,91 +1495,116 @@ class ProfessionalIntegralCalculator:
             logger.error(f"Error incrementing calc counter: {str(e)}")
     
     def calculate_integral(self):
-        """Calculate the integral with modern UI feedback"""
+        """Calculate integral with advanced engine and step-by-step display"""
         if self.is_calculating:
             return
         
         try:
-            # Get function from editor
-            function_text = self.editor_text.get("1.0", tk.END).strip()
-            if not function_text:
-                messagebox.showwarning("Advertencia", "Por favor ingresa una función")
+            # Get expression from advanced editor or fallback
+            expression = self.get_current_expression()
+            if not expression:
+                messagebox.showwarning("Advertencia", "Por favor ingrese una expresión matemática")
                 return
             
-            # Update UI state
-            self.is_calculating = True
-            self.update_status("Calculando...", '#f39c12')
-            self.calculate_btn.config(text="Calculando...", state="disabled")
-            
-            # Parse function
-            parsed_func = self.parser.parse(function_text)
-            
-            # Get integration method
-            method_map = {
-                'Automático': 'auto',
-                'Directa': 'direct', 
-                'Sustitución': 'substitution',
-                'Por Partes': 'parts',
-                'Fracciones Parciales': 'partial_fractions',
-                'Trigonométrica': 'trigonometric',
-                'Racional': 'racional',
-                'Exponencial': 'exponencial'
-            }
-            method = method_map.get(self.integral_type_var.get(), 'auto')
-            
-            # Get variable
+            # Get integration variable
             variable = self.symbols['x'].get()
-            var_symbol = sp.Symbol(variable)
             
-            # Calculate integral
-            result = self.integrator.integrate(parsed_func, var_symbol, method)
+            # Use Microsoft Math engine for detailed solution
+            solution = self.integrator.microsoft_engine.solve_integral_with_steps(expression, variable)
             
-            # Store result
-            self.current_result = result
-            self.current_function = function_text
-            self.last_answer = str(result.result)
+            if 'error' in solution:
+                messagebox.showerror("Error", f"No se pudo resolver la integral: {solution['error']}")
+                return
             
-            # Update UI
-            self.display_result(result)
-            self.increment_calc_counter()
-            self.update_status("Cálculo completado", '#27ae60')
+            # Display solution with steps
+            self.display_solution_with_steps(solution)
+            
+            # Update status
+            confidence = solution.get('confidence', 0.0)
+            status_msg = f"Cálculo completado (confianza: {confidence:.1%})"
+            status_color = '#27ae60' if confidence >= 0.8 else '#f39c12'
+            self.update_status(status_msg, status_color)
             
             # Add to history
-            self.history_manager.add_entry(function_text, self.integral_type_var.get())
+            result = solution.get('result', '')
+            self.history_manager.add_calculation(expression, result, variable)
             
         except Exception as e:
-            logger.error(f"Error calculating integral: {str(e)}")
-            messagebox.showerror("Error", f"No se pudo calcular la integral: {str(e)}")
-            self.update_status("Error en cálculo", '#e74c3c')
-        finally:
-            self.is_calculating = False
-            self.calculate_btn.config(text="CALCULAR", state="normal")
+            logger.error(f"Error in calculate_integral: {str(e)}")
+            messagebox.showerror("Error Inesperado", f"Ocurrió un error: {str(e)}")
+            self.update_status("Error inesperado", '#e74c3c')
     
-    def display_result(self, result):
-        """Display the integration result"""
+    def display_solution_with_steps(self, solution_data: Dict[str, Any]):
+        """Display solution with detailed steps using StepsDisplayPanel"""
         try:
-            # Create result display window if not exists
+            # Create steps display window if not exists
+            if not hasattr(self, 'steps_window') or not self.steps_window.winfo_exists():
+                self.create_steps_window()
+            
+            # Display solution in steps panel
+            self.steps_display.display_solution(solution_data)
+            
+            # Also show basic result in original result window
+            self.show_basic_result(solution_data)
+            
+        except Exception as e:
+            logger.error(f"Error displaying solution with steps: {str(e)}")
+            messagebox.showerror("Error", f"No se pudo mostrar la solución: {str(e)}")
+    
+    def create_steps_window(self):
+        """Create steps display window with Microsoft Math Solver style"""
+        try:
+            self.steps_window = tk.Toplevel(self.root)
+            self.steps_window.title("Solución Detallada - Microsoft Math Solver Style")
+            self.steps_window.geometry("900x700")
+            self.steps_window.configure(bg='#2c3e50')
+            
+            # Create steps display panel
+            self.steps_display = StepsDisplayPanel(self.steps_window)
+            
+            # Add window close handler
+            self.steps_window.protocol("WM_DELETE_WINDOW", self.on_steps_window_close)
+            
+        except Exception as e:
+            logger.error(f"Error creating steps window: {str(e)}")
+            raise
+    
+    def show_basic_result(self, solution_data: Dict[str, Any]):
+        """Show basic result in original result display"""
+        try:
             if not hasattr(self, 'result_window') or not self.result_window.winfo_exists():
                 self.create_result_display()
             
-            # Format the result nicely
-            if hasattr(result, 'result') and result.result is not None:
-                result_text = f"Resultado: {result.result}"
-                if hasattr(result, 'method'):
-                    result_text += f"\\nMétodo: {result.method.value}"
-                if hasattr(result, 'is_definite') and result.is_definite:
-                    definite_result = result.get_definite_result()
-                    if definite_result is not None:
-                        result_text += f"\\nValor definido: {definite_result}"
-            else:
-                result_text = "No se pudo calcular la integral"
+            # Format result text
+            result = solution_data.get('result', '')
+            method = solution_data.get('method', 'auto')
+            confidence = solution_data.get('confidence', 0.0)
+            
+            result_text = f"Resultado: {result} + C\n"
+            result_text += f"Método: {method}\n"
+            result_text += f"Confianza: {confidence:.1%}\n"
+            
+            # Add verification info
+            verification = solution_data.get('verification', {})
+            if verification:
+                are_equal = verification.get('are_equal', False)
+                result_text += f"Verificación: {'Exitosa' if are_equal else 'Requiere revisión'}\n"
             
             # Update result display
             if hasattr(self, 'result_label'):
                 self.result_label.config(text=result_text, justify="left")
                 
         except Exception as e:
-            logger.error(f"Error displaying result: {str(e)}")
+            logger.error(f"Error showing basic result: {str(e)}")
+    
+    def on_steps_window_close(self):
+        """Handle steps window close"""
+        try:
+            if hasattr(self, 'steps_window'):
+                self.steps_window.destroy()
+                delattr(self, 'steps_window')
+        except Exception as e:
+            logger.error(f"Error closing steps window: {str(e)}")
     
     def create_result_display(self):
         """Create result display window"""

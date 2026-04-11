@@ -1,0 +1,22 @@
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:Application closed normally

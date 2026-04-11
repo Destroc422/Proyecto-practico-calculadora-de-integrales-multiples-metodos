@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-10 11:43:41",
+    "timestamp": 1775839421.462007
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-10 11:44:06",
+    "timestamp": 1775839446.757878
+  },
+  {
+    "function": "3*x**2 + x - 5",
+    "type": "Automático",
+    "date": "2026-04-10 11:44:43",
+    "timestamp": 1775839483.252931
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-10 15:05:47",
+    "timestamp": 1775851547.836949
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-10 17:14:53",
+    "timestamp": 1775859293.274173
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-10 17:59:58",
+    "timestamp": 1775861998.244764
+  }
+]

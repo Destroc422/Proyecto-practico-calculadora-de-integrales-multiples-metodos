@@ -8,6 +8,8 @@ import logging
 from typing import Tuple, List, Dict, Any, Optional, Union
 from enum import Enum
 
+from .microsoft_math_engine import MicrosoftMathEngine
+
 logger = logging.getLogger(__name__)
 
 
@@ -57,6 +59,9 @@ class ProfessionalIntegrator:
     """Professional integration engine with advanced method detection"""
     
     def __init__(self):
+        # Initialize Microsoft Math Engine
+        self.microsoft_engine = MicrosoftMathEngine()
+        
         self.methods = {
             IntegrationMethod.AUTO: self._auto_detect_and_integrate,
             IntegrationMethod.DIRECT: self._direct_integration,
@@ -117,70 +122,55 @@ class ProfessionalIntegrator:
     
     def _auto_detect_and_integrate(self, func: sp.Expr, var: sp.Symbol, 
                                   limits: Optional[Tuple] = None) -> Tuple[sp.Expr, List[Dict]]:
-        """Automatically detect best integration method"""
-        # Use the steps engine to generate mathematical steps
-        from .steps_engine import StepsEngine
-        steps_engine = StepsEngine()
-        steps = steps_engine.get_comprehensive_steps(func, var, "auto", limits)
-        
-        # Perform the actual integration
+        """Automatically detect best integration method using advanced engine"""
         try:
-            result = sp.integrate(func, var)
-            if result is not None:
-                result = sp.simplify(result)
-        except Exception:
-            # Fallback to basic integration
-            result = sp.integrate(func, var, meijerg=True)
-            steps.append({
-                'type': 'method_step',
-                'title': 'Integración directa',
-                'expression': f"\\int {func} d{var} = {result}",
-                'method': 'direct'
-            })
-            return result, steps
-        
-        # Step 3: Try substitution
-        if self._detect_substitution_opportunity(func, var):
-            try:
-                result, sub_steps = self._substitution_integration(func, var, limits)
-                steps.extend(sub_steps)
-                return result, steps
-            except Exception:
-                pass
-        
-        # Step 4: Try parts
-        if self._detect_parts_opportunity(func, var):
-            try:
-                result, parts_steps = self._parts_integration(func, var, limits)
-                steps.extend(parts_steps)
-                return result, steps
-            except Exception:
-                pass
-        
-        # Step 5: Fallback to heurisch
-        try:
-            result = heurisch_module.heurisch(func, var)
-            if result:
+            # Use Microsoft math engine for detailed steps
+            func_str = str(func)
+            var_str = str(var)
+            
+            # Get solution with steps from Microsoft Math engine
+            solution = self.microsoft_engine.solve_integral_with_steps(func_str, var_str)
+            
+            if 'error' in solution:
+                # Fallback to traditional method
+                return self._fallback_integration(func, var, limits)
+            
+            # Convert steps to expected format
+            steps = []
+            for step in solution.get('steps', []):
+                converted_step = {
+                    'type': step.get('type', 'method_step'),
+                    'title': step.get('description', ''),
+                    'expression': step.get('expression', ''),
+                    'method': solution.get('method', 'auto'),
+                    'explanation': step.get('explanation', '')
+                }
+                steps.append(converted_step)
+            
+            # Parse result back to SymPy
+            result_str = solution.get('result', '')
+            if result_str:
+                result = sp.sympify(result_str, locals={var_str: var})
+            else:
+                result = sp.integrate(func, var)
+            
+            # Handle definite integrals
+            if limits:
+                lower, upper = limits
+                definite_result = sp.integrate(func, (var, lower, upper))
                 steps.append({
-                    'type': 'method_step',
-                    'title': 'Método heurístico',
-                    'expression': f"∫ {func} d{var} = {result}",
-                    'method': 'heurisch'
+                    'type': 'definite_step',
+                    'title': 'Integral definida',
+                    'expression': f"\\int_{{{lower}}}^{{{upper}}} {func} d{var} = {definite_result}",
+                    'method': 'definite'
                 })
-                return result, steps
-        except Exception:
-            pass
-        
-        # Step 6: Final fallback
-        result = sp.integrate(func, var, meijerg=True)
-        steps.append({
-            'type': 'method_step',
-            'title': 'Integración general',
-            'expression': f"∫ {func} d{var} = {result}",
-            'method': 'general'
-        })
-        
-        return result, steps
+                return definite_result, steps
+            
+            return result, steps
+            
+        except Exception as e:
+            logger.warning(f"Advanced engine failed, using fallback: {str(e)}")
+            return self._fallback_integration(func, var, limits)
     
     def _analyze_function(self, func: sp.Expr, var: sp.Symbol) -> Dict[str, Any]:
         """Analyze function structure for method selection"""
