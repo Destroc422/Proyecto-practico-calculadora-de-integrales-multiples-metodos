@@ -122,54 +122,45 @@ class ProfessionalIntegrator:
     
     def _auto_detect_and_integrate(self, func: sp.Expr, var: sp.Symbol, 
                                   limits: Optional[Tuple] = None) -> Tuple[sp.Expr, List[Dict]]:
-        """Automatically detect best integration method using advanced engine"""
+        """Automatically detect best integration method using SymPy"""
         try:
-            # Use Microsoft math engine for detailed steps
-            func_str = str(func)
-            var_str = str(var)
-            
-            # Get solution with steps from Microsoft Math engine
-            solution = self.microsoft_engine.solve_integral_with_steps(func_str, var_str)
-            
-            if 'error' in solution:
-                # Fallback to traditional method
-                return self._fallback_integration(func, var, limits)
-            
-            # Convert steps to expected format
-            steps = []
-            for step in solution.get('steps', []):
-                converted_step = {
-                    'type': step.get('type', 'method_step'),
-                    'title': step.get('description', ''),
-                    'expression': step.get('expression', ''),
-                    'method': solution.get('method', 'auto'),
-                    'explanation': step.get('explanation', '')
-                }
-                steps.append(converted_step)
-            
-            # Parse result back to SymPy
-            result_str = solution.get('result', '')
-            if result_str:
-                result = sp.sympify(result_str, locals={var_str: var})
+            # Use SymPy's integrate function
+            if limits:
+                # Definite integral
+                result = sp.integrate(func, (var, limits[0], limits[1]))
             else:
+                # Indefinite integral
                 result = sp.integrate(func, var)
             
-            # Handle definite integrals
-            if limits:
-                lower, upper = limits
-                definite_result = sp.integrate(func, (var, lower, upper))
-                steps.append({
-                    'type': 'definite_step',
-                    'title': 'Integral definida',
-                    'expression': f"\\int_{{{lower}}}^{{{upper}}} {func} d{var} = {definite_result}",
-                    'method': 'definite'
-                })
-                return definite_result, steps
+            # Create basic steps
+            steps = [
+                {
+                    'type': 'original',
+                    'title': 'Integral Original',
+                    'expression': f'∫{func} d{var}' if not limits else f'∫_{limits[0]}^{limits[1]} {func} d{var}',
+                    'method': 'auto',
+                    'explanation': 'Función a integrar'
+                },
+                {
+                    'type': 'method',
+                    'title': 'Método de Integración',
+                    'expression': 'Integración Directa',
+                    'method': 'auto',
+                    'explanation': 'Se aplicó integración directa usando SymPy'
+                },
+                {
+                    'type': 'result',
+                    'title': 'Resultado',
+                    'expression': str(result),
+                    'method': 'auto',
+                    'explanation': 'Resultado de la integración'
+                }
+            ]
             
             return result, steps
             
         except Exception as e:
-            logger.warning(f"Advanced engine failed, using fallback: {str(e)}")
+            logger.warning(f"SymPy integration failed: {str(e)}, using fallback")
             return self._fallback_integration(func, var, limits)
     
     def _analyze_function(self, func: sp.Expr, var: sp.Symbol) -> Dict[str, Any]:
@@ -424,6 +415,46 @@ class ProfessionalIntegrator:
         })
         
         return result, steps
+    
+    def _fallback_integration(self, func: sp.Expr, var: sp.Symbol, 
+                            limits: Optional[Tuple] = None) -> Tuple[sp.Expr, List[Dict]]:
+        """Fallback integration method using basic SymPy integration"""
+        try:
+            # Basic integration using SymPy
+            if limits:
+                result = sp.integrate(func, (var, limits[0], limits[1]))
+            else:
+                result = sp.integrate(func, var)
+            
+            steps = [
+                {
+                    'type': 'original',
+                    'title': 'Integral Original',
+                    'expression': f'∫{func} d{var}' if not limits else f'∫_{limits[0]}^{limits[1]} {func} d{var}',
+                    'method': 'fallback',
+                    'explanation': 'Función a integrar'
+                },
+                {
+                    'type': 'method',
+                    'title': 'Integración Básica',
+                    'expression': 'Método de integración directa',
+                    'method': 'fallback',
+                    'explanation': 'Se aplicó integración directa usando SymPy'
+                },
+                {
+                    'type': 'result',
+                    'title': 'Resultado',
+                    'expression': str(result),
+                    'method': 'fallback',
+                    'explanation': 'Resultado de la integración básica'
+                }
+            ]
+            
+            return result, steps
+            
+        except Exception as e:
+            logger.error(f"Fallback integration failed: {str(e)}")
+            raise IntegrationError(f"Cannot integrate {func}: {str(e)}")
 
 
 class IntegrationError(Exception):

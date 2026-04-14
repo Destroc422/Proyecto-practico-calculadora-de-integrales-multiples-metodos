@@ -77,7 +77,6 @@ class MicrosoftMathEngine:
             r'÷': '/',            # Division
             r'±': '+-',           # Plus minus
             r'·': '*',            # Dot multiplication
-            r'': '*',            # Implicit multiplication
         }
         
         # Fraction patterns
@@ -111,6 +110,8 @@ class MicrosoftMathEngine:
             r'integral\s+([^(]+)\s*d([a-zA-Z])',              # integral x dx
             r'(\d+)\s+to\s+(\d+)\s+int\s+([^(]+)\s*d([a-zA-Z])', # 0 to 1 int x dx
             r'(\d+)\s+to\s+(\d+)\s+integral\s+([^(]+)\s*d([a-zA-Z])',
+            r'∫\s*([^d]+?)\s*d\*([a-zA-Z])\s*$',               # ∫ f(x) dx (indefinite)
+            r'∫_([^{^}]+)\^([^{^}]+)\s*([^d]+?)\s*d\*([a-zA-Z])', # ∫_a^b f(x) dx (definite)
         ]
         
         logger.info("Microsoft Math Engine initialized")
@@ -149,6 +150,10 @@ class MicrosoftMathEngine:
         # Remove extra whitespace
         expr = re.sub(r'\s+', ' ', expression.strip())
         
+        # Remove unmatched parentheses at start and end
+        expr = re.sub(r'^[)\]}]+', '', expr)  # Remove closing brackets at start
+        expr = re.sub(r'[(\[{]+$', '', expr)  # Remove opening brackets at end
+        
         # Normalize Unicode characters
         expr = unicodedata.normalize('NFKC', expr)
         
@@ -172,14 +177,14 @@ class MicrosoftMathEngine:
         # Handle functions
         expr = self._transform_functions(expr)
         
-        # Handle integrals
-        expr = self._transform_integrals(expr)
-        
         # Handle operators
         expr = self._transform_operators(expr)
         
         # Handle implicit multiplication
         expr = self._handle_implicit_multiplication(expr)
+        
+        # Handle integrals (after implicit multiplication to avoid breaking)
+        expr = self._transform_integrals(expr)
         
         return expr
     
@@ -249,12 +254,20 @@ class MicrosoftMathEngine:
         # Handle integral patterns
         for pattern in self.integral_patterns:
             def replace_integral(match):
-                if len(match.groups()) == 4:  # Definite integral
-                    lower, upper, integrand, var = match.groups()
-                    return f"integrate({integrand}, ({var}, {lower}, {upper}))"
-                else:  # Indefinite integral
-                    integrand, var = match.groups()
+                groups = match.groups()
+                
+                if len(groups) == 4:  # Definite integral
+                    if '∫' in match.group(0):  # Unicode definite integral
+                        lower, upper, integrand, var = groups
+                        return f"integrate({integrand}, ({var}, {lower}, {upper}))"
+                    else:  # Text definite integral
+                        lower, upper, integrand, var = groups
+                        return f"integrate({integrand}, ({var}, {lower}, {upper}))"
+                elif len(groups) == 2:  # Indefinite integral
+                    integrand, var = groups
                     return f"integrate({integrand}, {var})"
+                else:
+                    return match.group(0)
             
             expr = re.sub(pattern, replace_integral, expr)
         
@@ -279,9 +292,17 @@ class MicrosoftMathEngine:
         
         # Variable followed by variable: xy -> x*y (but not function names)
         known_functions = [f.lower() for f in self.function_mappings.keys()]
+        known_functions.extend(['integrate', 'diff', 'limit', 'series'])  # Add mathematical functions
         
         def replace_var_var(match):
             var1, var2 = match.groups()
+            # Don't split if the sequence contains known mathematical functions
+            combined = (var1 + var2).lower()
+            if any(func in combined for func in known_functions + ['integrate']):
+                return match.group(0)
+            # Don't split if either variable is followed by parenthesis (function call)
+            if expr[match.end():match.end()+1] == '(':
+                return match.group(0)
             if var1.lower() not in known_functions and var2.lower() not in known_functions:
                 return f"{var1}*{var2}"
             return match.group(0)

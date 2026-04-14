@@ -18,10 +18,13 @@ import numpy as np
 # Core modules
 from core.integrator import ProfessionalIntegrator, IntegrationMethod, IntegrationError
 from core.parser import ProfessionalMathParser, ParseError
+from core.microsoft_math_engine import MicrosoftMathEngine
 
 # UI modules
 from ui.theme_manager import ThemeManager
 from ui.latex_renderer import ProfessionalLaTeXRenderer
+from ui.template_browser import TemplateBrowser, QuickTemplateSelector
+from data.template_manager import TemplateRepository
 
 # Graph and utilities
 from graph.plotter import ProfessionalPlotter
@@ -69,6 +72,8 @@ class ProfessionalIntegralCalculator:
             self.history_manager = HistoryManager()
             self.latex_renderer = ProfessionalLaTeXRenderer()
             self.validator = ExpressionValidator()
+            self.math_engine = MicrosoftMathEngine()  # Microsoft Mathematics Engine
+            self.template_manager = TemplateRepository()  # Template repository
             
             # Enhanced mathematical symbols
             self.symbols = {
@@ -466,6 +471,7 @@ class ProfessionalIntegralCalculator:
             self.create_enhanced_constants_tab()
             self.create_enhanced_special_tab()
             self.create_enhanced_matrix_tab()
+            self.create_templates_tab()
             
         except Exception as e:
             logger.error(f"Error setting up professional keypad: {str(e)}")
@@ -812,7 +818,7 @@ class ProfessionalIntegralCalculator:
             integral_frame.pack(fill="x", padx=8, pady=8)
             
             integral_ops = [
-                ('int', 'def_int', 'double_int', 'triple_int', 'line_int', 'surface_int'),
+                ('∫', 'def_int', 'double_int', 'triple_int', 'line_int', 'surface_int'),
                 ('contour_int', 'volume_int', 'path_int', 'area_int', 'arc_length', 'surface_area')
             ]
             
@@ -1066,6 +1072,43 @@ class ProfessionalIntegralCalculator:
         except Exception as e:
             logger.error(f"Error creating enhanced matrix tab: {str(e)}")
             raise
+    
+    def create_templates_tab(self):
+        """Create templates tab with mathematical function repository"""
+        try:
+            templates_frame = tk.Frame(self.tab_notebook, bg='#ffffff')
+            self.tab_notebook.add(templates_frame, text="Plantillas")
+            
+            # Initialize template browser
+            self.template_browser = TemplateBrowser(templates_frame, self.insert_template_expression, self.template_manager)
+            self.template_browser.pack(fill="both", expand=True, padx=5, pady=5)
+            
+        except Exception as e:
+            logger.error(f"Error creating templates tab: {str(e)}")
+            raise
+    
+    def insert_template_expression(self, template_expression: str):
+        """Insert template expression into the input field"""
+        try:
+            # Get current cursor position
+            current_text = self.input_text.get()
+            cursor_pos = self.input_text.index(tk.INSERT)
+            
+            # Insert template at cursor position
+            self.input_text.insert(cursor_pos, template_expression)
+            
+            # Set focus back to input
+            self.input_text.focus_set()
+            
+            # Update cursor position after insertion
+            new_cursor_pos = cursor_pos + len(template_expression)
+            self.input_text.mark_set(tk.INSERT, new_cursor_pos)
+            
+            logger.info(f"Template expression inserted: {template_expression}")
+            
+        except Exception as e:
+            logger.error(f"Error inserting template expression: {str(e)}")
+            messagebox.showerror("Error", f"No se pudo insertar la plantilla: {str(e)}")
     
     def create_enhanced_keypad_button(self, parent, text, color, width):
         """Create enhanced keypad button optimized for symbol visibility"""
@@ -1764,8 +1807,24 @@ class ProfessionalIntegralCalculator:
             self.update_status("Calculando integral...", '#e74c3c')
             self.calculate_btn.config(text="Calculando...", state="disabled")
             
-            # Parse function
-            parsed_func = self.parser.parse(function_text)
+            # Parse function using Microsoft Math Engine first
+            try:
+                parsed_func = self.math_engine.parse_natural_math(function_text)
+                self.update_status("Función parseada con Microsoft Math Engine", '#27ae60')
+            except Exception as e:
+                logger.info(f"Microsoft Math Engine parsing failed: {str(e)}, falling back to regular parser")
+                try:
+                    parsed_func = self.parser.parse(function_text)
+                    self.update_status("Función parseada con parser estándar", '#f39c12')
+                except Exception as e2:
+                    messagebox.showerror("Error de Parseo", 
+                                       f"No se pudo parsear la función '{function_text}':\n\n"
+                                       f"Microsoft Math Engine: {str(e)}\n"
+                                       f"Parser estándar: {str(e2)}")
+                    self.update_status("Error de parseo", '#e74c3c')
+                    self.is_calculating = False
+                    self.calculate_btn.config(text="CALCULAR INTEGRAL", state="normal")
+                    return
             
             # Get integration method
             method_map = {
@@ -1818,8 +1877,9 @@ class ProfessionalIntegralCalculator:
             self.root.after(0, lambda: self._display_calculation_result(result, parsed_func, limits))
             
         except Exception as e:
-            logger.error(f"Error in calculation thread: {str(e)}")
-            self.root.after(0, lambda: self._display_calculation_error(str(e)))
+            error_msg = str(e)
+            logger.error(f"Error in calculation thread: {error_msg}")
+            self.root.after(0, lambda: self._display_calculation_error(error_msg))
         finally:
             self.root.after(0, self._finish_calculation)
     
@@ -2872,13 +2932,22 @@ Para más información, visite la documentación en línea o contacte al soporte
             char_count = len(self.current_function)
             self.char_counter.config(text=f"{char_count} caracteres")
             
-            # Live validation
+            # Live validation with Microsoft Math Engine
             if self.current_function:
-                validation = self.validator.validate(self.current_function)
-                if validation['valid']:
-                    self.editor_status_label.config(text=" Válido", fg='#27ae60')
-                else:
-                    self.editor_status_label.config(text=" Inválido", fg='#e74c3c')
+                # First try Microsoft Math Engine validation
+                try:
+                    is_valid, error = self.math_engine.validate_expression(self.current_function)
+                    if is_valid:
+                        self.editor_status_label.config(text=" Válido (MS Math)", fg='#27ae60')
+                    else:
+                        self.editor_status_label.config(text=f" Error MS: {error[:20]}...", fg='#e74c3c')
+                except Exception as e:
+                    # Fallback to regular validator
+                    validation = self.validator.validate(self.current_function)
+                    if validation['valid']:
+                        self.editor_status_label.config(text=" Válido", fg='#27ae60')
+                    else:
+                        self.editor_status_label.config(text=" Inválido", fg='#e74c3c')
             else:
                 self.editor_status_label.config(text=" Vacío", fg='#95a5a6')
                 
@@ -2917,15 +2986,15 @@ Para más información, visite la documentación en línea o contacte al soporte
             
             cursor_pos = self.editor_text.index(tk.INSERT)
             
-            # Enhanced symbol mapping for proper SymPy syntax
+            # Enhanced symbol mapping for Microsoft Math Engine natural notation
             symbol_map = {
                 # Basic operations
-                '+': '+', '-': '-', '*': '*', '/': '/', '^': '**', '%': '%',
+                '+': '+', '-': '-', '*': '*', '/': '/', '^': '^', '%': '%',
                 '(': '(', ')': ')', '[': '[', ']': ']', '{': '{', '}': '}',
                 '=': '=', '<': '<', '>': '>', '!=': '!=', '<=': '<=', '>=': '>=', '==': '==',
                 '÷': '/', '×': '*', 'minus': '-',
                 
-                # Trigonometric functions (SymPy compatible)
+                # Trigonometric functions (natural notation)
                 'sin': 'sin(', 'cos': 'cos(', 'tan': 'tan(',
                 'asin': 'asin(', 'acos': 'acos(', 'atan': 'atan(',
                 'sinh': 'sinh(', 'cosh': 'cosh(', 'tanh': 'tanh(',
@@ -2935,9 +3004,20 @@ Para más información, visite la documentación en línea o contacte al soporte
                 'coth': 'coth(', 'sech': 'sech(', 'csch': 'csch(',
                 'acoth': 'acoth(', 'asech': 'asech(', 'acsch': 'acsch(',
                 
-                # Logarithmic and exponential functions (SymPy compatible)
-                'log': 'log(', 'ln': 'log(', 'log10': 'log(10,', 'exp': 'exp(',
-                'log(x)': 'log(', 'ln(x)': 'log(', 'log10(x)': 'log(10,',
+                # Logarithmic and exponential functions (natural notation)
+                'log': 'log(', 'ln': 'ln(', 'log10': 'log10(', 'exp': 'exp(',
+                'log(x)': 'log(', 'ln(x)': 'ln(', 'log10(x)': 'log10(',
+                'log2(x)': 'log2(', 'log_b(x)': 'log(',
+                'exp(x)': 'exp(',
+                
+                # Power and root functions (natural notation)
+                'sqrt': 'sqrt(', 'cbrt': '**(1/3)', 'abs': 'abs(', 'sign': 'sign(',
+                'sqrt(x)': 'sqrt(', 'cbrt(x)': '**(1/3)', 'root(x,n)': 'root(',
+                'x²': 'x²', 'x³': 'x³', 'x^n': 'x^',
+                'x^(-1)': 'x^(-1)', 'x^(1/2)': 'x^(1/2)', 'x^(1/3)': 'x^(1/3)',
+                
+                # Advanced functions (natural notation)
+                'floor': 'floor(', 'ceil': 'ceiling(', 'round': 'round(',
                 'log2(x)': 'log(2,', 'log_b(x)': 'log(x,', 'exp(x)': 'exp(',
                 
                 # Power and root functions (SymPy compatible)
@@ -2951,22 +3031,22 @@ Para más información, visite la documentación en línea o contacte al soporte
                 'factorial': 'factorial(', 'gcd': 'gcd(', 'lcm': 'lcm(',
                 'mod': 'mod(', 'divmod': 'divmod(', 'frac': 'Rational(',
                 
-                # Calculus functions (SymPy compatible)
+                # Calculus functions (natural notation)
                 'diff': 'diff(', 'D': 'Derivative(', 'grad': 'grad(', 'div': 'div(',
                 'curl': 'curl(', 'laplacian': 'laplacian(',
                 'int': 'integrate(', 'def_int': 'integrate(', 'limit': 'limit(',
                 'series': 'series(', 'taylor': 'series(', 'maclaurin': 'series(',
-                'sum': 'Sum(', 'prod': 'Product(',
+                'sum': 'sum(', 'prod': 'product(',
                 
-                # Special functions (SymPy compatible)
+                # Special functions (natural notation)
                 'gamma': 'gamma(', 'beta': 'beta(', 'erf': 'erf(', 'erfc': 'erfc(',
                 'zeta': 'zeta(', 'dirichlet': 'dirichlet(',
                 
-                # Constants (SymPy compatible)
-                'pi': 'pi', 'e': 'E', 'phi': '(1+sqrt(5))/2',
-                'tau': '2*pi', 'i': 'I', 'j': 'I', 'oo': 'oo',
-                'nan': 'nan', 'inf': 'oo', 'E': 'E',
-                'Infinity': 'oo', 'NaN': 'nan', 'Exp1': 'E', 'GoldenRatio': '(1+sqrt(5))/2',
+                # Constants (natural notation)
+                'pi': 'pi', 'e': 'e', 'phi': '(1+sqrt(5))/2',
+                'tau': '2*pi', 'i': 'i', 'j': 'i', 'oo': 'infinity',
+                'nan': 'nan', 'inf': 'infinity', 'E': 'e',
+                'Infinity': 'infinity', 'NaN': 'nan', 'Exp1': 'e', 'GoldenRatio': '(1+sqrt(5))/2',
                 
                 # Essential mathematical symbols (SymPy compatible)
                 'integral': 'integrate(', 'd/dx': 'diff(', 'lim': 'limit(', 'sum': 'Sum(', 'prod': 'Product(', 'infinity': 'oo',
@@ -2980,12 +3060,12 @@ Para más información, visite la documentación en línea o contacte al soporte
             # Insert symbol
             self.editor_text.insert(cursor_pos, insert_text)
             
-            # Auto-close parentheses for functions
+            # Auto-close parentheses for functions (natural notation)
             functions_with_parens = [
                 'sin', 'cos', 'tan', 'asin', 'acos', 'atan', 'sinh', 'cosh', 'tanh',
                 'asinh', 'acosh', 'atanh', 'cot', 'sec', 'csc', 'acot', 'asec', 'acsc',
                 'coth', 'sech', 'csch', 'acoth', 'asech', 'acsch',
-                'log', 'ln', 'log10', 'exp', 'sqrt', 'cbrt', 'abs', 'sign',
+                'log', 'ln', 'log10', 'log2', 'exp', 'sqrt', 'cbrt', 'abs', 'sign',
                 'floor', 'ceil', 'round', 'factorial', 'gcd', 'lcm', 'mod', 'divmod', 'frac',
                 'diff', 'D', 'grad', 'div', 'curl', 'laplacian',
                 'int', 'integrate', 'def_int', 'limit', 'series', 'taylor', 'maclaurin',
@@ -3018,6 +3098,29 @@ Para más información, visite la documentación en línea o contacte al soporte
             
         except Exception as e:
             logger.error(f"Error inserting symbol: {str(e)}")
+    
+    def validate_input_with_math_engine(self):
+        """Validate current input using Microsoft Math Engine"""
+        try:
+            current_text = self.editor_text.get("1.0", tk.END).strip()
+            if current_text:
+                is_valid, error = self.math_engine.validate_expression(current_text)
+                if is_valid:
+                    self.update_status("Expresión válida (Microsoft Math Engine)", '#27ae60')
+                else:
+                    self.update_status(f"Error: {error}", '#e74c3c')
+            else:
+                self.update_status("Listo para ingresar expresión", '#3498db')
+        except Exception as e:
+            logger.error(f"Error validating with math engine: {str(e)}")
+    
+    def get_math_engine_suggestions(self, partial_input):
+        """Get suggestions from Microsoft Math Engine"""
+        try:
+            return self.math_engine.get_suggestions(partial_input)
+        except Exception as e:
+            logger.error(f"Error getting suggestions: {str(e)}")
+            return []
     
     def delete_last_character(self):
         """Delete last character from editor"""

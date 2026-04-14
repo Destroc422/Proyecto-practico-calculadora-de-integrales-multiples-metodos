@@ -1,13 +1,17 @@
 import tkinter as tk
 from tkinter import ttk
 import re
+from core.microsoft_math_engine import MicrosoftMathEngine
 
 class MathEditor:
-    """Editor matemático avanzado con soporte para fracciones visuales"""
+    """Editor matemático avanzado con soporte para fracciones visuales y Microsoft Math Engine"""
     
     def __init__(self, parent, callback=None):
         self.parent = parent
         self.callback = callback
+        
+        # Initialize Microsoft Math Engine
+        self.math_engine = MicrosoftMathEngine()
         
         # Variables de estado
         self.fraction_mode = False
@@ -331,17 +335,97 @@ class MathEditor:
             return False
     
     def insert_symbol(self, symbol):
-        """Inserta un símbolo en la posición actual"""
-        cursor_pos = self.text_widget.index(tk.INSERT)
-        self.text_widget.insert(cursor_pos, symbol)
-        self.text_widget.focus_set()
-        
-        # Actualizar contexto
-        self.check_fraction_context()
-        
-        # Llamar callback
-        if self.callback:
-            self.callback()
+        """Inserta un símbolo en la posición actual con soporte Microsoft Math Engine"""
+        try:
+            cursor_pos = self.text_widget.index(tk.INSERT)
+            
+            # Mapeo de símbolos naturales a notación Microsoft Math Engine
+            natural_mappings = {
+                # Potencias naturales
+                'x²': 'x²',
+                'x³': 'x³', 
+                'x^': 'x^',
+                
+                # Funciones naturales
+                'ln(': 'ln(',
+                
+                # Operadores naturales
+                '^': '^',
+                
+                # Símbolos especiales que el engine puede parsear
+                'pi': 'pi',
+                'sqrt(': 'sqrt(',
+                'exp(': 'exp(',
+                'log(': 'log(',
+                'sin(': 'sin(',
+                'cos(': 'cos(',
+                'tan(': 'tan(',
+                'factorial(': 'factorial(',
+                'abs(': 'abs(',
+                'floor(': 'floor(',
+                
+                # Fracciones naturales
+                '1/2': '1/2',
+                '1/3': '1/3',
+                '1/4': '1/4',
+                '2/3': '2/3',
+                '3/4': '3/4',
+                '1/pi': '1/pi',
+                
+                # Funciones avanzadas
+                'limit(': 'limit(',
+                'sum(': 'sum(',
+                'product(': 'product(',
+                '**(1/3)': '**(1/3)',
+                '**(1/4)': '**(1/4)',
+                '**(1/': '**(1/',
+                '10^': '10^',
+                '2^': '2^'
+            }
+            
+            # Usar mapeo natural si existe, sino usar el símbolo original
+            insert_text = natural_mappings.get(symbol, symbol)
+            
+            # Insertar el texto
+            self.text_widget.insert(cursor_pos, insert_text)
+            
+            # Auto-cerrar paréntesis para funciones
+            if symbol in ['sqrt(', 'exp(', 'log(', 'ln(', 'sin(', 'cos(', 'tan(',
+                          'asin(', 'acos(', 'atan(', 'sinh(', 'cosh(', 'tanh(',
+                          'factorial(', 'abs(', 'floor(', 'limit(', 'sum(', 'product(']:
+                self.text_widget.insert(tk.INSERT, ')')
+                # Mover cursor dentro de los paréntesis
+                new_pos = self.text_widget.index(tk.INSERT)
+                new_pos = f"{new_pos}-1c"
+                self.text_widget.mark_set(tk.INSERT, new_pos)
+            
+            # Para x^, posicionar cursor después del ^
+            elif symbol == 'x^':
+                # El cursor ya está en la posición correcta
+                pass
+            
+            # Para fracciones, no hacer nada especial
+            elif symbol in ['1/2', '1/3', '1/4', '2/3', '3/4', '1/pi']:
+                pass
+            
+            # Actualizar contexto
+            self.check_fraction_context()
+            
+            # Llamar callback
+            if self.callback:
+                self.callback()
+                
+        except Exception as e:
+            # Fallback: insertar símbolo original
+            cursor_pos = self.text_widget.index(tk.INSERT)
+            self.text_widget.insert(cursor_pos, symbol)
+            
+            # Actualizar contexto
+            self.check_fraction_context()
+            
+            # Llamar callback
+            if self.callback:
+                self.callback()
     
     def pack(self, **kwargs):
         """Empaqueta el widget"""

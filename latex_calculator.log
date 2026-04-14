@@ -20,3 +20,1146 @@ INFO:__main__:+ LaTeX calculator created successfully
 INFO:__main__:+ Application ready
 INFO:__main__:==================================================
 INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:matplotlib.font_manager:generated new fontManager
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+ERROR:__main__:- Matplotlib not available
+ERROR:__main__:Missing dependencies. Please install:
+ERROR:__main__:pip install sympy matplotlib numpy
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: 'ProfessionalIntegralCalculator' object has no attribute 'math_engine', falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+WARNING:core.integrator:Advanced engine failed, using fallback: 'MicrosoftMathEngine' object has no attribute 'solve_integral_with_steps'
+ERROR:core.integrator:Integration failed: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+ERROR:ui.professional_main_window:Error in calculation thread: Failed to integrate x**2 + 3*x + 2: 'ProfessionalIntegrator' object has no attribute '_fallback_integration'
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+ERROR:ui.professional_main_window:Error initializing components: name 'MicrosoftMathEngine' is not defined
+ERROR:__main__:Fatal error: name 'MicrosoftMathEngine' is not defined
+ERROR:__main__:Full traceback:
+ERROR:__main__:Traceback (most recent call last):
+  File "C:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\main.py", line 116, in main
+    app = ProfessionalIntegralCalculator(root)
+  File "C:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 51, in __init__
+    self._initialize_components()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 72, in _initialize_components
+    self.math_engine = MicrosoftMathEngine()  # Microsoft Mathematics Engine
+                       ^^^^^^^^^^^^^^^^^^^
+NameError: name 'MicrosoftMathEngine' is not defined
+
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*x*****2* *+* *3***x* *+* *2*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: Cannot parse 'x**2 + 3*x + 2': Sympify of expression 'could not parse '*x*****2* *+* *3***x* *+* *2*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1), falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2 + 3*x + 2 dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/3 + 3*x**2/2 + 2*x', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*x*****2* *+* *3***x* *+* *2*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*x*****2* *+* *3***x* *+* *2*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+ERROR:__main__:Fatal error: invalid syntax (template_browser.py, line 352)
+ERROR:__main__:Full traceback:
+ERROR:__main__:Traceback (most recent call last):
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\main.py", line 103, in main
+    from ui.professional_main_window import ProfessionalIntegralCalculator
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 26, in <module>
+    from ui.template_browser import TemplateBrowser, QuickTemplateSelector
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\template_browser.py", line 352
+    return dialog</content>
+                  ^
+SyntaxError: invalid syntax
+
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+ERROR:__main__:Fatal error: invalid syntax (template_browser.py, line 353)
+ERROR:__main__:Full traceback:
+ERROR:__main__:Traceback (most recent call last):
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\main.py", line 103, in main
+    from ui.professional_main_window import ProfessionalIntegralCalculator
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 26, in <module>
+    from ui.template_browser import TemplateBrowser, QuickTemplateSelector
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\template_browser.py", line 353
+    <parameter name="filePath">c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\template_browser.py
+    ^
+SyntaxError: invalid syntax
+
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+ERROR:__main__:Fatal error: invalid syntax (template_manager.py, line 366)
+ERROR:__main__:Full traceback:
+ERROR:__main__:Traceback (most recent call last):
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\main.py", line 103, in main
+    from ui.professional_main_window import ProfessionalIntegralCalculator
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 26, in <module>
+    from ui.template_browser import TemplateBrowser, QuickTemplateSelector
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\template_browser.py", line 9, in <module>
+    from data.template_manager import TemplateRepository, MathematicalTemplate
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\data\template_manager.py", line 366
+    return get_template_repository._instance</content>
+                                             ^
+SyntaxError: invalid syntax
+
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+ERROR:__main__:Fatal error: invalid syntax (template_manager.py, line 367)
+ERROR:__main__:Full traceback:
+ERROR:__main__:Traceback (most recent call last):
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\main.py", line 103, in main
+    from ui.professional_main_window import ProfessionalIntegralCalculator
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 26, in <module>
+    from ui.template_browser import TemplateBrowser, QuickTemplateSelector
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\template_browser.py", line 9, in <module>
+    from data.template_manager import TemplateRepository, MathematicalTemplate
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\data\template_manager.py", line 367
+    <parameter name="filePath">c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\data\template_manager.py
+    ^
+SyntaxError: invalid syntax
+
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+ERROR:__main__:Fatal error: invalid syntax (template_manager.py, line 367)
+ERROR:__main__:Full traceback:
+ERROR:__main__:Traceback (most recent call last):
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\main.py", line 103, in main
+    from ui.professional_main_window import ProfessionalIntegralCalculator
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 26, in <module>
+    from ui.template_browser import TemplateBrowser, QuickTemplateSelector
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\template_browser.py", line 9, in <module>
+    from data.template_manager import TemplateRepository, MathematicalTemplate
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\data\template_manager.py", line 367
+    <parameter name="filePath">c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\data\template_manager.py
+    ^
+SyntaxError: invalid syntax
+
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Initializing default mathematical templates...
+INFO:data.template_manager:Added template: Polinomio cuadrático
+INFO:data.template_manager:Added template: Polinomio cúbico
+INFO:data.template_manager:Added template: Seno básico
+INFO:data.template_manager:Added template: Coseno básico
+INFO:data.template_manager:Added template: Seno + Coseno
+INFO:data.template_manager:Added template: Exponencial básica
+INFO:data.template_manager:Added template: Logaritmo natural
+INFO:data.template_manager:Added template: Exponencial compleja
+INFO:data.template_manager:Added template: Fracción simple
+INFO:data.template_manager:Added template: Fracción cuadrática
+INFO:data.template_manager:Added template: Raíz cuadrada
+INFO:data.template_manager:Added template: Raíz cuadrada compleja
+INFO:data.template_manager:Added template: Integral definida simple
+INFO:data.template_manager:Added template: Error function
+INFO:data.template_manager:Saved 14 templates to data/templates.json
+INFO:data.template_manager:Initialized 14 default templates
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*x*****2* *+* *3***x* *+* *2*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: Cannot parse 'x**2 + 3*x + 2': Sympify of expression 'could not parse '*x*****2* *+* *3***x* *+* *2*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1), falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2 + 3*x + 2 dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/3 + 3*x**2/2 + 2*x', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*x*****2* *+* *3***x* *+* *2*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: Cannot parse 'x**2 + 3*x + 2': Sympify of expression 'could not parse '*x*****2* *+* *3***x* *+* *2*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1), falling back to regular parser
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2 + 3*x + 2 dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/3 + 3*x**2/2 + 2*x', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*x*****2* *+* *3***x* *+* *2*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2))
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*x*****2* *+* *3***x* *+* *2*)*)*'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*)*∫* *(*3*x* *+* *5*)* *d*x*'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*)*∫* *(*3*x* *+* *5*)* *d*x*'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*∫* *(*3*x* *+* *5*)* *d*x*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*∫* *(*3*x* *+* *5*)* *d*x*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: Cannot parse '∫ (3x + 5) dx': Sympify of expression 'could not parse '*∫* *(*3*x* *+* *5*)* *d*x*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1), falling back to regular parser
+INFO:core.parser:Parsing expression: ∫ (3x + 5) dx
+INFO:core.parser:Cleaned expression: integrate (3x + 5) dx
+ERROR:core.parser:Failed to parse expression '∫ (3x + 5) dx': Sympify of expression 'could not parse 'integrate (3x + 5) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*)*i*n*t*e*g*r*a*t*e*(*(*3*x* *+* *5*)*,* *x*)*'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*)*i*n*t*e*g*r*a*t*e*(*(*3*x* *+* *5*)*,* *x*)*'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*i*n*t*e*g*r*a*t*e*(*(*3*x* *+* *5*)*,* *x*)*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '*i*n*t*e*g*r*a*t*e*(*(*3*x* *+* *5*)*,* *x*)*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: Cannot parse '∫ (3x + 5) dx': Sympify of expression 'could not parse '*i*n*t*e*g*r*a*t*e*(*(*3*x* *+* *5*)*,* *x*)*'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1), falling back to regular parser
+INFO:core.parser:Parsing expression: ∫ (3x + 5) dx
+INFO:core.parser:Cleaned expression: integrate (3x + 5) dx
+ERROR:core.parser:Failed to parse expression '∫ (3x + 5) dx': Sympify of expression 'could not parse 'integrate (3x + 5) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:Application closed normally
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ')integrate((3*x + 5), x)'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ')integrate((3*x + 5), x)'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (3x + 5) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (3x + 5) dx -> 3*x**2/2 + 5*x
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (3x + 5) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (3x + 5) dx -> 3*x**2/2 + 5*x
+INFO:core.integrator:Integrating: 3*x**2/2 + 5*x with method: auto
+INFO:core.integrator:Integration successful: x**2*(x + 5)/2
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫3*x**2/2 + 5*x dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/2 + 5*x**2/2', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: ∫ (3x + 5) dx
+INFO:core.parser:Cleaned expression: integrate (3x + 5) dx
+ERROR:core.parser:Failed to parse expression '∫ (3x + 5) dx': Sympify of expression 'could not parse 'integrate (3x + 5) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error plotting function: Cannot parse expression '∫ (3x + 5) dx': Sympify of expression 'could not parse 'integrate (3x + 5) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (3x + 5) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (3x + 5) dx -> 3*x**2/2 + 5*x
+INFO:core.integrator:Integrating: 3*x**2/2 + 5*x with method: auto
+INFO:core.integrator:Integration successful: x**2*(x + 5)/2
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫3*x**2/2 + 5*x dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/2 + 5*x**2/2', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: ∫ (3x + 5) dx
+INFO:core.parser:Cleaned expression: integrate (3x + 5) dx
+ERROR:core.parser:Failed to parse expression '∫ (3x + 5) dx': Sympify of expression 'could not parse 'integrate (3x + 5) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error plotting function: Cannot parse expression '∫ (3x + 5) dx': Sympify of expression 'could not parse 'integrate (3x + 5) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2 + 3*x + 2 dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/3 + 3*x**2/2 + 2*x', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: )x**2 + 3*x + 2
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ')x**2 + 3*x + 2'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ')'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ')integrate((3*x + 5), x)'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ')integrate((3*x + 5), x)'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (3x + 5) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (3x + 5) dx -> 3*x**2/2 + 5*x
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (3x + 5) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (3x + 5) dx -> 3*x**2/2 + 5*x
+INFO:core.integrator:Integrating: 3*x**2/2 + 5*x with method: auto
+INFO:core.integrator:Integration successful: x**2*(x + 5)/2
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫3*x**2/2 + 5*x dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/2 + 5*x**2/2', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: ∫ (3x + 5) dx
+INFO:core.parser:Cleaned expression: integrate (3x + 5) dx
+ERROR:core.parser:Failed to parse expression '∫ (3x + 5) dx': Sympify of expression 'could not parse 'integrate (3x + 5) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error plotting function: Cannot parse expression '∫ (3x + 5) dx': Sympify of expression 'could not parse 'integrate (3x + 5) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '(3*x + 5) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '(3*x + 5) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: Cannot parse '(3x + 5) dx': Sympify of expression 'could not parse '(3*x + 5) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1), falling back to regular parser
+INFO:core.parser:Parsing expression: (3x + 5) dx
+INFO:core.parser:Cleaned expression: (3x + 5) dx
+ERROR:core.parser:Failed to parse expression '(3x + 5) dx': Sympify of expression 'could not parse '(3x + 5) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '(3*x + 5) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '(3*x + 5) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ')integrate((3*x + 5), x)'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (3x + 5) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ')integrate((3*x + 5), x)'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (3x + 5) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (3x + 5) dx -> 3*x**2/2 + 5*x
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (3x + 5) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (3x + 5) dx -> 3*x**2/2 + 5*x
+INFO:core.integrator:Integrating: 3*x**2/2 + 5*x with method: auto
+INFO:core.integrator:Integration successful: x**2*(x + 5)/2
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫3*x**2/2 + 5*x dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/2 + 5*x**2/2', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+ERROR:ui.latex_renderer:Error cleaning LaTeX for academic format: unterminated character set at position 8
+INFO:core.parser:Parsing expression: ∫ (3x + 5) dx
+INFO:core.parser:Cleaned expression: integrate (3x + 5) dx
+ERROR:core.parser:Failed to parse expression '∫ (3x + 5) dx': Sympify of expression 'could not parse 'integrate (3x + 5) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error plotting function: Cannot parse expression '∫ (3x + 5) dx': Sympify of expression 'could not parse 'integrate (3x + 5) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: )x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: )x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Parsing natural math: )x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: )x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Parsing natural math: )x**2 + 3*x + 2)
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse 'x**2 + 3*x + 2)'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )x**2 + 3*x + 2)
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse 'x**2 + 3*x + 2)'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (2x² + 3x - 1) dx -> 3*x**2/2 + x*(2*x2 - 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (2x² + 3x - 1) dx -> 3*x**2/2 + x*(2*x2 - 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 3*x**2/2 + x*(2*x2 - 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 3*x**2/2 + x*(2*x2 - 1)
+INFO:core.integrator:Integrating: 3*x**2/2 + x*(2*x2 - 1) with method: auto
+INFO:core.integrator:Integration successful: x**2*(x + 2*x2 - 1)/2
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫3*x**2/2 + x*(2*x2 - 1) dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/2 + x**2*(x2 - 1/2)', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.parser:Parsing expression: ∫ (2x² + 3x - 1) dx
+INFO:core.parser:Cleaned expression: integrate (2x² + 3x - 1) dx
+ERROR:core.parser:Failed to parse expression '∫ (2x² + 3x - 1) dx': Sympify of expression 'could not parse 'integrate (2x² + 3x - 1) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error plotting function: Cannot parse expression '∫ (2x² + 3x - 1) dx': Sympify of expression 'could not parse 'integrate (2x² + 3x - 1) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ x dx = (x² / 2) + C
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '∫ x d*x = (x(2)/(2)) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ x dx = (x² / 2) + C
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '∫ x d*x = (x(2)/(2)) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ x dx = (x² / 2) + C
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '∫ x d*x = (x(2)/(2)) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ x dx = (x² / 2) + C
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '∫ x d*x = (x(2)/(2)) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: Cannot parse '∫ x dx = (x² / 2) + C': Sympify of expression 'could not parse '∫ x d*x = (x(2)/(2)) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1), falling back to regular parser
+INFO:core.parser:Parsing expression: ∫ x dx = (x² / 2) + C
+INFO:core.parser:Cleaned expression: integrate x dx = (x² / 2) + C
+ERROR:core.parser:Failed to parse expression '∫ x dx = (x² / 2) + C': Sympify of expression 'could not parse 'integrate x dx = (x² / 2) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ x dx = (x² / 2) + C
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '∫ x d*x = (x(2)/(2)) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: Cannot parse '∫ x dx = (x² / 2) + C': Sympify of expression 'could not parse '∫ x d*x = (x(2)/(2)) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1), falling back to regular parser
+INFO:core.parser:Parsing expression: ∫ x dx = (x² / 2) + C
+INFO:core.parser:Cleaned expression: integrate x dx = (x² / 2) + C
+ERROR:core.parser:Failed to parse expression '∫ x dx = (x² / 2) + C': Sympify of expression 'could not parse 'integrate x dx = (x² / 2) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ x dx = (x² / 2) + C
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '∫ x d*x = (x(2)/(2)) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ x dx = (x² / 2) + C
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '∫ x d*x = (x(2)/(2)) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: Cannot parse '∫ x dx = (x² / 2) + C': Sympify of expression 'could not parse '∫ x d*x = (x(2)/(2)) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1), falling back to regular parser
+INFO:core.parser:Parsing expression: ∫ x dx = (x² / 2) + C
+INFO:core.parser:Cleaned expression: integrate x dx = (x² / 2) + C
+ERROR:core.parser:Failed to parse expression '∫ x dx = (x² / 2) + C': Sympify of expression 'could not parse 'integrate x dx = (x² / 2) + C'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: (5x⁴ - 2x² + x) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '(5*x4 - 2*x2 + x) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.integrator:Integrating: x**2/2 + x*(-2*x2 + 5*x4) with method: auto
+INFO:core.integrator:Integration successful: x**2*(x - 6*x2 + 15*x4)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2/2 + x*(-2*x2 + 5*x4) dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/6 + x**2*(-x2 + 5*x4/2)', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.parser:Parsing expression: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.parser:Cleaned expression: integrate (5x⁴ - 2x² + x) dx
+ERROR:core.parser:Failed to parse expression '∫ (5x⁴ - 2x² + x) dx': Sympify of expression 'could not parse 'integrate (5x⁴ - 2x² + x) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error plotting function: Cannot parse expression '∫ (5x⁴ - 2x² + x) dx': Sympify of expression 'could not parse 'integrate (5x⁴ - 2x² + x) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.integrator:Integrating: x**2/2 + x*(-2*x2 + 5*x4) with method: auto
+INFO:core.integrator:Integration successful: x**2*(x - 6*x2 + 15*x4)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2/2 + x*(-2*x2 + 5*x4) dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/6 + x**2*(-x2 + 5*x4/2)', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.parser:Parsing expression: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.parser:Cleaned expression: integrate (5x⁴ - 2x² + x) dx
+ERROR:core.parser:Failed to parse expression '∫ (5x⁴ - 2x² + x) dx': Sympify of expression 'could not parse 'integrate (5x⁴ - 2x² + x) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+ERROR:ui.professional_main_window:Error plotting function: Cannot parse expression '∫ (5x⁴ - 2x² + x) dx': Sympify of expression 'could not parse 'integrate (5x⁴ - 2x² + x) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: integrate∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: integrate∫ (5x⁴ - 2x² + x) dx -> eg*i*nt*ra*teintegrate(x - 2*x2 + 5*x4, x)
+INFO:core.microsoft_math_engine:Parsing natural math: integrate (5x⁴ - 2x² + x) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse 'i*nt*eg*ra*te (5*x4 - 2*x2 + x) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: integrate(5x⁴ - 2x² + x) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse 'i*nt*eg*ra*te(5*x4 - 2*x2 + x) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: integrate (5x⁴ - 2x² + x) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse 'i*nt*eg*ra*te (5*x4 - 2*x2 + x) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: integrate (5x⁴ - 2x² + x) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse 'i*nt*eg*ra*te (5*x4 - 2*x2 + x) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: Cannot parse 'integrate (5x⁴ - 2x² + x) dx': Sympify of expression 'could not parse 'i*nt*eg*ra*te (5*x4 - 2*x2 + x) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1), falling back to regular parser
+INFO:core.parser:Parsing expression: integrate (5x⁴ - 2x² + x) dx
+INFO:core.parser:Cleaned expression: integrate (5x⁴ - 2x² + x) dx
+ERROR:core.parser:Failed to parse expression 'integrate (5x⁴ - 2x² + x) dx': Sympify of expression 'could not parse 'integrate (5x⁴ - 2x² + x) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: integrate (5x⁴ - 2x² + x) dx
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse 'i*nt*eg*ra*te (5*x4 - 2*x2 + x) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:ui.professional_main_window:Microsoft Math Engine parsing failed: Cannot parse 'integrate (5x⁴ - 2x² + x) dx': Sympify of expression 'could not parse 'i*nt*eg*ra*te (5*x4 - 2*x2 + x) d*x'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1), falling back to regular parser
+INFO:core.parser:Parsing expression: integrate (5x⁴ - 2x² + x) dx
+INFO:core.parser:Cleaned expression: integrate (5x⁴ - 2x² + x) dx
+ERROR:core.parser:Failed to parse expression 'integrate (5x⁴ - 2x² + x) dx': Sympify of expression 'could not parse 'integrate (5x⁴ - 2x² + x) dx'' failed, because of exception being raised:
+SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2 + 3*x + 2 dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/3 + 3*x**2/2 + 2*x', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: )x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: )x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Parsing natural math: )x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: )x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Parsing natural math: )
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:__main__:Application closed normally
