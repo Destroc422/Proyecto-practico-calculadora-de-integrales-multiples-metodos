@@ -105,6 +105,11 @@ class ProfessionalMathParser:
         # Remove whitespace
         expr = expression.strip()
         
+        # Don't try to parse integral expressions as functions to plot
+        if 'integrate' in expr or '∫' in expr:
+            # Leave integration expressions as-is for the integration engine
+            return expr
+        
         # Convert common notations - Fixed to avoid over-processing
         conversions = {
             r'×': '*',              # Multiplication symbol
@@ -114,7 +119,6 @@ class ProfessionalMathParser:
             r'√': 'sqrt',           # Square root
             r'∑': 'Sum',            # Summation
             r'∏': 'Product',        # Product
-            r'∫': 'integrate',      # Integral
             r'∂': 'Derivative',     # Partial derivative
             r'∇': 'Gradient',       # Gradient
             r'∈': 'in',             # Element of
@@ -133,9 +137,9 @@ class ProfessionalMathParser:
         
         for pattern, replacement in conversions.items():
             expr = re.sub(pattern, replacement, expr)
-        
-        # Handle implicit multiplication (e.g., "2x" -> "2*x") - DISABLED for now
-        # expr = self._handle_implicit_multiplication(expr)
+
+        # Handle implicit multiplication (e.g., "2x" -> "2*x")
+        expr = self._handle_implicit_multiplication(expr)
         
         # Handle function notation (e.g., "sinx" -> "sin(x)")
         expr = self._handle_function_notation(expr)

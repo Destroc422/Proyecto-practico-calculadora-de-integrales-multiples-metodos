@@ -6,6 +6,10 @@ Robust version with comprehensive error handling
 import logging
 import sys
 import traceback
+import os
+
+# Add current directory to Python path for imports
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # Configure logging with UTF-8 encoding
 import sys

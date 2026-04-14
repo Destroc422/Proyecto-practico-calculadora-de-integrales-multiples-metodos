@@ -122,57 +122,258 @@ class ProfessionalIntegrator:
     
     def _auto_detect_and_integrate(self, func: sp.Expr, var: sp.Symbol, 
                                   limits: Optional[Tuple] = None) -> Tuple[sp.Expr, List[Dict]]:
-        """Automatically detect best integration method using advanced engine"""
+        """Automatically detect best integration method using SymPy"""
         try:
-            # Use Microsoft math engine for detailed steps
-            func_str = str(func)
-            var_str = str(var)
-            
-            # Get solution with steps from Microsoft Math engine
-            solution = self.microsoft_engine.solve_integral_with_steps(func_str, var_str)
-            
-            if 'error' in solution:
-                # Fallback to traditional method
-                return self._fallback_integration(func, var, limits)
-            
-            # Convert steps to expected format
-            steps = []
-            for step in solution.get('steps', []):
-                converted_step = {
-                    'type': step.get('type', 'method_step'),
-                    'title': step.get('description', ''),
-                    'expression': step.get('expression', ''),
-                    'method': solution.get('method', 'auto'),
-                    'explanation': step.get('explanation', '')
-                }
-                steps.append(converted_step)
-            
-            # Parse result back to SymPy
-            result_str = solution.get('result', '')
-            if result_str:
-                result = sp.sympify(result_str, locals={var_str: var})
+            # Use SymPy's integrate function
+            if limits:
+                # Definite integral
+                result = sp.integrate(func, (var, limits[0], limits[1]))
             else:
+                # Indefinite integral
                 result = sp.integrate(func, var)
             
-            # Handle definite integrals
-            if limits:
-                lower, upper = limits
-                definite_result = sp.integrate(func, (var, lower, upper))
-                steps.append({
-                    'type': 'definite_step',
-                    'title': 'Integral definida',
-                    'expression': f"\\int_{{{lower}}}^{{{upper}}} {func} d{var} = {definite_result}",
-                    'method': 'definite'
-                })
-                return definite_result, steps
+            # Create detailed mathematical steps
+            steps = self._generate_detailed_steps(func, var, result, limits)
             
             return result, steps
             
         except Exception as e:
-            logger.warning(f"Advanced engine failed, using fallback: {str(e)}")
-            return self._fallback_integration(func, var, limits)
+            logger.error(f"Auto-detection integration failed: {e}")
+            # Fallback to basic steps
+            result = sp.integrate(func, var)
+            steps = [
+                {
+                    'type': 'original',
+                    'title': 'Integral Original',
+                    'latex': f'\\int {sp.latex(func)} d{var}',
+                    'explanation': 'Función a integrar'
+                },
+                {
+                    'type': 'result',
+                    'title': 'Resultado',
+                    'latex': f'{sp.latex(result)} + C',
+                    'explanation': 'Resultado de la integración'
+                }
+            ]
+            return result, steps
     
-    def _analyze_function(self, func: sp.Expr, var: sp.Symbol) -> Dict[str, Any]:
+    def _generate_detailed_steps(self, func: sp.Expr, var: sp.Symbol, 
+                                result: sp.Expr, limits: Optional[Tuple] = None) -> List[Dict]:
+        """Generate detailed mathematical steps for integration"""
+        steps = []
+        
+        # Step 1: Original integral
+        if limits:
+            integral_latex = f'\\int_{{{sp.latex(limits[0])}}}^{{{sp.latex(limits[1])}}} {sp.latex(func)} \\, d{var}'
+        else:
+            integral_latex = f'\\int {sp.latex(func)} \\, d{var}'
+        
+        steps.append({
+            'type': 'original',
+            'title': 'Integral Original',
+            'latex': integral_latex,
+            'explanation': 'Expresión a integrar'
+        })
+        
+        # Step 2: Analyze function structure
+        steps.extend(self._analyze_function_structure(func, var))
+        
+        # Step 3: Decomposition steps (if applicable)
+        if func.is_Add:
+            steps.extend(self._decompose_sum(func, var, result))
+        elif func.is_Mul:
+            steps.extend(self._analyze_product(func, var, result))
+        
+        # Step 4: Integration process
+        steps.extend(self._show_integration_process(func, var, result))
+        
+        # Step 5: Final result
+        if limits:
+            # Definite integral
+            lower, upper = limits
+            result_simplified = sp.simplify(result)
+            result_latex = sp.latex(result_simplified)
+            steps.append({
+                'type': 'result',
+                'title': 'Resultado de la Integral Definida',
+                'latex': f'F({var})|_{{{sp.latex(lower)}}}^{{{sp.latex(upper)}}} = {result_latex}',
+                'explanation': 'Aplicamos límites de integración'
+            })
+        else:
+            # Indefinite integral
+            result_simplified = sp.simplify(result)
+            result_latex = sp.latex(result_simplified)
+            steps.append({
+                'type': 'result',
+                'title': 'Resultado de la Integral Indefinida',
+                'latex': f'{result_latex} + C',
+                'explanation': 'Suma de la constante de integración C'
+            })
+        
+        return steps
+    
+    def _analyze_function_structure(self, func: sp.Expr, var: sp.Symbol) -> List[Dict]:
+        """Analyze and describe function structure"""
+        steps = []
+        
+        # Identify function type
+        func_type = ''
+        if func.is_Add:
+            func_type = 'Suma de términos'
+            terms = func.as_ordered_terms()
+            latex_terms = [f'{sp.latex(term)}' for term in terms]
+            steps.append({
+                'type': 'analysis',
+                'title': 'Paso 1: Identificar estructura',
+                'latex': f'\\text{{Función: }} {"+".join(latex_terms)}',
+                'explanation': f'La función es una suma con {len(terms)} término(s)'
+            })
+        elif func.is_Mul:
+            func_type = 'Producto de factores'
+            steps.append({
+                'type': 'analysis',
+                'title': 'Paso 1: Identificar estructura',
+                'latex': f'{sp.latex(func)}',
+                'explanation': 'La función es un producto de factores'
+            })
+        elif func.is_Pow:
+            func_type = 'Potencia'
+            base = func.base
+            exp = func.exp
+            steps.append({
+                'type': 'analysis',
+                'title': 'Paso 1: Identificar estructura',
+                'latex': f'{sp.latex(func)} = {sp.latex(base)}^{{{sp.latex(exp)}}}',
+                'explanation': 'La función es una potencia'
+            })
+        else:
+            steps.append({
+                'type': 'analysis',
+                'title': 'Paso 1: Identificar estructura',
+                'latex': f'{sp.latex(func)}',
+                'explanation': 'Función elemental'
+            })
+        
+        return steps
+    
+    def _decompose_sum(self, func: sp.Expr, var: sp.Symbol, result: sp.Expr) -> List[Dict]:
+        """Show decomposition of sum"""
+        steps = []
+        terms = func.as_ordered_terms()
+        
+        if len(terms) > 1:
+            steps.append({
+                'type': 'decomposition',
+                'title': 'Paso 2: Aplicar linealidad de la integral',
+                'latex': f'\\int \\left[{" + ".join([sp.latex(t) for t in terms])}\\right] d{var} = {" + ".join([f"\\int {sp.latex(t)} d{var}" for t in terms])}',
+                'explanation': 'La integral de una suma es la suma de integrales'
+            })
+            
+            # Show individual integrations
+            for i, term in enumerate(terms, 1):
+                int_term = sp.integrate(term, var)
+                if int_term != 0:  # Only show non-zero terms
+                    steps.append({
+                        'type': 'term_integration',
+                        'title': f'Paso 2.{i}: Integrar término {i}',
+                        'latex': f'\\int {sp.latex(term)} \\, d{var} = {sp.latex(int_term)}',
+                        'explanation': self._get_rule_explanation(term, var)
+                    })
+        
+        return steps
+    
+    def _analyze_product(self, func: sp.Expr, var: sp.Symbol, result: sp.Expr) -> List[Dict]:
+        """Show analysis of product"""
+        steps = []
+        steps.append({
+            'type': 'analysis',
+            'title': 'Paso 2: Analizar factores',
+            'latex': f'{sp.latex(func)}',
+            'explanation': 'Verificamos si se puede simplificar o factorizar el producto'
+        })
+        return steps
+    
+    def _show_integration_process(self, func: sp.Expr, var: sp.Symbol, result: sp.Expr) -> List[Dict]:
+        """Show the integration process"""
+        steps = []
+        
+        # Identify the integration rule used
+        rule = self._identify_integration_rule(func, var)
+        
+        if rule:
+            steps.append({
+                'type': 'integration_rule',
+                'title': 'Paso 3: Aplicar regla de integración',
+                'latex': rule['formula'],
+                'explanation': rule['description']
+            })
+        
+        return steps
+    
+    def _identify_integration_rule(self, func: sp.Expr, var: sp.Symbol) -> Optional[Dict]:
+        """Identify which integration rule applies"""
+        
+        # Power rule: ∫x^n dx = x^(n+1)/(n+1)
+        if func.is_Pow and func.base == var:
+            n = func.exp
+            return {
+                'name': 'Power Rule',
+                'formula': f'\\int {sp.latex(var)}^{{{sp.latex(n)}}} d{var} = \\frac{{{sp.latex(var)}^{{{sp.latex(n+1)}}}}}{{{sp.latex(n+1)}}}',
+                'description': f'Regla de potencia: ∫x^n dx = x^(n+1)/(n+1)'
+            }
+        
+        # Exponential rule: ∫e^x dx = e^x
+        if func.has(sp.exp):
+            return {
+                'name': 'Exponential Rule',
+                'formula': f'\\int e^{{{sp.latex(var)}}} d{var} = e^{{{sp.latex(var)}}}',
+                'description': 'Regla exponencial: ∫e^x dx = e^x'
+            }
+        
+        # Trigonometric rules
+        if func.has(sp.sin):
+            return {
+                'name': 'Sine Rule',
+                'formula': f'\\int \\sin({sp.latex(var)}) d{var} = -\\cos({sp.latex(var)})',
+                'description': 'Integración de seno'
+            }
+        if func.has(sp.cos):
+            return {
+                'name': 'Cosine Rule',
+                'formula': f'\\int \\cos({sp.latex(var)}) d{var} = \\sin({sp.latex(var)})',
+                'description': 'Integración de coseno'
+            }
+        
+        # Logarithmic rule: ∫1/x dx = ln|x|
+        if func == 1/var:
+            return {
+                'name': 'Logarithmic Rule',
+                'formula': f'\\int \\frac{{1}}{{{sp.latex(var)}}} d{var} = \\ln|{sp.latex(var)}|',
+                'description': 'Regla logarítmica: ∫(1/x) dx = ln|x|'
+            }
+        
+        return None
+    
+    def _get_rule_explanation(self, term: sp.Expr, var: sp.Symbol) -> str:
+        """Get explanation for integration rule applied to term"""
+        
+        if term == var:
+            return f'Integración de {sp.latex(var)}: ∫x dx = x²/2'
+        elif term.is_Pow and term.base == var:
+            n = term.exp
+            return f'Regla de potencia: ∫x^{n} dx = x^{n+1}/{n+1}'
+        elif term.is_constant(var):
+            return f'Integral de constante: ∫c dx = cx'
+        elif term.has(sp.sin):
+            return 'Integral de seno: ∫sin(x) dx = -cos(x)'
+        elif term.has(sp.cos):
+            return 'Integral de coseno: ∫cos(x) dx = sin(x)'
+        elif term.has(sp.exp):
+            return 'Integral exponencial: ∫e^x dx = e^x'
+        else:
+            return 'Aplicar reglas de integración'
+    
+    def _direct_integration(self, func: sp.Expr, var: sp.Symbol,
         """Analyze function structure for method selection"""
         analysis = {
             'has_powers': False,
@@ -424,6 +625,46 @@ class ProfessionalIntegrator:
         })
         
         return result, steps
+    
+    def _fallback_integration(self, func: sp.Expr, var: sp.Symbol, 
+                            limits: Optional[Tuple] = None) -> Tuple[sp.Expr, List[Dict]]:
+        """Fallback integration method using basic SymPy integration"""
+        try:
+            # Basic integration using SymPy
+            if limits:
+                result = sp.integrate(func, (var, limits[0], limits[1]))
+            else:
+                result = sp.integrate(func, var)
+            
+            steps = [
+                {
+                    'type': 'original',
+                    'title': 'Integral Original',
+                    'expression': f'∫{func} d{var}' if not limits else f'∫_{limits[0]}^{limits[1]} {func} d{var}',
+                    'method': 'fallback',
+                    'explanation': 'Función a integrar'
+                },
+                {
+                    'type': 'method',
+                    'title': 'Integración Básica',
+                    'expression': 'Método de integración directa',
+                    'method': 'fallback',
+                    'explanation': 'Se aplicó integración directa usando SymPy'
+                },
+                {
+                    'type': 'result',
+                    'title': 'Resultado',
+                    'expression': str(result),
+                    'method': 'fallback',
+                    'explanation': 'Resultado de la integración básica'
+                }
+            ]
+            
+            return result, steps
+            
+        except Exception as e:
+            logger.error(f"Fallback integration failed: {str(e)}")
+            raise IntegrationError(f"Cannot integrate {func}: {str(e)}")
 
 
 class IntegrationError(Exception):

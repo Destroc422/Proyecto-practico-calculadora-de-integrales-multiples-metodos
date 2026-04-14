@@ -610,8 +610,8 @@ class ProfessionalLaTeXRenderer:
                 # Parentheses (proper LaTeX format)
                 r'\\left\(': r'(',
                 r'\\right\)': r')',
-                r'\\left\\[': r'[',
-                r'\\right\\]': r']',
+                r'\\left[[]': r'[',
+                r'\\right[]]': r']',
                 
                 # Text formatting (remove for academic format)
                 r'\\text{([^}]+)}': r'\1',

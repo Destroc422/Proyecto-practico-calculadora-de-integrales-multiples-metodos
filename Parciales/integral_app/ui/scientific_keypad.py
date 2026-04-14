@@ -55,13 +55,13 @@ class ScientificKeypad:
             btn.grid(row=row, column=col, padx=2, pady=2)
     
     def create_operations_section(self, parent):
-        """Sección de operaciones básicas"""
+        """Sección de operaciones básicas con notación natural"""
         frame = ttk.LabelFrame(parent, text="Operaciones", padding=5)
         frame.grid(row=0, column=1, padx=5, pady=5, sticky="nsew")
         
         operations = [
             ('÷', '/'), ('×', '*'), ('-', '-'), ('+', '+'),
-            ('x^y', '**'), ('√x', 'sqrt('), ('x!', '!'), ('π', 'pi'),
+            ('x^y', '^'), ('√x', 'sqrt('), ('x!', 'factorial('), ('π', 'pi'),
             ('(', '('), (')', ')'), ('|x|', 'abs('), ('⌊x⌋', 'floor(')
         ]
         
@@ -78,14 +78,14 @@ class ScientificKeypad:
             btn.grid(row=row, column=col, padx=2, pady=2)
     
     def create_functions_section(self, parent):
-        """Sección de funciones matemáticas"""
+        """Sección de funciones matemáticas con notación natural"""
         frame = ttk.LabelFrame(parent, text="Funciones", padding=5)
         frame.grid(row=0, column=2, padx=5, pady=5, sticky="nsew")
         
         functions = [
             ('sin', 'sin('), ('cos', 'cos('), ('tan', 'tan('),
             ('asin', 'asin('), ('acos', 'acos('), ('atan', 'atan('),
-            ('log', 'log('), ('ln', 'log('), ('exp', 'exp('),
+            ('log', 'log('), ('ln', 'ln('), ('exp', 'exp('),
             ('sinh', 'sinh('), ('cosh', 'cosh('), ('tanh', 'tanh(')
         ]
         
@@ -102,15 +102,15 @@ class ScientificKeypad:
             btn.grid(row=row, column=col, padx=2, pady=2)
     
     def create_advanced_section(self, parent):
-        """Sección de funciones avanzadas"""
+        """Sección de funciones avanzadas con notación natural"""
         frame = ttk.LabelFrame(parent, text="Avanzado", padding=5)
         frame.grid(row=1, column=0, padx=5, pady=5, sticky="nsew")
         
         advanced = [
-            ('x²', 'x**2'), ('x³', 'x**3'), ('xⁿ', 'x^'),
-            ('e^x', 'exp('), ('10^x', '10**'), ('2^x', '2**'),
+            ('x²', 'x²'), ('x³', 'x³'), ('x^n', 'x^'),
+            ('e^x', 'exp('), ('10^x', '10^'), ('2^x', '2^'),
             ('∛', '**(1/3)'), ('⁴√', '**(1/4)'), ('ⁿ√', '**(1/'),
-            ('lim', 'lim'), ('∑', 'sum'), ('∏', 'product')
+            ('lim', 'limit('), ('∑', 'sum('), ('∏', 'product(')
         ]
         
         for i, (text, insert) in enumerate(advanced):
@@ -140,7 +140,7 @@ class ScientificKeypad:
         )
         fraction_btn.grid(row=0, column=0, padx=10, pady=5, rowspan=3)
         
-        # Fracciones comunes
+        # Fracciones comunes con notación natural
         common_fractions = [
             ('1/2', '1/2'), ('1/3', '1/3'), ('1/4', '1/4'),
             ('2/3', '2/3'), ('3/4', '3/4'), ('1/π', '1/pi'),
