@@ -105,6 +105,11 @@ class ProfessionalMathParser:
         # Remove whitespace
         expr = expression.strip()
         
+        # Don't try to parse integral expressions as functions to plot
+        if 'integrate' in expr or '∫' in expr:
+            # Leave integration expressions as-is for the integration engine
+            return expr
+        
         # Convert common notations - Fixed to avoid over-processing
         conversions = {
             r'×': '*',              # Multiplication symbol
@@ -114,7 +119,6 @@ class ProfessionalMathParser:
             r'√': 'sqrt',           # Square root
             r'∑': 'Sum',            # Summation
             r'∏': 'Product',        # Product
-            r'∫': 'integrate',      # Integral
             r'∂': 'Derivative',     # Partial derivative
             r'∇': 'Gradient',       # Gradient
             r'∈': 'in',             # Element of
@@ -131,14 +135,8 @@ class ProfessionalMathParser:
             r'ℚ': 'Rationals',      # Rational numbers
         }
         
-        # Handle integral notation like '∫ f(x) dx' or 'int f(x) dx' first
-        expr = self._handle_integral_notation(expr)
-
         for pattern, replacement in conversions.items():
             expr = re.sub(pattern, replacement, expr)
-
-        # Handle integral patterns that may now start with 'integrate'
-        expr = self._handle_integrate_function_notation(expr)
 
         # Handle implicit multiplication (e.g., "2x" -> "2*x")
         expr = self._handle_implicit_multiplication(expr)
@@ -181,42 +179,6 @@ class ProfessionalMathParser:
         
         return expression
     
-    def _handle_integral_notation(self, expression: str) -> str:
-        """Handle integral notation and convert to SymPy integrate() calls"""
-        expr = expression
-
-        # Definite integral: ∫_a^b f(x) dx
-        expr = re.sub(
-            r'∫_\s*([^\^\s]+)\^\s*([^\s]+)\s*\(?(.+?)\)?\s*d([a-zA-Z])\b',
-            r'integrate(\3, (\4, \1, \2))',
-            expr
-        )
-
-        # Indefinite integral: ∫ f(x) dx or int f(x) dx
-        expr = re.sub(
-            r'∫\s*\(?(.+?)\)?\s*d([a-zA-Z])\b',
-            r'integrate(\1, \2)',
-            expr
-        )
-        expr = re.sub(
-            r'\bint(?:egral)?\s*\(?(.+?)\)?\s*d([a-zA-Z])\b',
-            r'integrate(\1, \2)',
-            expr,
-            flags=re.IGNORECASE
-        )
-
-        return expr
-
-    def _handle_integrate_function_notation(self, expression: str) -> str:
-        """Handle integrate(...) dx cases that remain after initial preprocessing"""
-        expr = expression
-        expr = re.sub(
-            r'\bintegrate\s*\(?(.+?)\)?\s*d([a-zA-Z])\b',
-            r'integrate(\1, \2)',
-            expr
-        )
-        return expr
-
     def _handle_function_notation(self, expression: str) -> str:
         """Handle function notation without parentheses"""
         # Common functions that need parentheses

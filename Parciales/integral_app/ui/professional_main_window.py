@@ -15,6 +15,9 @@ from typing import Optional, Dict, Any, List, Tuple
 import sympy as sp
 import numpy as np
 
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 # Core modules
 from core.integrator import ProfessionalIntegrator, IntegrationMethod, IntegrationError
 from core.parser import ProfessionalMathParser, ParseError
@@ -3152,8 +3155,129 @@ Para más información, visite la documentación en línea o contacte al soporte
                 messagebox.showwarning("Gráfica", "No hay función para graficar")
                 return
             
-            # Parse function
-            parsed_func = self.parser.parse(function_text)
+            # Check if expression contains integral notation and process it
+            if '∫' in function_text or 'integrate' in function_text.lower() or ('d' in function_text and 'dx' in function_text):
+                try:
+                    # Parse with Microsoft Math Engine to get clean expression
+                    parsed_expr = self.math_engine.parse_natural_math(function_text)
+                    
+                    # Integrate the expression
+                    variable = self.symbols['x'].get()
+                    var_symbol = sp.Symbol(variable)
+                    expr = sp.sympify(parsed_expr)
+                    
+                    # Remove integral notation if exists
+                    expr_str = str(expr).replace('integrate', '').replace('∫', '').replace('dx', '').strip()
+                    expr_clean = sp.sympify(expr_str)
+                    
+                    # Integrate
+                    result = sp.integrate(expr_clean, var_symbol)
+                    parsed_func = result
+                    display_text = f"∫({expr_clean})dx = {str(result)}"
+                    
+                except Exception as e:
+                    logger.error(f"Error integrating for plot: {e}")
+                    messagebox.showerror("Error", f"No se pudo integrar la expresión:\n{str(e)}")
+                    return
+            else:
+                # Regular function parsing
+                try:
+                    parsed_func = self.parser.parse(function_text)
+                    display_text = function_text
+                except Exception as parse_err:
+                    messagebox.showerror("Error de Parsing", f"No se pudo parsear la función:\n{str(parse_err)}")
+                    logger.error(f"Parse error in plot_function: {parse_err}")
+                    return
+            
+            variable = self.symbols['x'].get()
+            var_symbol = sp.Symbol(variable)
+            
+            # Get range
+            try:
+                x_min = float(self.x_min_entry.get())
+                x_max = float(self.x_max_entry.get())
+            except:
+                x_min, x_max = -10, 10
+            
+            # Generate data
+            x = np.linspace(x_min, x_max, 1000)
+            
+            # Convert to numpy function
+            f = sp.lambdify(var_symbol, parsed_func, 'numpy')
+            y = f(x)
+            
+            # Handle potential infinities
+            mask = np.isfinite(y)
+            if not np.any(mask):
+                messagebox.showerror("Error", "La función no tiene valores finitos en el rango especificado")
+                return
+            
+            x_clean = x[mask]
+            y_clean = y[mask]
+            
+            # Clear and plot
+            self.ax.clear()
+            
+            # Get next color for multiple functions
+            color_index = len(self.graph_functions) % len(self.graph_colors)
+            color = self.graph_colors[color_index]
+            
+            # Plot function
+            self.ax.plot(x_clean, y_clean, color=color, linewidth=2.5, 
+                        label=f'f({variable}) = {display_text}')
+            
+            # Add to graph functions list
+            self.graph_functions.append((display_text, color))
+            
+            # Set styling
+            if self.show_grid.get():
+                self.ax.grid(True, alpha=0.3, color='#bdc3c7')
+            
+            self.ax.set_xlabel(variable, fontsize=12, color='#2c3e50')
+            self.ax.set_ylabel(f'f({variable})', fontsize=12, color='#2c3e50')
+            self.ax.set_title(f'Gráfica: {display_text}', fontsize=14, fontweight='bold', color='#2c3e50')
+            
+            # Add legend if enabled
+            if self.show_legend.get() and len(self.graph_functions) > 0:
+                self.ax.legend(loc='upper right', frameon=True, fancybox=True, shadow=True)
+            
+            # Modern styling
+            self.ax.spines['top'].set_visible(False)
+            self.ax.spines['right'].set_visible(False)
+            self.ax.spines['left'].set_color('#2c3e50')
+            self.ax.spines['bottom'].set_color('#2c3e50')
+            
+            # Add zero lines
+            self.ax.axhline(y=0, color='#2c3e50', linewidth=0.8, alpha=0.5)
+            self.ax.axvline(x=0, color='#2c3e50', linewidth=0.8, alpha=0.5)
+            
+            # Highlight area for definite integrals
+            if self.definite_var.get():
+                try:
+                    lower = float(self.lower_limit.get())
+                    upper = float(self.upper_limit.get())
+                    
+                    if lower >= x_min and upper <= x_max:
+                        # Shade area under curve
+                        x_fill = np.linspace(lower, upper, 100)
+                        y_fill = f(x_fill)
+                        
+                        # Handle infinities in fill area
+                        mask_fill = np.isfinite(y_fill)
+                        if np.any(mask_fill):
+                            self.ax.fill_between(x_fill[mask_fill], 0, y_fill[mask_fill], 
+                                              alpha=0.3, color=color)
+                        
+                except:
+                    pass
+            
+            self.canvas.draw()
+            self.update_status("Gráfica actualizada", '#27ae60')
+            
+        except Exception as e:
+            logger.error(f"Error plotting function: {str(e)}")
+            messagebox.showerror("Error", f"No se pudo graficar la función: {str(e)}")
+                
             variable = self.symbols['x'].get()
             var_symbol = sp.Symbol(variable)
             

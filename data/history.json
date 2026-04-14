@@ -70,5 +70,71 @@
     "type": "Automático",
     "date": "2026-04-13 22:04:47",
     "timestamp": 1776135887.132939
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-13 23:38:42",
+    "timestamp": 1776141522.72551
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-13 23:41:48",
+    "timestamp": 1776141708.220504
+  },
+  {
+    "function": "∫ (5x⁴ - 2x² + x) dx",
+    "type": "Automático",
+    "date": "2026-04-13 23:42:38",
+    "timestamp": 1776141758.981809
+  },
+  {
+    "function": "∫ (5x⁴ - 2x² + x) dx",
+    "type": "Automático",
+    "date": "2026-04-13 23:42:58",
+    "timestamp": 1776141778.676134
+  },
+  {
+    "function": "∫ (5x⁴ - 2x² + x) dx",
+    "type": "Automático",
+    "date": "2026-04-13 23:43:14",
+    "timestamp": 1776141794.886978
+  },
+  {
+    "function": "∫ (5x⁴ - 2x² + x) dx",
+    "type": "Automático",
+    "date": "2026-04-13 23:46:26",
+    "timestamp": 1776141986.514585
+  },
+  {
+    "function": "∫ (5x⁴ - 2x² + x) dx",
+    "type": "Automático",
+    "date": "2026-04-13 23:46:40",
+    "timestamp": 1776142000.471113
+  },
+  {
+    "function": "∫ (√x) dx",
+    "type": "Automático",
+    "date": "2026-04-13 23:46:58",
+    "timestamp": 1776142018.647124
+  },
+  {
+    "function": "∫ (√x) dx",
+    "type": "Automático",
+    "date": "2026-04-13 23:47:28",
+    "timestamp": 1776142048.24691
+  },
+  {
+    "function": "∫ (2x)(x² + 1) dx",
+    "type": "Automático",
+    "date": "2026-04-13 23:47:55",
+    "timestamp": 1776142075.383262
+  },
+  {
+    "function": "∫ (x² + 1)/(x) dx",
+    "type": "Automático",
+    "date": "2026-04-13 23:48:14",
+    "timestamp": 1776142094.920257
   }
 ]

@@ -1163,3 +1163,332 @@ INFO:core.microsoft_math_engine:Parsing natural math: )
 ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ''' failed, because of exception being raised:
 SyntaxError: invalid syntax (<string>, line 0)
 INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2 + 3*x + 2 dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/3 + 3*x**2/2 + 2*x', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+ERROR:__main__:Fatal error: invalid syntax (professional_main_window.py, line 3170)
+ERROR:__main__:Full traceback:
+ERROR:__main__:Traceback (most recent call last):
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\main.py", line 107, in main
+    from ui.professional_main_window import ProfessionalIntegralCalculator
+  File "c:\Users\Wilder\OneDrive\Documentos\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 3170
+    tion_text.lower() or 'd' in function_text and 'dx' in function_text:
+                                                                       ^
+SyntaxError: invalid syntax
+
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2 + 3*x + 2 dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/3 + 3*x**2/2 + 2*x', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.integrator:Integrating: x**2/2 + x*(-2*x2 + 5*x4) with method: auto
+INFO:core.integrator:Integration successful: x**2*(x - 6*x2 + 15*x4)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2/2 + x*(-2*x2 + 5*x4) dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/6 + x**2*(-x2 + 5*x4/2)', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.integrator:Integrating: x**2/2 + x*(-2*x2 + 5*x4) with method: auto
+INFO:core.integrator:Integration successful: x**2*(x - 6*x2 + 15*x4)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2/2 + x*(-2*x2 + 5*x4) dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/6 + x**2*(-x2 + 5*x4/2)', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.integrator:Integrating: x**2/2 + x*(-2*x2 + 5*x4) with method: auto
+INFO:core.integrator:Integration successful: x**2*(x - 6*x2 + 15*x4)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2/2 + x*(-2*x2 + 5*x4) dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/6 + x**2*(-x2 + 5*x4/2)', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.3333333333333333
+INFO:ui.professional_main_window:Font scaling: 1.00x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1920x1080 -> Window: 1800x1012
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: )x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: )x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Parsing natural math: )x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: )x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Parsing natural math: ))x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: ))x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Parsing natural math: ))
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:core.microsoft_math_engine:Parsing natural math: )
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:core.microsoft_math_engine:Parsing natural math: ))
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:core.microsoft_math_engine:Parsing natural math: )))
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:__main__:Application closed normally
+INFO:core.microsoft_math_engine:Parsing natural math: ))))
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse ''' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 0)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.integrator:Integrating: x**2/2 + x*(-2*x2 + 5*x4) with method: auto
+INFO:core.integrator:Integration successful: x**2*(x - 6*x2 + 15*x4)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2/2 + x*(-2*x2 + 5*x4) dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/6 + x**2*(-x2 + 5*x4/2)', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+ERROR:ui.professional_main_window:Error plotting function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+ERROR:ui.professional_main_window:Error displaying calculation result: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+INFO:core.integrator:Integrating: x**2/2 + x*(-2*x2 + 5*x4) with method: auto
+INFO:core.integrator:Integration successful: x**2*(x - 6*x2 + 15*x4)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2/2 + x*(-2*x2 + 5*x4) dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3/6 + x**2*(-x2 + 5*x4/2)', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> x**2/2 + x*(-2*x2 + 5*x4)
+ERROR:ui.professional_main_window:Error plotting function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+ERROR:ui.professional_main_window:Error displaying calculation result: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (√x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (√x) dx -> x*√x
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (√x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (√x) dx -> x*√x
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (√x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (√x) dx -> x*√x
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (√x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (√x) dx -> x*√x
+INFO:core.integrator:Integrating: x*√x with method: auto
+INFO:core.integrator:Integration successful: x**2*√x/2
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x*√x dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**2*√x/2', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (√x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (√x) dx -> x*√x
+ERROR:ui.professional_main_window:Error plotting function: invalid character '√' (U+221A) (<lambdifygenerated-5>, line 2)
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+ERROR:ui.professional_main_window:Error displaying calculation result: invalid character '√' (U+221A) (<lambdifygenerated-6>, line 2)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (√x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (√x) dx -> x*√x
+INFO:core.integrator:Integrating: x*√x with method: auto
+INFO:core.integrator:Integration successful: x**2*√x/2
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x*√x dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**2*√x/2', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (√x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (√x) dx -> x*√x
+ERROR:ui.professional_main_window:Error plotting function: invalid character '√' (U+221A) (<lambdifygenerated-7>, line 2)
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+ERROR:ui.professional_main_window:Error displaying calculation result: invalid character '√' (U+221A) (<lambdifygenerated-8>, line 2)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (√x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (√x) dx -> x*√x
+ERROR:ui.professional_main_window:Error plotting function: invalid character '√' (U+221A) (<lambdifygenerated-9>, line 2)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (√x) dx)
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '∫ (√x) d*x)'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (√x) dx)))
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse '∫ (√x) d*x)))'' failed, because of exception being raised:
+SyntaxError: unmatched ')' (<string>, line 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (2x)(x² + 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (2x)(x² + 1) dx -> x**2*(x2 + 1)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (2x)(x² + 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (2x)(x² + 1) dx -> x**2*(x2 + 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x)(x² + 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x)(x² + 1) dx -> x**2*(x2 + 1)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x)(x² + 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x)(x² + 1) dx -> x**2*(x2 + 1)
+INFO:core.integrator:Integrating: x**2*(x2 + 1) with method: auto
+INFO:core.integrator:Integration successful: x**3*(x2 + 1)/3
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫x**2*(x2 + 1) dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x**3*(x2/3 + 1/3)', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x)(x² + 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x)(x² + 1) dx -> x**2*(x2 + 1)
+ERROR:ui.professional_main_window:Error plotting function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+ERROR:ui.professional_main_window:Error displaying calculation result: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (x² + 1)/(x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (x² + 1)/(x) dx -> (x2 + 1)*log(x)
+INFO:core.microsoft_math_engine:Parsing natural math: )∫ (x² + 1)/(x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫ (x² + 1)/(x) dx -> (x2 + 1)*log(x)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (x² + 1)/(x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (x² + 1)/(x) dx -> (x2 + 1)*log(x)
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (x² + 1)/(x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (x² + 1)/(x) dx -> (x2 + 1)*log(x)
+INFO:core.integrator:Integrating: (x2 + 1)*log(x) with method: auto
+INFO:core.integrator:Integration successful: x*(x2 + 1)*(log(x) - 1)
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'expression': '∫(x2 + 1)*log(x) dx', 'method': 'auto', 'explanation': 'Función a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: 
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'method', 'title': 'Método de Integración', 'expression': 'Integración Directa', 'method': 'auto', 'explanation': 'Se aplicó integración directa usando SymPy'}
+INFO:ui.professional_main_window:Step 2 latex_content: 
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'result', 'title': 'Resultado', 'expression': 'x*(-x2 - 1) + (x*x2 + x)*log(x)', 'method': 'auto', 'explanation': 'Resultado de la integración'}
+INFO:ui.professional_main_window:Step 3 latex_content: 
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (x² + 1)/(x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (x² + 1)/(x) dx -> (x2 + 1)*log(x)
+ERROR:ui.professional_main_window:Error plotting function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+ERROR:ui.professional_main_window:Error displaying calculation result: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:__main__:Application closed normally
