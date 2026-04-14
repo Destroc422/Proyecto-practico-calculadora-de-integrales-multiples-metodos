@@ -75,6 +75,10 @@ class ProfessionalLaTeXRenderer:
             # Remove axes for clean display
             ax.set_axis_off()
             
+            # Clean expression string first to prevent parsing errors
+            if isinstance(expression, str):
+                expression = self._clean_latex_string(expression)
+            
             # Convert expression to professional display format
             display_text = self._convert_to_professional_format(expression, title)
             
@@ -644,6 +648,14 @@ class ProfessionalLaTeXRenderer:
             result = re.sub(r'([a-zA-Z])_([0-9]+)', r'\1_{\2}', result)
             result = re.sub(r'([a-zA-Z])_({[^}]+})', r'\1_\2', result)
             
+            # Fix malformed brackets that cause parsing errors
+            result = result.replace('ight]', 'right]')
+            result = result.replace('left[', 'left[')
+            result = result.replace('\u00ADight]', 'right]')
+            result = result.replace('\u00AD', '')
+            result = result.replace('\x0D', '')
+            result = result.replace('\r', '')
+            
             # Clean up extra spaces
             result = re.sub(r'\s+', ' ', result)
             result = result.strip()
@@ -652,6 +664,43 @@ class ProfessionalLaTeXRenderer:
             
         except Exception as e:
             logger.error(f"Error cleaning LaTeX for academic format: {str(e)}")
+            return latex_str
+    
+    def _clean_latex_string(self, latex_str: str) -> str:
+        """
+        Clean LaTeX string to prevent parsing errors
+        
+        Args:
+            latex_str: LaTeX string
+            
+        Returns:
+            Cleaned LaTeX string
+        """
+        try:
+            # Remove problematic characters that cause parsing errors
+            result = latex_str
+            
+            # Fix malformed brackets
+            result = result.replace('ight]', 'right]')
+            result = result.replace('left[', 'left[')
+            
+            # Remove control characters
+            result = result.replace('\u00AD', '')
+            result = result.replace('\x0D', '')
+            result = result.replace('\r', '')
+            result = result.replace('\n', ' ')
+            
+            # Remove any remaining non-printable characters
+            result = ''.join(char for char in result if char.isprintable() or char.isspace())
+            
+            # Clean up extra spaces
+            result = re.sub(r'\s+', ' ', result)
+            result = result.strip()
+            
+            return result
+            
+        except Exception as e:
+            logger.error(f"Error cleaning LaTeX string: {str(e)}")
             return latex_str
     
     def _clean_latex_for_text_display(self, latex_str: str) -> str:

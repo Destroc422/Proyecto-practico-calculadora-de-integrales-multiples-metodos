@@ -10,6 +10,10 @@ from typing import Tuple, Optional, List
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.widgets import Slider, Button
 
+# Import domain validator and error handler
+from utils.domain_validator import domain_validator
+from utils.error_handler import error_handler
+
 # Configure matplotlib for professional plotting
 matplotlib.rcParams.update({
     'font.size': 12,
@@ -67,22 +71,78 @@ class ProfessionalPlotter:
             matplotlib Figure
         """
         try:
+            # Validate function domain before plotting
+            domain_validation = domain_validator.validate_function_domain(func, var, (a, b))
+            
+            # Log validation results
+            if domain_validation['warnings']:
+                for warning in domain_validation['warnings']:
+                    logger.warning(f"Domain validation warning: {warning}")
+            if domain_validation['errors']:
+                for error in domain_validation['errors']:
+                    logger.error(f"Domain validation error: {error}")
+            
+            # Use safe ranges if available
+            safe_ranges = domain_validation['safe_ranges']
+            if len(safe_ranges) > 1 or not domain_validation['valid']:
+                logger.info(f"Using {len(safe_ranges)} safe ranges for plotting")
+            
             # Create figure with better proportions
             fig, ax = plt.subplots(figsize=(12, 8))
             fig.patch.set_facecolor(self.colors['background'])
             ax.set_facecolor(self.colors['background'])
             
-            # Generate points
-            x = np.linspace(a, b, 1000)
+            # Generate points using safe ranges (simplified approach)
+            if len(safe_ranges) == 1 and domain_validation['valid']:
+                current_range = safe_ranges[0]
+            else:
+                # Use the largest safe range
+                current_range = max(safe_ranges, key=lambda r: r[1] - r[0])
+                logger.info(f"Using range {current_range} for plotting")
             
-            # Convert to numpy function
-            f = sp.lambdify(var, func, 'numpy')
+            # Generate points with standard resolution
+            x = np.linspace(current_range[0], current_range[1], 1000)
+            logger.info(f"Using standard resolution: 1000 points")
             
             try:
+                # Convert to numpy function and evaluate
+                f = sp.lambdify(var, func, 'numpy')
                 y = f(x)
                 
+                # Enhanced validation for ufunc 'isfinite' error
+                if y is None:
+                    raise ValueError("Function returned None")
+                
+                # Convert to numpy array if needed
+                if not isinstance(y, np.ndarray):
+                    try:
+                        y = np.array(y, dtype=float)
+                    except (ValueError, TypeError) as e:
+                        raise ValueError(f"Cannot convert function output to numeric array: {str(e)}")
+                
+                # Check for object dtype which causes ufunc errors
+                if y.dtype == object:
+                    try:
+                        # Try to convert to float
+                        y = y.astype(float)
+                    except (ValueError, TypeError):
+                        # Filter out non-numeric elements
+                        numeric_mask = np.array([isinstance(val, (int, float, np.number)) and not isinstance(val, bool) for val in y])
+                        if not np.any(numeric_mask):
+                            raise ValueError("No numeric values in function output")
+                        y = np.array([y[i] for i in range(len(y)) if numeric_mask[i]], dtype=float)
+                        x = x[numeric_mask]
+                
                 # Handle potential infinities or NaNs
-                mask = np.isfinite(y)
+                try:
+                    mask = np.isfinite(y)
+                except (TypeError, ValueError) as e:
+                    # Fallback: manual check for finite values
+                    mask = np.array([isinstance(val, (int, float, np.number)) and 
+                                   not isinstance(val, bool) and 
+                                   np.isfinite(val) if isinstance(val, np.number) else True 
+                                   for val in y])
+                
                 if not np.any(mask):
                     raise ValueError("No finite values to plot")
                 
@@ -134,10 +194,106 @@ class ProfessionalPlotter:
                 
             except Exception as e:
                 logger.error(f"Error plotting function: {str(e)}")
-                # Create error plot
-                ax.text(0.5, 0.5, f'Error al graficar: {str(e)}', 
+                
+                # Use intelligent error handler
+                error_info = error_handler.handle_plotting_error(e, func, var, (a, b), {
+                    'method': 'plot_interactive',
+                    'original_range': (a, b),
+                    'show_area': show_area
+                })
+                
+                # Try recovery if possible
+                if error_info['can_recover']:
+                    logger.info("Attempting automatic recovery...")
+                    
+                    # Apply recovery strategies
+                    for attempt in error_info['recovery_attempts']:
+                        strategy, value = attempt
+                        logger.info(f"Trying recovery strategy: {strategy}")
+                        
+                        if strategy == 'reduce_range':
+                            new_a, new_b = value
+                            x = np.linspace(new_a, new_b, error_info['recovered_resolution'])
+                        elif strategy == 'lower_resolution':
+                            x = np.linspace(a, b, value)
+                        else:
+                            x = np.linspace(a, b, error_info['recovered_resolution'])
+                        
+                        try:
+                            f = sp.lambdify(var, func, 'numpy')
+                            y = f(x)
+                            
+                            # Enhanced validation
+                            if y is None:
+                                continue
+                            
+                            if not isinstance(y, np.ndarray):
+                                try:
+                                    y = np.array(y, dtype=float)
+                                except (ValueError, TypeError):
+                                    continue
+                            
+                            if y.dtype == object:
+                                try:
+                                    y = y.astype(float)
+                                except (ValueError, TypeError):
+                                    numeric_mask = np.array([isinstance(val, (int, float, np.number)) and not isinstance(val, bool) for val in y])
+                                    if not np.any(numeric_mask):
+                                        continue
+                                    y = np.array([y[i] for i in range(len(y)) if numeric_mask[i]], dtype=float)
+                                    x = x[numeric_mask]
+                            
+                            try:
+                                mask = np.isfinite(y)
+                            except (TypeError, ValueError):
+                                mask = np.array([isinstance(val, (int, float, np.number)) and 
+                                               not isinstance(val, bool) and 
+                                               np.isfinite(val) if isinstance(val, np.number) else True 
+                                               for val in y])
+                            
+                            if np.any(mask):
+                                x_clean = x[mask]
+                                y_clean = y[mask]
+                                
+                                # Plot recovered function
+                                ax.plot(x_clean, y_clean, color=self.colors['function'], 
+                                       linewidth=2.5, label=f'f({var.name}) = {func} (recovered)', 
+                                       zorder=3)
+                                
+                                # Add recovery notice
+                                ax.text(0.02, 0.98, f'Recuperado automáticamente: {len(error_info["recovery_attempts"])} intentos', 
+                                       transform=ax.transAxes, va='top', fontsize=10, 
+                                       color='green', bbox=dict(boxstyle='round', facecolor='lightgreen', alpha=0.8))
+                                
+                                # Complete plot setup
+                                ax.grid(True, alpha=0.3, color=self.colors['grid'], linestyle='-', linewidth=0.5)
+                                ax.set_xlabel(f'{var.name}', fontsize=12, color=self.colors['text'])
+                                ax.set_ylabel('f({})'.format(var.name), fontsize=12, color=self.colors['text'])
+                                ax.set_title(f'Gráfica de {func} (Recuperada)', fontsize=14, color=self.colors['text'], pad=20)
+                                ax.set_xlim(x_clean[0], x_clean[-1])
+                                
+                                y_min, y_max = np.min(y_clean), np.max(y_clean)
+                                y_range = y_max - y_min
+                                if y_range > 0:
+                                    ax.set_ylim(y_min - 0.1*y_range, y_max + 0.1*y_range)
+                                
+                                ax.legend(loc='best', framealpha=0.9, fontsize=10)
+                                ax.axhline(y=0, color='black', linewidth=0.5, alpha=0.5)
+                                ax.axvline(x=0, color='black', linewidth=0.5, alpha=0.5)
+                                
+                                plt.tight_layout()
+                                logger.info("Automatic recovery successful!")
+                                return fig
+                                
+                        except Exception as recovery_error:
+                            logger.warning(f"Recovery attempt failed: {str(recovery_error)}")
+                            continue
+                
+                # If all recovery attempts failed, show detailed error message
+                user_message = error_handler.create_user_friendly_message(error_info)
+                ax.text(0.5, 0.5, user_message, 
                        transform=ax.transAxes, ha='center', va='center', 
-                       fontsize=12, color='red')
+                       fontsize=10, color='red', bbox=dict(boxstyle='round', facecolor='lightyellow', alpha=0.9))
                 return fig
                 
         except Exception as e:
@@ -181,8 +337,40 @@ class ProfessionalPlotter:
             try:
                 y = f(x)
                 
+                # Enhanced validation for ufunc 'isfinite' error
+                if y is None:
+                    raise ValueError("Function returned None")
+                
+                # Convert to numpy array if needed
+                if not isinstance(y, np.ndarray):
+                    try:
+                        y = np.array(y, dtype=float)
+                    except (ValueError, TypeError) as e:
+                        raise ValueError(f"Cannot convert function output to numeric array: {str(e)}")
+                
+                # Check for object dtype which causes ufunc errors
+                if y.dtype == object:
+                    try:
+                        # Try to convert to float
+                        y = y.astype(float)
+                    except (ValueError, TypeError):
+                        # Filter out non-numeric elements
+                        numeric_mask = np.array([isinstance(val, (int, float, np.number)) and not isinstance(val, bool) for val in y])
+                        if not np.any(numeric_mask):
+                            raise ValueError("No numeric values in function output")
+                        y = np.array([y[i] for i in range(len(y)) if numeric_mask[i]], dtype=float)
+                        x = x[numeric_mask]
+                
                 # Handle potential infinities or NaNs
-                mask = np.isfinite(y)
+                try:
+                    mask = np.isfinite(y)
+                except (TypeError, ValueError) as e:
+                    # Fallback: manual check for finite values
+                    mask = np.array([isinstance(val, (int, float, np.number)) and 
+                                   not isinstance(val, bool) and 
+                                   np.isfinite(val) if isinstance(val, np.number) else True 
+                                   for val in y])
+                
                 if not np.any(mask):
                     raise ValueError("No finite values to plot")
                 

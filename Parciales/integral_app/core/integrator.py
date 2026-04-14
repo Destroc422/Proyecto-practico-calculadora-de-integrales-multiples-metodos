@@ -73,7 +73,7 @@ class ProfessionalIntegrator:
             IntegrationMethod.EXPONENTIAL: self._exponential_integration
         }
         
-    def integrate(self, func: sp.Expr, var: sp.Symbol, 
+    def integrate(self, func: Union[str, sp.Expr], var: Union[str, sp.Symbol], 
                   method: Union[str, IntegrationMethod] = IntegrationMethod.AUTO,
                   limits: Optional[Tuple[sp.Expr, sp.Expr]] = None) -> IntegrationResult:
         """
@@ -89,6 +89,12 @@ class ProfessionalIntegrator:
             IntegrationResult with result and steps
         """
         try:
+            # Convert strings to SymPy expressions
+            if isinstance(func, str):
+                func = sp.sympify(func)
+            if isinstance(var, str):
+                var = sp.symbols(var)
+                
             # Convert method to enum
             if isinstance(method, str):
                 method = IntegrationMethod(method.lower())
@@ -164,9 +170,9 @@ class ProfessionalIntegrator:
         
         # Step 1: Original integral
         if limits:
-            integral_latex = f'\\int_{{{sp.latex(limits[0])}}}^{{{sp.latex(limits[1])}}} {sp.latex(func)} \\, d{var}'
+            integral_latex = '\int_{' + sp.latex(limits[0]) + '}^{' + sp.latex(limits[1]) + '} ' + sp.latex(func) + ' \, d' + str(var)
         else:
-            integral_latex = f'\\int {sp.latex(func)} \\, d{var}'
+            integral_latex = '\int ' + sp.latex(func) + ' \, d' + str(var)
         
         steps.append({
             'type': 'original',
@@ -196,7 +202,7 @@ class ProfessionalIntegrator:
             steps.append({
                 'type': 'result',
                 'title': 'Resultado de la Integral Definida',
-                'latex': f'F({var})|_{{{sp.latex(lower)}}}^{{{sp.latex(upper)}}} = {result_latex}',
+                'latex': 'F(' + str(var) + ')|_{' + sp.latex(lower) + '}^{' + sp.latex(upper) + '} = ' + result_latex,
                 'explanation': 'Aplicamos límites de integración'
             })
         else:
@@ -206,7 +212,7 @@ class ProfessionalIntegrator:
             steps.append({
                 'type': 'result',
                 'title': 'Resultado de la Integral Indefinida',
-                'latex': f'{result_latex} + C',
+                'latex': result_latex + ' + C',
                 'explanation': 'Suma de la constante de integración C'
             })
         
@@ -221,11 +227,11 @@ class ProfessionalIntegrator:
         if func.is_Add:
             func_type = 'Suma de términos'
             terms = func.as_ordered_terms()
-            latex_terms = [f'{sp.latex(term)}' for term in terms]
+            latex_terms = [sp.latex(term) for term in terms]
             steps.append({
                 'type': 'analysis',
                 'title': 'Paso 1: Identificar estructura',
-                'latex': f'\\text{{Función: }} {"+".join(latex_terms)}',
+                'latex': '\text{Función: } ' + ' + '.join(latex_terms),
                 'explanation': f'La función es una suma con {len(terms)} término(s)'
             })
         elif func.is_Mul:
@@ -233,7 +239,7 @@ class ProfessionalIntegrator:
             steps.append({
                 'type': 'analysis',
                 'title': 'Paso 1: Identificar estructura',
-                'latex': f'{sp.latex(func)}',
+                'latex': sp.latex(func),
                 'explanation': 'La función es un producto de factores'
             })
         elif func.is_Pow:
@@ -243,14 +249,14 @@ class ProfessionalIntegrator:
             steps.append({
                 'type': 'analysis',
                 'title': 'Paso 1: Identificar estructura',
-                'latex': f'{sp.latex(func)} = {sp.latex(base)}^{{{sp.latex(exp)}}}',
+                'latex': sp.latex(func) + ' = ' + sp.latex(base) + '^{' + sp.latex(exp) + '}',
                 'explanation': 'La función es una potencia'
             })
         else:
             steps.append({
                 'type': 'analysis',
                 'title': 'Paso 1: Identificar estructura',
-                'latex': f'{sp.latex(func)}',
+                'latex': sp.latex(func),
                 'explanation': 'Función elemental'
             })
         
@@ -265,7 +271,7 @@ class ProfessionalIntegrator:
             steps.append({
                 'type': 'decomposition',
                 'title': 'Paso 2: Aplicar linealidad de la integral',
-                'latex': f'\\int \\left[{" + ".join([sp.latex(t) for t in terms])}\\right] d{var} = {" + ".join([f"\\int {sp.latex(t)} d{var}" for t in terms])}',
+                'latex': '\int \left[' + " + ".join([sp.latex(t) for t in terms]) + '\right] d' + str(var) + ' = ' + " + ".join(['\int ' + sp.latex(t) + ' d' + str(var) for t in terms]),
                 'explanation': 'La integral de una suma es la suma de integrales'
             })
             
@@ -276,7 +282,7 @@ class ProfessionalIntegrator:
                     steps.append({
                         'type': 'term_integration',
                         'title': f'Paso 2.{i}: Integrar término {i}',
-                        'latex': f'\\int {sp.latex(term)} \\, d{var} = {sp.latex(int_term)}',
+                        'latex': '\int ' + sp.latex(term) + ' \, d' + str(var) + ' = ' + sp.latex(int_term),
                         'explanation': self._get_rule_explanation(term, var)
                     })
         
@@ -288,7 +294,7 @@ class ProfessionalIntegrator:
         steps.append({
             'type': 'analysis',
             'title': 'Paso 2: Analizar factores',
-            'latex': f'{sp.latex(func)}',
+            'latex': sp.latex(func),
             'explanation': 'Verificamos si se puede simplificar o factorizar el producto'
         })
         return steps
@@ -318,7 +324,7 @@ class ProfessionalIntegrator:
             n = func.exp
             return {
                 'name': 'Power Rule',
-                'formula': f'\\int {sp.latex(var)}^{{{sp.latex(n)}}} d{var} = \\frac{{{sp.latex(var)}^{{{sp.latex(n+1)}}}}}{{{sp.latex(n+1)}}}',
+                'formula': '\int ' + sp.latex(var) + '^{' + sp.latex(n) + '} d' + str(var) + ' = \frac{' + sp.latex(var) + '^{' + sp.latex(n+1) + '}}{' + sp.latex(n+1) + '}',
                 'description': f'Regla de potencia: ∫x^n dx = x^(n+1)/(n+1)'
             }
         
@@ -326,7 +332,7 @@ class ProfessionalIntegrator:
         if func.has(sp.exp):
             return {
                 'name': 'Exponential Rule',
-                'formula': f'\\int e^{{{sp.latex(var)}}} d{var} = e^{{{sp.latex(var)}}}',
+                'formula': '\int e^{' + sp.latex(var) + '} d' + str(var) + ' = e^{' + sp.latex(var) + '}',
                 'description': 'Regla exponencial: ∫e^x dx = e^x'
             }
         
@@ -334,13 +340,13 @@ class ProfessionalIntegrator:
         if func.has(sp.sin):
             return {
                 'name': 'Sine Rule',
-                'formula': f'\\int \\sin({sp.latex(var)}) d{var} = -\\cos({sp.latex(var)})',
+                'formula': '\int \sin(' + sp.latex(var) + ') d' + str(var) + ' = -\cos(' + sp.latex(var) + ')',
                 'description': 'Integración de seno'
             }
         if func.has(sp.cos):
             return {
                 'name': 'Cosine Rule',
-                'formula': f'\\int \\cos({sp.latex(var)}) d{var} = \\sin({sp.latex(var)})',
+                'formula': '\int \cos(' + sp.latex(var) + ') d' + str(var) + ' = \sin(' + sp.latex(var) + ')',
                 'description': 'Integración de coseno'
             }
         
@@ -348,7 +354,7 @@ class ProfessionalIntegrator:
         if func == 1/var:
             return {
                 'name': 'Logarithmic Rule',
-                'formula': f'\\int \\frac{{1}}{{{sp.latex(var)}}} d{var} = \\ln|{sp.latex(var)}|',
+                'formula': '\int \frac{1}{' + sp.latex(var) + '} d' + str(var) + ' = \ln|' + sp.latex(var) + '|',
                 'description': 'Regla logarítmica: ∫(1/x) dx = ln|x|'
             }
         
@@ -373,7 +379,7 @@ class ProfessionalIntegrator:
         else:
             return 'Aplicar reglas de integración'
     
-    def _direct_integration(self, func: sp.Expr, var: sp.Symbol,
+    def _analyze_function_structure_for_method(self, func: sp.Expr, var: sp.Symbol):
         """Analyze function structure for method selection"""
         analysis = {
             'has_powers': False,

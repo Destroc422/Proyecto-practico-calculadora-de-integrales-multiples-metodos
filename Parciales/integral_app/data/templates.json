@@ -1,0 +1,213 @@
+[
+  {
+    "name": "Polinomio cuadrático",
+    "expression": "x**2 + 3*x + 2",
+    "category": "Polinomiales",
+    "description": "Función polinomial de grado 2",
+    "difficulty": "beginner",
+    "tags": [
+      "polinomio",
+      "cuadrático",
+      "básico"
+    ],
+    "latex_form": "x^{2} + 3x + 2",
+    "created_date": "2026-04-14T00:03:56.763294",
+    "usage_count": 0
+  },
+  {
+    "name": "Polinomio cúbico",
+    "expression": "x**3 + 2*x**2 + x + 1",
+    "category": "Polinomiales",
+    "description": "Función polinomial de grado 3",
+    "difficulty": "beginner",
+    "tags": [
+      "polinomio",
+      "cúbico",
+      "básico"
+    ],
+    "latex_form": "x^{3} + 2x^{2} + x + 1",
+    "created_date": "2026-04-14T00:03:56.764812",
+    "usage_count": 0
+  },
+  {
+    "name": "Seno básico",
+    "expression": "sin(x)",
+    "category": "Trigonométricas",
+    "description": "Función seno básica",
+    "difficulty": "beginner",
+    "tags": [
+      "trigonométrica",
+      "seno",
+      "básico"
+    ],
+    "latex_form": "\\sin(x)",
+    "created_date": "2026-04-14T00:03:56.766333",
+    "usage_count": 0
+  },
+  {
+    "name": "Coseno básico",
+    "expression": "cos(x)",
+    "category": "Trigonométricas",
+    "description": "Función coseno básica",
+    "difficulty": "beginner",
+    "tags": [
+      "trigonométrica",
+      "coseno",
+      "básico"
+    ],
+    "latex_form": "\\cos(x)",
+    "created_date": "2026-04-14T00:03:56.766333",
+    "usage_count": 0
+  },
+  {
+    "name": "Seno + Coseno",
+    "expression": "sin(x) + cos(x)",
+    "category": "Trigonométricas",
+    "description": "Combinación de funciones trigonométricas",
+    "difficulty": "intermediate",
+    "tags": [
+      "trigonométrica",
+      "seno",
+      "coseno",
+      "combinación"
+    ],
+    "latex_form": "\\sin(x) + \\cos(x)",
+    "created_date": "2026-04-14T00:03:56.769657",
+    "usage_count": 0
+  },
+  {
+    "name": "Exponencial básica",
+    "expression": "exp(x)",
+    "category": "Exponenciales",
+    "description": "Función exponencial natural",
+    "difficulty": "beginner",
+    "tags": [
+      "exponencial",
+      "euler",
+      "básico"
+    ],
+    "latex_form": "e^{x}",
+    "created_date": "2026-04-14T00:03:56.770863",
+    "usage_count": 0
+  },
+  {
+    "name": "Logaritmo natural",
+    "expression": "log(x)",
+    "category": "Logarítmicas",
+    "description": "Logaritmo natural (base e)",
+    "difficulty": "beginner",
+    "tags": [
+      "logaritmo",
+      "natural",
+      "básico"
+    ],
+    "latex_form": "\\ln(x)",
+    "created_date": "2026-04-14T00:03:56.771375",
+    "usage_count": 0
+  },
+  {
+    "name": "Exponencial compleja",
+    "expression": "exp(-x**2)",
+    "category": "Exponenciales",
+    "description": "Función exponencial con argumento cuadrático",
+    "difficulty": "intermediate",
+    "tags": [
+      "exponencial",
+      "gaussiana",
+      "avanzado"
+    ],
+    "latex_form": "e^{-x^{2}}",
+    "created_date": "2026-04-14T00:03:56.773436",
+    "usage_count": 0
+  },
+  {
+    "name": "Fracción simple",
+    "expression": "1/(x + 1)",
+    "category": "Racionales",
+    "description": "Fracción racional simple",
+    "difficulty": "beginner",
+    "tags": [
+      "racional",
+      "fracción",
+      "básico"
+    ],
+    "latex_form": "\\frac{1}{x + 1}",
+    "created_date": "2026-04-14T00:03:56.774955",
+    "usage_count": 0
+  },
+  {
+    "name": "Fracción cuadrática",
+    "expression": "1/(x**2 + 1)",
+    "category": "Racionales",
+    "description": "Fracción con denominador cuadrático",
+    "difficulty": "intermediate",
+    "tags": [
+      "racional",
+      "cuadrático",
+      "trigonométrico"
+    ],
+    "latex_form": "\\frac{1}{x^{2} + 1}",
+    "created_date": "2026-04-14T00:03:56.774955",
+    "usage_count": 0
+  },
+  {
+    "name": "Raíz cuadrada",
+    "expression": "sqrt(x)",
+    "category": "Radicales",
+    "description": "Raíz cuadrada básica",
+    "difficulty": "beginner",
+    "tags": [
+      "raíz",
+      "cuadrada",
+      "básico"
+    ],
+    "latex_form": "\\sqrt{x}",
+    "created_date": "2026-04-14T00:03:56.775497",
+    "usage_count": 0
+  },
+  {
+    "name": "Raíz cuadrada compleja",
+    "expression": "sqrt(x**2 + 1)",
+    "category": "Radicales",
+    "description": "Raíz cuadrada de expresión cuadrática",
+    "difficulty": "intermediate",
+    "tags": [
+      "raíz",
+      "cuadrada",
+      "trigonométrico"
+    ],
+    "latex_form": "\\sqrt{x^{2} + 1}",
+    "created_date": "2026-04-14T00:03:56.780868",
+    "usage_count": 0
+  },
+  {
+    "name": "Integral definida simple",
+    "expression": "integrate(x**2, (x, 0, 1))",
+    "category": "Integrales Definidas",
+    "description": "Integral definida de polinomio cuadrático",
+    "difficulty": "intermediate",
+    "tags": [
+      "integral",
+      "definida",
+      "polinomio"
+    ],
+    "latex_form": "\\int_{0}^{1} x^{2} \\, dx",
+    "created_date": "2026-04-14T00:03:56.784036",
+    "usage_count": 0
+  },
+  {
+    "name": "Error function",
+    "expression": "erf(x)",
+    "category": "Funciones Especiales",
+    "description": "Función de error",
+    "difficulty": "advanced",
+    "tags": [
+      "error",
+      "especial",
+      "estadística"
+    ],
+    "latex_form": "\\erf(x)",
+    "created_date": "2026-04-14T00:03:56.784567",
+    "usage_count": 0
+  }
+]

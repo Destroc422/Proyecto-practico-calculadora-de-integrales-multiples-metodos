@@ -136,5 +136,47 @@
     "type": "Automático",
     "date": "2026-04-13 23:48:14",
     "timestamp": 1776142094.920257
+  },
+  {
+    "function": "∫ (x² + 1)/(x) dx",
+    "type": "Automático",
+    "date": "2026-04-14 00:15:26",
+    "timestamp": 1776143726.100629
+  },
+  {
+    "function": "∫ (x² + 1)/(x) dx",
+    "type": "Automático",
+    "date": "2026-04-14 00:20:42",
+    "timestamp": 1776144042.433548
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-14 00:28:43",
+    "timestamp": 1776144523.48348
+  },
+  {
+    "function": "))∫ (x² + 1)/(x) dx",
+    "type": "Automático",
+    "date": "2026-04-14 00:28:52",
+    "timestamp": 1776144532.566984
+  },
+  {
+    "function": "∫ (x² + 1)/(x) dx",
+    "type": "Automático",
+    "date": "2026-04-14 00:36:26",
+    "timestamp": 1776144986.593936
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-14 01:03:52",
+    "timestamp": 1776146632.751276
+  },
+  {
+    "function": "∫ (x² + 1)/(x) dx",
+    "type": "Automático",
+    "date": "2026-04-14 01:04:31",
+    "timestamp": 1776146671.408564
   }
 ]

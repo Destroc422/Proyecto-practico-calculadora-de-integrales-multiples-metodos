@@ -81,11 +81,15 @@ class MicrosoftMathEngine:
         
         # Fraction patterns
         self.fraction_patterns = [
-            r'(\d+)/(\d+)',       # Simple fraction a/b
-            r'(\d+)\s*/\s*(\d+)', # Fraction with spaces
-            r'(\d+)\s*½',         # Half
-            r'(\d+)\s*¼',         # Quarter
-            r'(\d+)\s*¾',         # Three quarters
+            r'\(([^)]+)\)/\(([^)]+)\)',  # (a+b)/(c+d)
+            r'\(([^)]+)\)/([a-zA-Z]+)',   # (a+b)/x
+            r'([a-zA-Z]+\([^)]+\))/([a-zA-Z]+)',  # f(x)/x
+            r'([^(]+)\s*/\s*([^(]+)',     # General fraction
+            r'(\d+)/(\d+)',               # Simple fraction a/b
+            r'(\d+)\s*/\s*(\d+)',         # Fraction with spaces
+            r'(\d+)\s*½',                 # Half
+            r'(\d+)\s*¼',                 # Quarter
+            r'(\d+)\s*¾',                 # Three quarters
         ]
         
         # Power patterns
@@ -104,14 +108,33 @@ class MicrosoftMathEngine:
             r'([a-zA-Z]+)(\d+)',        # log2 -> log(2)
         ]
         
-        # Integral patterns
+        # Integral patterns - SIMPLIFIED WORKING PATTERNS
         self.integral_patterns = [
-            r'int\s+([^(]+)\s*d([a-zA-Z])',                    # int x dx
-            r'integral\s+([^(]+)\s*d([a-zA-Z])',              # integral x dx
-            r'(\d+)\s+to\s+(\d+)\s+int\s+([^(]+)\s*d([a-zA-Z])', # 0 to 1 int x dx
-            r'(\d+)\s+to\s+(\d+)\s+integral\s+([^(]+)\s*d([a-zA-Z])',
-            r'∫\s*([^d]+?)\s*d\*([a-zA-Z])\s*$',               # ∫ f(x) dx (indefinite)
-            r'∫_([^{^}]+)\^([^{^}]+)\s*([^d]+?)\s*d\*([a-zA-Z])', # ∫_a^b f(x) dx (definite)
+            # Basic indefinite integrals
+            r'int\s+(.+?)\s+dx',                    # int x dx
+            r'integral\s+(.+?)\s+dx',              # integral x dx
+            r'[\u222B]\s*(.+?)\s*dx',              # Unicode integral symbol:  f(x) dx
+            
+            # Basic definite integrals  
+            r'(\d+)\s+to\s+(\d+)\s+int\s+(.+?)\s+dx', # 0 to 1 int x dx
+            r'(\d+)\s+to\s+(\d+)\s+integral\s+(.+?)\s+dx', # 0 to 1 integral x dx
+            r'[\u222B]_([^{^}]+)\^([^{^}]+)\s*(.+?)\s*dx', # Unicode definite integral: _a^b f(x) dx
+            
+            # Fraction integrals - NEW PATTERNS
+            r'int\s+\((.+?/.+?)\)\s+dx',           # int (x^2+1)/(x+1) dx
+            r'integral\s+\((.+?/.+?)\)\s+dx',     # integral (x^2+1)/(x+1) dx
+            r'[\u222B]\s*\((.+?/.+?)\)\s*dx',     # Unicode integral with fractions: (x^2+1)/(x+1) dx
+            r'(\d+)\s+to\s+(\d+)\s+int\s+\((.+?/.+?)\)\s+dx', # 0 to 1 int (x^2+1)/(x+1) dx
+            r'(\d+)\s+to\s+(\d+)\s+integral\s+\((.+?/.+?)\)\s+dx', # 0 to 1 integral (x^2+1)/(x+1) dx
+            r'[\u222B]_([^{^}]+)\^([^{^}]+)\s*\((.+?/.+?)\)\s*dx', # Unicode definite with fractions: _a^b (x^2+1)/(x+1) dx
+            
+            # Simple fraction integrals
+            r'int\s+(.+?/.+?)\s+dx',              # int x^2/x dx
+            r'integral\s+(.+?/.+?)\s+dx',        # integral x^2/x dx
+            r'[\u222B]\s*(.+?/.+?)\s*dx',        # Unicode integral simple fractions: x^2/x dx
+            r'(\d+)\s+to\s+(\d+)\s+int\s+(.+?/.+?)\s+dx', # 0 to 1 int x^2/x dx
+            r'(\d+)\s+to\s+(\d+)\s+integral\s+(.+?/.+?)\s+dx', # 0 to 1 integral x^2/x dx
+            r'[\u222B]_([^{^}]+)\^([^{^}]+)\s*(.+?/.+?)\s*dx', # Unicode definite simple fractions: _a^b x^2/x dx
         ]
         
         logger.info("Microsoft Math Engine initialized")
@@ -154,6 +177,13 @@ class MicrosoftMathEngine:
         expr = re.sub(r'^[)\]}]+', '', expr)  # Remove closing brackets at start
         expr = re.sub(r'[(\[{]+$', '', expr)  # Remove opening brackets at end
         
+        # Handle superscript characters BEFORE Unicode normalization
+        expr = expr.replace('²', '**2')
+        expr = expr.replace('³', '**3')
+        expr = expr.replace('\u00B2', '**2')  # SUPERSCRIPT TWO
+        expr = expr.replace('\u00B3', '**3')  # SUPERSCRIPT THREE
+        expr = expr.replace('\u00B9', '**1')  # SUPERSCRIPT ONE
+        
         # Normalize Unicode characters
         expr = unicodedata.normalize('NFKC', expr)
         
@@ -168,11 +198,17 @@ class MicrosoftMathEngine:
         """Apply various mathematical transformations"""
         expr = expression
         
-        # Handle fractions first
-        expr = self._transform_fractions(expr)
+        # Handle "to" in definite integrals FIRST (before general transformations)
+        expr = self._transform_definite_integral_limits(expr)
         
-        # Handle powers
+        # Handle integrals FIRST (before implicit multiplication to avoid breaking)
+        expr = self._transform_integrals(expr)
+        
+        # Handle powers next (to convert ² to **2 before fraction processing)
         expr = self._transform_powers(expr)
+        
+        # Handle fractions next (now with proper power notation)
+        expr = self._transform_fractions(expr)
         
         # Handle functions
         expr = self._transform_functions(expr)
@@ -180,11 +216,8 @@ class MicrosoftMathEngine:
         # Handle operators
         expr = self._transform_operators(expr)
         
-        # Handle implicit multiplication
+        # Handle implicit multiplication last (after integrals are processed)
         expr = self._handle_implicit_multiplication(expr)
-        
-        # Handle integrals (after implicit multiplication to avoid breaking)
-        expr = self._transform_integrals(expr)
         
         return expr
     
@@ -200,9 +233,13 @@ class MicrosoftMathEngine:
         # Handle general fractions
         for pattern in self.fraction_patterns:
             def replace_fraction(match):
-                numerator = match.group(1)
-                denominator = match.group(2) if len(match.groups()) > 1 else '2'
-                return f"({numerator})/({denominator})"
+                try:
+                    numerator = match.group(1)
+                    denominator = match.group(2) if len(match.groups()) > 1 else '2'
+                    return f"({numerator})/({denominator})"
+                except IndexError:
+                    # Handle patterns with different group counts
+                    return match.group(0)
             
             expr = re.sub(pattern, replace_fraction, expr)
         
@@ -212,9 +249,12 @@ class MicrosoftMathEngine:
         """Transform power notation"""
         expr = expression
         
-        # Handle superscript characters
+        # Handle superscript characters - make sure to handle Unicode properly
         expr = expr.replace('²', '**2')
         expr = expr.replace('³', '**3')
+        expr = expr.replace('\u00B2', '**2')  # SUPERSCRIPT TWO
+        expr = expr.replace('\u00B3', '**3')  # SUPERSCRIPT THREE
+        expr = expr.replace('\u00B9', '**1')  # SUPERSCRIPT ONE
         
         # Handle power patterns
         for pattern in self.power_patterns:
@@ -247,6 +287,23 @@ class MicrosoftMathEngine:
         
         return expr
     
+    def _transform_definite_integral_limits(self, expression: str) -> str:
+        """Transform definite integral limits notation"""
+        expr = expression
+        
+        # Handle "a to b int" pattern for definite integrals
+        # This needs to be done before the "to" gets transformed by implicit multiplication
+        def replace_limits(match):
+            lower = match.group(1)
+            upper = match.group(2)
+            integral_part = match.group(3)
+            return f"{lower} {upper} {integral_part}"
+        
+        # Pattern for "a to b int" or "a to b integral"
+        expr = re.sub(r'(\d+)\s+to\s+(\d+)\s+(int|integral)', replace_limits, expr)
+        
+        return expr
+    
     def _transform_integrals(self, expression: str) -> str:
         """Transform integral notation"""
         expr = expression
@@ -256,20 +313,21 @@ class MicrosoftMathEngine:
             def replace_integral(match):
                 groups = match.groups()
                 
-                if len(groups) == 4:  # Definite integral
-                    if '∫' in match.group(0):  # Unicode definite integral
-                        lower, upper, integrand, var = groups
-                        return f"integrate({integrand}, ({var}, {lower}, {upper}))"
-                    else:  # Text definite integral
-                        lower, upper, integrand, var = groups
-                        return f"integrate({integrand}, ({var}, {lower}, {upper}))"
-                elif len(groups) == 2:  # Indefinite integral
-                    integrand, var = groups
-                    return f"integrate({integrand}, {var})"
+                if len(groups) == 3:  # Definite integral
+                    lower, upper, integrand = groups
+                    # Extract variable from integrand (assume x for simplicity)
+                    return f"integrate({integrand}, (x, {lower}, {upper}))"
+                elif len(groups) == 1:  # Indefinite integral
+                    integrand = groups[0]
+                    # Extract variable from integrand (assume x for simplicity)
+                    return f"integrate({integrand}, x)"
                 else:
                     return match.group(0)
             
             expr = re.sub(pattern, replace_integral, expr)
+        
+        # Clean up any remaining "to" patterns that weren't caught
+        expr = re.sub(r'(\d+)\s+(\d+)\s+', r'', expr)
         
         return expr
     
@@ -286,6 +344,10 @@ class MicrosoftMathEngine:
     def _handle_implicit_multiplication(self, expression: str) -> str:
         """Handle implicit multiplication"""
         expr = expression
+        
+        # Skip processing if this looks like an integral expression
+        if 'int' in expr or 'integral' in expr or 'integrate' in expr:
+            return expr
         
         # Number followed by variable: 2x -> 2*x
         expr = re.sub(r'(\d)([a-zA-Z])', r'\1*\2', expr)
