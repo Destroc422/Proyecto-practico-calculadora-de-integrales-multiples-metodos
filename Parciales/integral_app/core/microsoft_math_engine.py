@@ -204,19 +204,19 @@ class MicrosoftMathEngine:
         # Handle integrals FIRST (before implicit multiplication to avoid breaking)
         expr = self._transform_integrals(expr)
         
+        # Handle functions BEFORE implicit multiplication (to avoid breaking sin(x) -> s*in(x))
+        expr = self._transform_functions(expr)
+        
         # Handle powers next (to convert ² to **2 before fraction processing)
         expr = self._transform_powers(expr)
         
         # Handle fractions next (now with proper power notation)
         expr = self._transform_fractions(expr)
         
-        # Handle functions
-        expr = self._transform_functions(expr)
-        
         # Handle operators
         expr = self._transform_operators(expr)
         
-        # Handle implicit multiplication last (after integrals are processed)
+        # Handle implicit multiplication last (after functions are processed)
         expr = self._handle_implicit_multiplication(expr)
         
         return expr
@@ -315,12 +315,16 @@ class MicrosoftMathEngine:
                 
                 if len(groups) == 3:  # Definite integral
                     lower, upper, integrand = groups
+                    # Apply implicit multiplication to integrand
+                    processed_integrand = self._handle_implicit_multiplication(integrand)
                     # Extract variable from integrand (assume x for simplicity)
-                    return f"integrate({integrand}, (x, {lower}, {upper}))"
+                    return f"integrate({processed_integrand}, (x, {lower}, {upper}))"
                 elif len(groups) == 1:  # Indefinite integral
                     integrand = groups[0]
+                    # Apply implicit multiplication to integrand
+                    processed_integrand = self._handle_implicit_multiplication(integrand)
                     # Extract variable from integrand (assume x for simplicity)
-                    return f"integrate({integrand}, x)"
+                    return f"integrate({processed_integrand}, x)"
                 else:
                     return match.group(0)
             
@@ -349,22 +353,55 @@ class MicrosoftMathEngine:
         if 'int' in expr or 'integral' in expr or 'integrate' in expr:
             return expr
         
+        # Skip processing if this looks like a function expression
+        if '(' in expr and ')' in expr:
+            # Check if it contains function patterns
+            known_functions = [f.lower() for f in self.function_mappings.keys()]
+            for func in known_functions:
+                if func + '(' in expr.lower():
+                    return expr
+        
         # Number followed by variable: 2x -> 2*x
         expr = re.sub(r'(\d)([a-zA-Z])', r'\1*\2', expr)
         
         # Variable followed by variable: xy -> x*y (but not function names)
         known_functions = [f.lower() for f in self.function_mappings.keys()]
         known_functions.extend(['integrate', 'diff', 'limit', 'series'])  # Add mathematical functions
+        # Add common mathematical functions to prevent splitting
+        known_functions.extend(['sin', 'cos', 'tan', 'cot', 'sec', 'csc', 'asin', 'acos', 'atan', 
+                               'sinh', 'cosh', 'tanh', 'exp', 'log', 'ln', 'sqrt', 'abs', 'sign'])
         
         def replace_var_var(match):
             var1, var2 = match.groups()
             # Don't split if the sequence contains known mathematical functions
             combined = (var1 + var2).lower()
-            if any(func in combined for func in known_functions + ['integrate']):
+            if any(func in combined for func in known_functions):
                 return match.group(0)
             # Don't split if either variable is followed by parenthesis (function call)
             if expr[match.end():match.end()+1] == '(':
                 return match.group(0)
+            # Don't split if the first part is a known function prefix
+            if var1.lower() in known_functions:
+                return match.group(0)
+            if var2.lower() in known_functions:
+                return match.group(0)
+            # Additional check: don't split if we're inside a function call
+            # Find the position of the match in the original expression
+            match_start = match.start()
+            match_end = match.end()
+            
+            # Check if there's an opening parenthesis before this match that hasn't been closed
+            paren_count = 0
+            for i in range(match_start):
+                if expr[i] == '(':
+                    paren_count += 1
+                elif expr[i] == ')':
+                    paren_count -= 1
+            
+            # If we're inside parentheses (likely a function call), don't split
+            if paren_count > 0:
+                return match.group(0)
+            
             if var1.lower() not in known_functions and var2.lower() not in known_functions:
                 return f"{var1}*{var2}"
             return match.group(0)

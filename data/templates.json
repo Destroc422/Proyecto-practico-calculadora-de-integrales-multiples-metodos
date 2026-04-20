@@ -73,7 +73,7 @@
     ],
     "latex_form": "\\sin(x) + \\cos(x)",
     "created_date": "2026-04-13T21:30:00.285090",
-    "usage_count": 0
+    "usage_count": 3
   },
   {
     "name": "Exponencial básica",
@@ -193,7 +193,7 @@
     ],
     "latex_form": "\\int_{0}^{1} x^{2} \\, dx",
     "created_date": "2026-04-13T21:30:00.286894",
-    "usage_count": 0
+    "usage_count": 4
   },
   {
     "name": "Error function",

@@ -1,3 +1,4 @@
+
 """
 Plotter module for Integral Calculator
 """

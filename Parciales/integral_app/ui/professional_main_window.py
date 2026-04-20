@@ -2230,10 +2230,37 @@ class ProfessionalIntegralCalculator:
                 
                 # Render LaTeX expression - much smaller like results
                 latex_text = step_expression.replace('\\\\', '\\')
-                ax.text(0.5, 0.5, f'${latex_text}$', 
-                       transform=ax.transAxes,
-                       fontsize=10, ha='center', va='center', 
-                       color='black', family='serif')
+                
+                # Check if LaTeX already has $ symbols to avoid duplication
+                if latex_text.startswith('$') and latex_text.endswith('$'):
+                    # LaTeX already has $ symbols, use as is
+                    final_latex = latex_text
+                elif '$' in latex_text:
+                    # LaTeX contains $ symbols but not properly formatted, clean it
+                    final_latex = latex_text.replace('$', '').strip()
+                    final_latex = f'${final_latex}$'
+                else:
+                    # LaTeX doesn't have $ symbols, add them
+                    final_latex = f'${latex_text}$'
+                
+                # Additional validation to prevent malformed LaTeX
+                if not final_latex.strip() or final_latex.strip() == '$$':
+                    # Skip rendering if LaTeX is empty or malformed
+                    logger.warning(f"Skipping rendering of malformed LaTeX: {step_expression}")
+                    return
+                
+                try:
+                    ax.text(0.5, 0.5, final_latex, 
+                           transform=ax.transAxes,
+                           fontsize=10, ha='center', va='center', 
+                           color='black', family='serif')
+                except Exception as render_error:
+                    logger.error(f"Error rendering LaTeX with matplotlib: {render_error}")
+                    # Fallback to plain text
+                    ax.text(0.5, 0.5, latex_text, 
+                           transform=ax.transAxes,
+                           fontsize=10, ha='center', va='center', 
+                           color='black', family='monospace')
                 
                 plt.tight_layout()
                 

@@ -529,18 +529,18 @@ class ProfessionalLaTeXRenderer:
                 # Integrals (text format)
                 r'\\int': 'integral',
                 r'\\int_': 'integral_',
-                r'\\int\^': 'integral^',
-                r'\\int_{([^}]+)}\^{([^}]+)}': r'integral_{\1}^{\2}',
+                r'\\int\\^': 'integral^',
+                r'\\int_{([^}]+)}\\^{([^}]+)}': r'integral_{\1}^{\2}',
                 r'\\int_{([^}]+)}': r'integral_{\1}',
-                r'\\int\^{([^}]+)}': r'integral^{\1}',
+                r'\\int\\^{([^}]+)}': r'integral^{\1}',
                 
                 # Summation and products (text format)
                 r'\\sum': 'sum',
                 r'\\sum_': 'sum_',
-                r'\\sum\^': 'sum^',
+                r'\\sum\\^': 'sum^',
                 r'\\prod': 'product',
                 r'\\prod_': 'product_',
-                r'\\prod\^': 'product^',
+                r'\\prod\\^': 'product^',
                 
                 # Constants (text format)
                 r'\\pi': 'pi',

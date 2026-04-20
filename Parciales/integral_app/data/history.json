@@ -496,5 +496,11 @@
     "type": "Automático",
     "date": "2026-04-14 00:31:56",
     "timestamp": 1776144716.346577
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-18 20:21:11",
+    "timestamp": 1776561671.92808
   }
 ]
