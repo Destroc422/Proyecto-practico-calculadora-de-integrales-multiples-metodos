@@ -134,15 +134,33 @@ class ProfessionalPlotter:
                         y = np.array([y[i] for i in range(len(y)) if numeric_mask[i]], dtype=float)
                         x = x[numeric_mask]
                 
-                # Handle potential infinities or NaNs
+                # Handle potential infinities or NaNs with robust validation
                 try:
+                    # Try standard numpy isfinite first
                     mask = np.isfinite(y)
                 except (TypeError, ValueError) as e:
-                    # Fallback: manual check for finite values
-                    mask = np.array([isinstance(val, (int, float, np.number)) and 
-                                   not isinstance(val, bool) and 
-                                   np.isfinite(val) if isinstance(val, np.number) else True 
-                                   for val in y])
+                    logger.warning(f"Standard isfinite failed: {e}, using robust fallback")
+                    # Robust fallback: manual check for finite values
+                    mask = []
+                    for i, val in enumerate(y):
+                        try:
+                            # Check if value is numeric and finite
+                            if isinstance(val, (int, float, np.number)) and not isinstance(val, bool):
+                                if isinstance(val, np.number):
+                                    # Use numpy's isfinite for numpy numbers
+                                    mask.append(np.isfinite(val))
+                                else:
+                                    # For Python numbers, use math.isfinite
+                                    import math
+                                    mask.append(math.isfinite(val))
+                            else:
+                                # Non-numeric values are not finite
+                                mask.append(False)
+                        except (TypeError, ValueError, AttributeError):
+                            # Any error in checking means not finite
+                            mask.append(False)
+                    
+                    mask = np.array(mask, dtype=bool)
                 
                 if not np.any(mask):
                     raise ValueError("No finite values to plot")
@@ -362,15 +380,33 @@ class ProfessionalPlotter:
                         y = np.array([y[i] for i in range(len(y)) if numeric_mask[i]], dtype=float)
                         x = x[numeric_mask]
                 
-                # Handle potential infinities or NaNs
+                # Handle potential infinities or NaNs with robust validation
                 try:
+                    # Try standard numpy isfinite first
                     mask = np.isfinite(y)
                 except (TypeError, ValueError) as e:
-                    # Fallback: manual check for finite values
-                    mask = np.array([isinstance(val, (int, float, np.number)) and 
-                                   not isinstance(val, bool) and 
-                                   np.isfinite(val) if isinstance(val, np.number) else True 
-                                   for val in y])
+                    logger.warning(f"Standard isfinite failed: {e}, using robust fallback")
+                    # Robust fallback: manual check for finite values
+                    mask = []
+                    for i, val in enumerate(y):
+                        try:
+                            # Check if value is numeric and finite
+                            if isinstance(val, (int, float, np.number)) and not isinstance(val, bool):
+                                if isinstance(val, np.number):
+                                    # Use numpy's isfinite for numpy numbers
+                                    mask.append(np.isfinite(val))
+                                else:
+                                    # For Python numbers, use math.isfinite
+                                    import math
+                                    mask.append(math.isfinite(val))
+                            else:
+                                # Non-numeric values are not finite
+                                mask.append(False)
+                        except (TypeError, ValueError, AttributeError):
+                            # Any error in checking means not finite
+                            mask.append(False)
+                    
+                    mask = np.array(mask, dtype=bool)
                 
                 if not np.any(mask):
                     raise ValueError("No finite values to plot")

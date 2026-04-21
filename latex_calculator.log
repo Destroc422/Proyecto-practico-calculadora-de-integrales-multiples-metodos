@@ -2657,3 +2657,609 @@ INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed success
 INFO:ui.professional_main_window:Visual LaTeX step 7 rendering completed successfully
 ERROR:ui.professional_main_window:Error adjusting window size: '_tkinter.tkapp' object has no attribute 'winfo_minsize'
 INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'latex': '\\int x^{2} + 3 x + 2 \\, dx', 'explanation': 'Expresión a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int x^{2} + 3 x + 2 \, dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'analysis', 'title': 'Paso 1: Identificar estructura', 'latex': '\text{Función: } x^{2} + 3 x + 2', 'explanation': 'La función es una suma con 3 término(s)'}
+INFO:ui.professional_main_window:Step 2 latex_content: 	ext{Función: } x^{2} + 3 x + 2
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'decomposition', 'title': 'Paso 2: Aplicar linealidad de la integral', 'latex': '\\int \\left[x^{2} + 3 x + 2\right] dx = \\int x^{2} dx + \\int 3 x dx + \\int 2 dx', 'explanation': 'La integral de una suma es la suma de integrales'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int \left[x^{2} + 3 x + 2ight] dx = \int x^{2} dx + \int 3 x dx + \int 2 dx
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.1: Integrar término 1', 'latex': '\\int x^{2} \\, dx = \\frac{x^{3}}{3}', 'explanation': 'Regla de potencia: ∫x^2 dx = x^3/3'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int x^{2} \, dx = \frac{x^{3}}{3}
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.2: Integrar término 2', 'latex': '\\int 3 x \\, dx = \\frac{3 x^{2}}{2}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int 3 x \, dx = \frac{3 x^{2}}{2}
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.3: Integrar término 3', 'latex': '\\int 2 \\, dx = 2 x', 'explanation': 'Integral de constante: ∫c dx = cx'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int 2 \, dx = 2 x
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': 'Resultado de la Integral Indefinida', 'latex': '\\frac{x \\left(2 x^{2} + 9 x + 12\\right)}{6} + C', 'explanation': 'Suma de la constante de integración C'}
+INFO:ui.professional_main_window:Step 7 latex_content: \frac{x \left(2 x^{2} + 9 x + 12\right)}{6} + C
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 3: 
+$\int \left[x^{2} + 3 x + 2ight] dx = \int x^{2} dx + \int 3 x dx + \int 2 dx$
+^
+ParseException: Expected end of text, found '$'  (at char 0), (line:1, col:1)
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 7 rendering completed successfully
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+INFO:core.integrator:Integrating: -2*x**3/3 + x**2/2 + 5*x*x4 with method: auto
+INFO:core.integrator:Integration successful: x**2*(-x**2 + x + 15*x4)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'latex': '\\int - \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4} \\, dx', 'explanation': 'Expresión a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int - \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4} \, dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'analysis', 'title': 'Paso 1: Identificar estructura', 'latex': '\text{Función: } - \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4}', 'explanation': 'La función es una suma con 3 término(s)'}
+INFO:ui.professional_main_window:Step 2 latex_content: 	ext{Función: } - \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4}
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'decomposition', 'title': 'Paso 2: Aplicar linealidad de la integral', 'latex': '\\int \\left[- \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4}\right] dx = \\int - \\frac{2 x^{3}}{3} dx + \\int \\frac{x^{2}}{2} dx + \\int 5 x x_{4} dx', 'explanation': 'La integral de una suma es la suma de integrales'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int \left[- \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4}ight] dx = \int - \frac{2 x^{3}}{3} dx + \int \frac{x^{2}}{2} dx + \int 5 x x_{4} dx
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.1: Integrar término 1', 'latex': '\\int - \\frac{2 x^{3}}{3} \\, dx = - \\frac{x^{4}}{6}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int - \frac{2 x^{3}}{3} \, dx = - \frac{x^{4}}{6}
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.2: Integrar término 2', 'latex': '\\int \\frac{x^{2}}{2} \\, dx = \\frac{x^{3}}{6}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int \frac{x^{2}}{2} \, dx = \frac{x^{3}}{6}
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.3: Integrar término 3', 'latex': '\\int 5 x x_{4} \\, dx = \\frac{5 x^{2} x_{4}}{2}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int 5 x x_{4} \, dx = \frac{5 x^{2} x_{4}}{2}
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': 'Resultado de la Integral Indefinida', 'latex': '\\frac{x^{2} \\left(- x^{2} + x + 15 x_{4}\\right)}{6} + C', 'explanation': 'Suma de la constante de integración C'}
+INFO:ui.professional_main_window:Step 7 latex_content: \frac{x^{2} \left(- x^{2} + x + 15 x_{4}\right)}{6} + C
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+ERROR:ui.professional_main_window:Error plotting function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 3: 
+$\int \left[- \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4}ight] dx = \int - \frac{2 x^{3}}{3} dx + \int \frac{x^{2}}{2} dx + \int 5 x x_{4} dx$
+^
+ParseException: Expected end of text, found '$'  (at char 0), (line:1, col:1)
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 7 rendering completed successfully
+ERROR:ui.professional_main_window:Error displaying calculation result: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:core.integrator:Integrating: 2*x**3/3 + 3*x**2/2 - x with method: auto
+INFO:core.integrator:Integration successful: x**2*(x**2 + 3*x - 3)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'latex': '\\int \\frac{2 x^{3}}{3} + \\frac{3 x^{2}}{2} - x \\, dx', 'explanation': 'Expresión a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int \frac{2 x^{3}}{3} + \frac{3 x^{2}}{2} - x \, dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'analysis', 'title': 'Paso 1: Identificar estructura', 'latex': '\text{Función: } \\frac{2 x^{3}}{3} + \\frac{3 x^{2}}{2} + - x', 'explanation': 'La función es una suma con 3 término(s)'}
+INFO:ui.professional_main_window:Step 2 latex_content: 	ext{Función: } \frac{2 x^{3}}{3} + \frac{3 x^{2}}{2} + - x
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'decomposition', 'title': 'Paso 2: Aplicar linealidad de la integral', 'latex': '\\int \\left[\\frac{2 x^{3}}{3} + \\frac{3 x^{2}}{2} + - x\right] dx = \\int \\frac{2 x^{3}}{3} dx + \\int \\frac{3 x^{2}}{2} dx + \\int - x dx', 'explanation': 'La integral de una suma es la suma de integrales'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int \left[\frac{2 x^{3}}{3} + \frac{3 x^{2}}{2} + - xight] dx = \int \frac{2 x^{3}}{3} dx + \int \frac{3 x^{2}}{2} dx + \int - x dx
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.1: Integrar término 1', 'latex': '\\int \\frac{2 x^{3}}{3} \\, dx = \\frac{x^{4}}{6}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int \frac{2 x^{3}}{3} \, dx = \frac{x^{4}}{6}
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.2: Integrar término 2', 'latex': '\\int \\frac{3 x^{2}}{2} \\, dx = \\frac{x^{3}}{2}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int \frac{3 x^{2}}{2} \, dx = \frac{x^{3}}{2}
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.3: Integrar término 3', 'latex': '\\int - x \\, dx = - \\frac{x^{2}}{2}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int - x \, dx = - \frac{x^{2}}{2}
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': 'Resultado de la Integral Indefinida', 'latex': '\\frac{x^{2} \\left(x^{2} + 3 x - 3\\right)}{6} + C', 'explanation': 'Suma de la constante de integración C'}
+INFO:ui.professional_main_window:Step 7 latex_content: \frac{x^{2} \left(x^{2} + 3 x - 3\right)}{6} + C
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 3: 
+$\int \left[\frac{2 x^{3}}{3} + \frac{3 x^{2}}{2} + - xight] dx = \int \frac{2 x^{3}}{3} dx + \int \frac{3 x^{2}}{2} dx + \int - x dx$
+^
+ParseException: Expected end of text, found '$'  (at char 0), (line:1, col:1)
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 7 rendering completed successfully
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+INFO:core.integrator:Integrating: -2*x**3/3 + x**2/2 + 5*x*x4 with method: auto
+INFO:core.integrator:Integration successful: x**2*(-x**2 + x + 15*x4)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'latex': '\\int - \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4} \\, dx', 'explanation': 'Expresión a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int - \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4} \, dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'analysis', 'title': 'Paso 1: Identificar estructura', 'latex': '\text{Función: } - \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4}', 'explanation': 'La función es una suma con 3 término(s)'}
+INFO:ui.professional_main_window:Step 2 latex_content: 	ext{Función: } - \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4}
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'decomposition', 'title': 'Paso 2: Aplicar linealidad de la integral', 'latex': '\\int \\left[- \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4}\right] dx = \\int - \\frac{2 x^{3}}{3} dx + \\int \\frac{x^{2}}{2} dx + \\int 5 x x_{4} dx', 'explanation': 'La integral de una suma es la suma de integrales'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int \left[- \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4}ight] dx = \int - \frac{2 x^{3}}{3} dx + \int \frac{x^{2}}{2} dx + \int 5 x x_{4} dx
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.1: Integrar término 1', 'latex': '\\int - \\frac{2 x^{3}}{3} \\, dx = - \\frac{x^{4}}{6}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int - \frac{2 x^{3}}{3} \, dx = - \frac{x^{4}}{6}
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.2: Integrar término 2', 'latex': '\\int \\frac{x^{2}}{2} \\, dx = \\frac{x^{3}}{6}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int \frac{x^{2}}{2} \, dx = \frac{x^{3}}{6}
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.3: Integrar término 3', 'latex': '\\int 5 x x_{4} \\, dx = \\frac{5 x^{2} x_{4}}{2}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int 5 x x_{4} \, dx = \frac{5 x^{2} x_{4}}{2}
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': 'Resultado de la Integral Indefinida', 'latex': '\\frac{x^{2} \\left(- x^{2} + x + 15 x_{4}\\right)}{6} + C', 'explanation': 'Suma de la constante de integración C'}
+INFO:ui.professional_main_window:Step 7 latex_content: \frac{x^{2} \left(- x^{2} + x + 15 x_{4}\right)}{6} + C
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+ERROR:ui.professional_main_window:Error plotting function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 1: cannot access local variable 'latex_text' where it is not associated with a value
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 2: cannot access local variable 'latex_text' where it is not associated with a value
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 3: cannot access local variable 'latex_text' where it is not associated with a value
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 4: cannot access local variable 'latex_text' where it is not associated with a value
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 5: cannot access local variable 'latex_text' where it is not associated with a value
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 6: cannot access local variable 'latex_text' where it is not associated with a value
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 7: cannot access local variable 'latex_text' where it is not associated with a value
+ERROR:ui.professional_main_window:Error displaying calculation result: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+INFO:core.integrator:Integrating: -2*x**3/3 + x**2/2 + 5*x*x4 with method: auto
+INFO:core.integrator:Integration successful: x**2*(-x**2 + x + 15*x4)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'latex': '\\int - \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4} \\, dx', 'explanation': 'Expresión a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int - \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4} \, dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'analysis', 'title': 'Paso 1: Identificar estructura', 'latex': '\text{Función: } - \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4}', 'explanation': 'La función es una suma con 3 término(s)'}
+INFO:ui.professional_main_window:Step 2 latex_content: 	ext{Función: } - \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4}
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'decomposition', 'title': 'Paso 2: Aplicar linealidad de la integral', 'latex': '\\int \\left[- \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4}\right] dx = \\int - \\frac{2 x^{3}}{3} dx + \\int \\frac{x^{2}}{2} dx + \\int 5 x x_{4} dx', 'explanation': 'La integral de una suma es la suma de integrales'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int \left[- \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4}ight] dx = \int - \frac{2 x^{3}}{3} dx + \int \frac{x^{2}}{2} dx + \int 5 x x_{4} dx
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.1: Integrar término 1', 'latex': '\\int - \\frac{2 x^{3}}{3} \\, dx = - \\frac{x^{4}}{6}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int - \frac{2 x^{3}}{3} \, dx = - \frac{x^{4}}{6}
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.2: Integrar término 2', 'latex': '\\int \\frac{x^{2}}{2} \\, dx = \\frac{x^{3}}{6}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int \frac{x^{2}}{2} \, dx = \frac{x^{3}}{6}
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.3: Integrar término 3', 'latex': '\\int 5 x x_{4} \\, dx = \\frac{5 x^{2} x_{4}}{2}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int 5 x x_{4} \, dx = \frac{5 x^{2} x_{4}}{2}
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': 'Resultado de la Integral Indefinida', 'latex': '\\frac{x^{2} \\left(- x^{2} + x + 15 x_{4}\\right)}{6} + C', 'explanation': 'Suma de la constante de integración C'}
+INFO:ui.professional_main_window:Step 7 latex_content: \frac{x^{2} \left(- x^{2} + x + 15 x_{4}\right)}{6} + C
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+WARNING:ui.professional_main_window:Standard isfinite failed in plot_function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe'', using robust fallback
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 3 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 7: 
+fraccionx^2 (- x^2 + x + 15 x_4\rright)6 + C
+                               ^
+ParseFatalException: Unknown symbol: \rright, found '\'  (at char 31), (line:1, col:32)
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:core.integrator:Integrating: 2*x**3/3 + 3*x**2/2 - x with method: auto
+INFO:core.integrator:Integration successful: x**2*(x**2 + 3*x - 3)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'latex': '\\int \\frac{2 x^{3}}{3} + \\frac{3 x^{2}}{2} - x \\, dx', 'explanation': 'Expresión a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int \frac{2 x^{3}}{3} + \frac{3 x^{2}}{2} - x \, dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'analysis', 'title': 'Paso 1: Identificar estructura', 'latex': '\text{Función: } \\frac{2 x^{3}}{3} + \\frac{3 x^{2}}{2} + - x', 'explanation': 'La función es una suma con 3 término(s)'}
+INFO:ui.professional_main_window:Step 2 latex_content: 	ext{Función: } \frac{2 x^{3}}{3} + \frac{3 x^{2}}{2} + - x
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'decomposition', 'title': 'Paso 2: Aplicar linealidad de la integral', 'latex': '\\int \\left[\\frac{2 x^{3}}{3} + \\frac{3 x^{2}}{2} + - x\right] dx = \\int \\frac{2 x^{3}}{3} dx + \\int \\frac{3 x^{2}}{2} dx + \\int - x dx', 'explanation': 'La integral de una suma es la suma de integrales'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int \left[\frac{2 x^{3}}{3} + \frac{3 x^{2}}{2} + - xight] dx = \int \frac{2 x^{3}}{3} dx + \int \frac{3 x^{2}}{2} dx + \int - x dx
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.1: Integrar término 1', 'latex': '\\int \\frac{2 x^{3}}{3} \\, dx = \\frac{x^{4}}{6}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int \frac{2 x^{3}}{3} \, dx = \frac{x^{4}}{6}
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.2: Integrar término 2', 'latex': '\\int \\frac{3 x^{2}}{2} \\, dx = \\frac{x^{3}}{2}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int \frac{3 x^{2}}{2} \, dx = \frac{x^{3}}{2}
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.3: Integrar término 3', 'latex': '\\int - x \\, dx = - \\frac{x^{2}}{2}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int - x \, dx = - \frac{x^{2}}{2}
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': 'Resultado de la Integral Indefinida', 'latex': '\\frac{x^{2} \\left(x^{2} + 3 x - 3\\right)}{6} + C', 'explanation': 'Suma de la constante de integración C'}
+INFO:ui.professional_main_window:Step 7 latex_content: \frac{x^{2} \left(x^{2} + 3 x - 3\right)}{6} + C
+INFO:ui.professional_main_window:plot_function called with: '∫ (2x² + 3x - 1) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 3 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 7: 
+fraccionx^2 (x^2 + 3 x - 3\rright)6 + C
+                          ^
+ParseFatalException: Unknown symbol: \rright, found '\'  (at char 26), (line:1, col:27)
+INFO:ui.professional_main_window:plot_function called with: '∫ (2x² + 3x - 1) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:ui.professional_main_window:plot_function called with: '∫ (2x² + 3x - 1) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:data.template_manager:Saved 14 templates to data/templates.json
+INFO:data.template_manager:Saved 14 templates to data/templates.json
+ERROR:ui.professional_main_window:Error inserting template expression: can only concatenate str (not "int") to str
+INFO:data.template_manager:Saved 14 templates to data/templates.json
+INFO:data.template_manager:Saved 14 templates to data/templates.json
+ERROR:ui.professional_main_window:Error inserting template expression: can only concatenate str (not "int") to str
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:core.integrator:Integrating: 2*x**3/3 + 3*x**2/2 - x with method: auto
+INFO:core.integrator:Integration successful: x**2*(x**2 + 3*x - 3)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'latex': '\\int \\frac{2 x^{3}}{3} + \\frac{3 x^{2}}{2} - x \\, dx', 'explanation': 'Expresión a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int \frac{2 x^{3}}{3} + \frac{3 x^{2}}{2} - x \, dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'analysis', 'title': 'Paso 1: Identificar estructura', 'latex': '\text{Función: } \\frac{2 x^{3}}{3} + \\frac{3 x^{2}}{2} + - x', 'explanation': 'La función es una suma con 3 término(s)'}
+INFO:ui.professional_main_window:Step 2 latex_content: 	ext{Función: } \frac{2 x^{3}}{3} + \frac{3 x^{2}}{2} + - x
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'decomposition', 'title': 'Paso 2: Aplicar linealidad de la integral', 'latex': '\\int \\left[\\frac{2 x^{3}}{3} + \\frac{3 x^{2}}{2} + - x\right] dx = \\int \\frac{2 x^{3}}{3} dx + \\int \\frac{3 x^{2}}{2} dx + \\int - x dx', 'explanation': 'La integral de una suma es la suma de integrales'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int \left[\frac{2 x^{3}}{3} + \frac{3 x^{2}}{2} + - xight] dx = \int \frac{2 x^{3}}{3} dx + \int \frac{3 x^{2}}{2} dx + \int - x dx
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.1: Integrar término 1', 'latex': '\\int \\frac{2 x^{3}}{3} \\, dx = \\frac{x^{4}}{6}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int \frac{2 x^{3}}{3} \, dx = \frac{x^{4}}{6}
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.2: Integrar término 2', 'latex': '\\int \\frac{3 x^{2}}{2} \\, dx = \\frac{x^{3}}{2}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int \frac{3 x^{2}}{2} \, dx = \frac{x^{3}}{2}
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.3: Integrar término 3', 'latex': '\\int - x \\, dx = - \\frac{x^{2}}{2}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int - x \, dx = - \frac{x^{2}}{2}
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': 'Resultado de la Integral Indefinida', 'latex': '\\frac{x^{2} \\left(x^{2} + 3 x - 3\\right)}{6} + C', 'explanation': 'Suma de la constante de integración C'}
+INFO:ui.professional_main_window:Step 7 latex_content: \frac{x^{2} \left(x^{2} + 3 x - 3\right)}{6} + C
+INFO:ui.professional_main_window:plot_function called with: '∫ (2x² + 3x - 1) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 3 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 7: 
+fraccionx^2 (x^2 + 3 x - 3\rright)6 + C
+                          ^
+ParseFatalException: Unknown symbol: \rright, found '\'  (at char 26), (line:1, col:27)
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+INFO:core.integrator:Integrating: -2*x**3/3 + x**2/2 + 5*x*x4 with method: auto
+INFO:core.integrator:Integration successful: x**2*(-x**2 + x + 15*x4)/6
+INFO:ui.professional_main_window:Processing step 1: <class 'dict'> - {'type': 'original', 'title': 'Integral Original', 'latex': '\\int - \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4} \\, dx', 'explanation': 'Expresión a integrar'}
+INFO:ui.professional_main_window:Step 1 latex_content: \int - \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4} \, dx
+INFO:ui.professional_main_window:Processing step 2: <class 'dict'> - {'type': 'analysis', 'title': 'Paso 1: Identificar estructura', 'latex': '\text{Función: } - \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4}', 'explanation': 'La función es una suma con 3 término(s)'}
+INFO:ui.professional_main_window:Step 2 latex_content: 	ext{Función: } - \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4}
+INFO:ui.professional_main_window:Processing step 3: <class 'dict'> - {'type': 'decomposition', 'title': 'Paso 2: Aplicar linealidad de la integral', 'latex': '\\int \\left[- \\frac{2 x^{3}}{3} + \\frac{x^{2}}{2} + 5 x x_{4}\right] dx = \\int - \\frac{2 x^{3}}{3} dx + \\int \\frac{x^{2}}{2} dx + \\int 5 x x_{4} dx', 'explanation': 'La integral de una suma es la suma de integrales'}
+INFO:ui.professional_main_window:Step 3 latex_content: \int \left[- \frac{2 x^{3}}{3} + \frac{x^{2}}{2} + 5 x x_{4}ight] dx = \int - \frac{2 x^{3}}{3} dx + \int \frac{x^{2}}{2} dx + \int 5 x x_{4} dx
+INFO:ui.professional_main_window:Processing step 4: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.1: Integrar término 1', 'latex': '\\int - \\frac{2 x^{3}}{3} \\, dx = - \\frac{x^{4}}{6}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 4 latex_content: \int - \frac{2 x^{3}}{3} \, dx = - \frac{x^{4}}{6}
+INFO:ui.professional_main_window:Processing step 5: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.2: Integrar término 2', 'latex': '\\int \\frac{x^{2}}{2} \\, dx = \\frac{x^{3}}{6}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 5 latex_content: \int \frac{x^{2}}{2} \, dx = \frac{x^{3}}{6}
+INFO:ui.professional_main_window:Processing step 6: <class 'dict'> - {'type': 'term_integration', 'title': 'Paso 2.3: Integrar término 3', 'latex': '\\int 5 x x_{4} \\, dx = \\frac{5 x^{2} x_{4}}{2}', 'explanation': 'Aplicar reglas de integración'}
+INFO:ui.professional_main_window:Step 6 latex_content: \int 5 x x_{4} \, dx = \frac{5 x^{2} x_{4}}{2}
+INFO:ui.professional_main_window:Processing step 7: <class 'dict'> - {'type': 'result', 'title': 'Resultado de la Integral Indefinida', 'latex': '\\frac{x^{2} \\left(- x^{2} + x + 15 x_{4}\\right)}{6} + C', 'explanation': 'Suma de la constante de integración C'}
+INFO:ui.professional_main_window:Step 7 latex_content: \frac{x^{2} \left(- x^{2} + x + 15 x_{4}\right)}{6} + C
+INFO:ui.professional_main_window:plot_function called with: '∫ (5x⁴ - 2x² + x) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+WARNING:ui.professional_main_window:Standard isfinite failed in plot_function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe'', using robust fallback
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 1 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 2 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 3 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 4 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 5 rendering completed successfully
+INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed successfully
+ERROR:ui.professional_main_window:Error rendering visual LaTeX step 7: 
+fraccionx^2 (- x^2 + x + 15 x_4\rright)6 + C
+                               ^
+ParseFatalException: Unknown symbol: \rright, found '\'  (at char 31), (line:1, col:32)
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+ERROR:__main__:Fatal error: unindent does not match any outer indentation level (professional_main_window.py, line 2515)
+ERROR:__main__:Full traceback:
+ERROR:__main__:Traceback (most recent call last):
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\main.py", line 107, in main
+    from ui.professional_main_window import ProfessionalIntegralCalculator
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 2515
+    def _clear_latex_data(self):
+                                ^
+IndentationError: unindent does not match any outer indentation level
+
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+ERROR:__main__:Fatal error: unindent does not match any outer indentation level (professional_main_window.py, line 2515)
+ERROR:__main__:Full traceback:
+ERROR:__main__:Traceback (most recent call last):
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\main.py", line 107, in main
+    from ui.professional_main_window import ProfessionalIntegralCalculator
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 2515
+    def _clear_latex_data(self):
+                                ^
+IndentationError: unindent does not match any outer indentation level
+
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: )∫x²dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫x²dx -> x**3/3
+INFO:core.microsoft_math_engine:Parsing natural math: )∫x²dx
+INFO:core.microsoft_math_engine:Successfully parsed: )∫x²dx -> x**3/3
+INFO:core.microsoft_math_engine:Parsing natural math: ∫x²dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫x²dx -> x**3/3
+INFO:core.microsoft_math_engine:Parsing natural math: ∫x²dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫x²dx -> x**3/3
+INFO:core.integrator:Integrating: x**3/3 with method: auto
+INFO:core.integrator:Integration successful: x**4/12
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫x²dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫x²dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫x²dx -> x**3/3
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 4 visualizaciones LaTeX
+ERROR:ui.professional_main_window:Error creando visualización step_1: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_2: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_3: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_4: name 'plt' is not defined
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+INFO:core.integrator:Integrating: -2*x**3/3 + x**2/2 + 5*x*x4 with method: auto
+INFO:core.integrator:Integration successful: x**2*(-x**2 + x + 15*x4)/6
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫ (5x⁴ - 2x² + x) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+WARNING:ui.professional_main_window:Standard isfinite failed in plot_function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe'', using robust fallback
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+ERROR:ui.professional_main_window:Error creando visualización step_1: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_2: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_3: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_4: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_5: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_6: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_7: name 'plt' is not defined
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+INFO:core.integrator:Integrating: -2*x**3/3 + x**2/2 + 5*x*x4 with method: auto
+INFO:core.integrator:Integration successful: 5*x4/2
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫ (5x⁴ - 2x² + x) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+WARNING:ui.professional_main_window:Standard isfinite failed in plot_function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe'', using robust fallback
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+ERROR:ui.professional_main_window:Error creando visualización step_1: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_2: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_3: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_4: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_5: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_6: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_7: name 'plt' is not defined
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:core.integrator:Integrating: 2*x**3/3 + 3*x**2/2 - x with method: auto
+INFO:core.integrator:Integration successful: 1/6
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫ (2x² + 3x - 1) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+ERROR:ui.professional_main_window:Error creando visualización step_1: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_2: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_3: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_4: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_5: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_6: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_7: name 'plt' is not defined
+INFO:__main__:Application closed normally

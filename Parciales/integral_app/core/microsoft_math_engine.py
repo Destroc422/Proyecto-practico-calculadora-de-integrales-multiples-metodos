@@ -32,15 +32,48 @@ class MicrosoftMathEngine:
             # Mathematical constants
             'pi': sp.pi, 'e': sp.E, 'infinity': sp.oo, 'inf': sp.oo,
             
-            # Unicode symbols to text
+            # Unicode symbols to text - EXPANDIDO con símbolos faltantes
             '×': '*', '÷': '/', '±': '+-', '²': '**2', '³': '**3',
             '½': '1/2', '¼': '1/4', '¾': '3/4', '¹': '**1',
             '°': '*sp.pi/180',  # degrees to radians
-            '²': '**2', '³': '**3',
-            '²': '**2', '³': '**3',
-            '²': '**2', '³': '**3',
-            '²': '**2', '³': '**3',
-            '²': '**2', '³': '**3',
+            
+            # Superíndices adicionales
+            '\u2070': '**0', '\u2076': '**6', '\u2077': '**7', '\u2078': '**8', '\u2079': '**9',
+            
+            # Subíndices
+            '\u2080': '_0', '\u2081': '_1', '\u2082': '_2', '\u2083': '_3',
+            '\u2084': '_4', '\u2085': '_5', '\u2086': '_6', '\u2087': '_7', '\u2088': '_8', '\u2089': '_9',
+            
+            # Operadores relacionales adicionales
+            '\u2248': '~=', '\u2262': '!=', '\u2261': '==', '\u226a': '<<', '\u226b': '>>',
+            '\u2249': '!=', '\u2247': '~=', '\u224d': '!=',
+            
+            # Flechas y operadores lógicos
+            '\u2190': '<-', '\u2194': '<->', '\u21d0': '<=>', '\u2191': 'up', '\u2193': 'down',
+            '\u21d2': '=>', '\u21d4': '<=>', '\u21d1': 'down_implies',
+            '\u2227': 'and', '\u2228': 'or', '\u2200': 'forall', '\u2203': 'exists',
+            
+            # Conjuntos y cuantificadores
+            '\u2208': 'in', '\u2209': 'notin', '\u2282': 'subset', '\u2283': 'superset',
+            '\u2205': 'empty', '\u2204': 'nexists', '\u220b': 'contains',
+            '\u220c': 'not_contains',
+            
+            # Fracciones adicionales
+            '\u2153': '1/3', '\u2154': '2/3', '\u2155': '1/5', '\u2156': '2/5', 
+            '\u2157': '3/5', '\u2158': '4/5', '\u2159': '1/6', '\u215a': '5/6',
+            '\u215b': '1/8', '\u215c': '3/8', '\u2044': '/',
+            
+            # Símbolos matemáticos especiales
+            '\u221b': 'root(3,', '\u221c': 'root(4,', '\u2221': 'angle_measured',
+            '\u223c': '~', '\u223d': '~= ', '\u2250': '!=_def',
+            '\u2252': 'approx_def', '\u2253': 'really_equal',
+            '\u2135': 'aleph0', '\u2136': 'aleph1', '\u2137': 'aleph2',
+            
+            # Letras griegas adicionales
+            '\u03bf': 'omicron', '\u03c2': 'stigma', '\u039f': 'Omicron', '\u039f': 'Omicron',
+            
+            # Conjuntos numéricos adicionales
+            '\u2119': 'primes', '\u211c': 'imaginaries',
         }
         
         # Function name mappings
@@ -591,11 +624,15 @@ def get_expression_info(self, expression: str) -> Dict[str, Any]:
         
     def solve_integral_with_steps(self, expression: str, variable: str = 'x') -> Dict[str, Any]:
         """
-        Solve integral with detailed step-by-step explanation
-        Compatible interface for integration system
+        Solve integral with detailed step-by-step explanation as a math tutor
+        Enhanced with detailed explanations for each step
         """
         try:
-            logger.info(f"Solving integral with Microsoft Math Engine: {expression} with respect to {variable}")
+            logger.info(f"Solving integral with Enhanced Math Engine: {expression} with respect to {variable}")
+            
+            # Import enhanced explainer
+            from enhanced_integral_explainer import EnhancedIntegralExplainer
+            explainer = EnhancedIntegralExplainer()
             
             # Parse the expression using natural math parsing
             parsed_expr = self.parse_natural_math(expression)
@@ -610,11 +647,46 @@ def get_expression_info(self, expression: str) -> Dict[str, Any]:
             if result is not None:
                 result = sp.simplify(result)
             
-            # Generate steps based on expression type
-            steps = self._generate_integration_steps(parsed_expr, var, result)
+            # Convert expressions to strings for explanation
+            original_str = str(parsed_expr).replace('**', '^')
+            result_str = str(result).replace('**', '^')
+            
+            # Generate basic steps
+            basic_steps = self._generate_integration_steps(parsed_expr, var, result)
+            
+            # Create enhanced detailed explanation
+            enhanced_explanation = explainer.create_detailed_explanation(
+                original_str, result_str, basic_steps, variable
+            )
             
             # Verify the solution
             verification = self._verify_integral_solution(parsed_expr, result, var)
+            
+            # Combine basic and enhanced steps
+            combined_steps = []
+            
+            # Add enhanced tutorial steps first
+            if enhanced_explanation.get('tutorial_mode'):
+                for step in enhanced_explanation.get('steps', []):
+                    combined_steps.append({
+                        'content': step.get('explanation', ''),
+                        'latex': step.get('latex', ''),
+                        'type': 'tutorial',
+                        'rule': step.get('rule', ''),
+                        'step_number': step.get('step', 0),
+                        'title': step.get('title', ''),
+                        'details': step.get('details', '')
+                    })
+            
+            # Add computational steps
+            for step in basic_steps:
+                combined_steps.append({
+                    'content': step.get('content', ''),
+                    'latex': step.get('latex', ''),
+                    'type': 'computational',
+                    'rule': step.get('rule', ''),
+                    'step_number': step.get('step', 0)
+                })
             
             # Detect method used
             method = self._detect_integration_method(parsed_expr, var)
@@ -623,9 +695,13 @@ def get_expression_info(self, expression: str) -> Dict[str, Any]:
             response = {
                 "result": str(result),
                 "result_latex": sp.latex(result),
-                "steps": steps,
+                "steps": combined_steps,
                 "method": method,
                 "verification": verification,
+                "enhanced_explanation": enhanced_explanation,
+                "tutorial_mode": enhanced_explanation.get('tutorial_mode', False),
+                "analysis": enhanced_explanation.get('analysis', {}),
+                "summary": enhanced_explanation.get('summary', {}),
                 "confidence": verification.get("confidence", 0.0),
                 "timestamp": "2026-04-10T18:00:00",
                 "expression": expression,

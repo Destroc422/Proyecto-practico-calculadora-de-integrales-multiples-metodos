@@ -262,7 +262,7 @@ class ProfessionalLaTeXRenderer:
     
     def convert_to_academic_format(self, original_expression, result_expression, variable="x") -> str:
         """
-        Convert operation and result to academic LaTeX block format
+        Convert operation and result to academic Unicode block format
         
         Args:
             original_expression: Original mathematical expression (SymPy or string)
@@ -270,27 +270,19 @@ class ProfessionalLaTeXRenderer:
             variable: Integration variable (default: "x")
             
         Returns:
-            Academic LaTeX block format: [\\int f(x),dx = F(x) + C]
+            Academic Unicode block format: [\\int f(x),dx = F(x) + C]
         """
         try:
-            # Convert original expression to LaTeX
-            if hasattr(original_expression, 'latex'):
-                original_latex = original_expression.latex()
-            else:
-                original_latex = str(original_expression)
+            # Convert expressions to string format
+            original_str = str(original_expression)
+            result_str = str(result_expression)
             
-            # Convert result expression to LaTeX
-            if hasattr(result_expression, 'latex'):
-                result_latex = result_expression.latex()
-            else:
-                result_latex = str(result_expression)
+            # Apply Unicode formatting to both expressions
+            original_unicode = self._convert_to_unicode_format(original_str)
+            result_unicode = self._convert_to_unicode_format(result_str)
             
-            # Clean both expressions for academic format
-            original_clean = self._clean_latex_for_academic_format(original_latex)
-            result_clean = self._clean_latex_for_academic_format(result_latex)
-            
-            # Format as academic block: [\\int f(x),dx = F(x) + C]
-            academic_format = f"[\\int {original_clean},d{variable} = {result_clean}]"
+            # Format as academic block with Unicode symbols: [\\int f(x),dx = F(x) + C]
+            academic_format = f"[\\int {original_unicode},d{variable} = {result_unicode}]"
             
             return academic_format
             
@@ -298,6 +290,67 @@ class ProfessionalLaTeXRenderer:
             logger.error(f"Error converting to academic format: {str(e)}")
             # Fallback to simple format
             return f"[\\int {original_expression},d{variable} = {result_expression}]"
+    
+    def _convert_to_unicode_format(self, expression: str) -> str:
+        """
+        Convert mathematical expression to Unicode format
+        
+        Args:
+            expression: Mathematical expression string
+            
+        Returns:
+            Unicode-formatted string with mathematical symbols
+        """
+        try:
+            unicode_expr = expression
+            
+            # Convert powers to Unicode superscripts
+            unicode_expr = unicode_expr.replace('**2', '²')
+            unicode_expr = unicode_expr.replace('**3', '³')
+            unicode_expr = unicode_expr.replace('**4', '³')
+            unicode_expr = unicode_expr.replace('**5', '³')
+            unicode_expr = unicode_expr.replace('**6', '³')
+            unicode_expr = unicode_expr.replace('**7', '³')
+            unicode_expr = unicode_expr.replace('**8', '³')
+            unicode_expr = unicode_expr.replace('**9', '³')
+            
+            # Convert multiplication to Unicode symbol
+            unicode_expr = unicode_expr.replace('*', '×')
+            
+            # Convert integral notation to Unicode symbol
+            unicode_expr = unicode_expr.replace('int ', 'integral ')
+            unicode_expr = unicode_expr.replace('integrate(', 'integral(')
+            unicode_expr = unicode_expr.replace('integral', 'integral')
+            
+            # Convert common mathematical symbols
+            unicode_expr = unicode_expr.replace('pi', 'pi')
+            unicode_expr = unicode_expr.replace('e^', 'e^')
+            unicode_expr = unicode_expr.replace('exp(', 'exp(')
+            
+            # Convert square roots
+            unicode_expr = unicode_expr.replace('sqrt(', 'sqrt(')
+            
+            # Convert logarithms
+            unicode_expr = unicode_expr.replace('log(', 'log(')
+            unicode_expr = unicode_expr.replace('ln(', 'ln(')
+            
+            # Convert trigonometric functions
+            unicode_expr = unicode_expr.replace('sin(', 'sin(')
+            unicode_expr = unicode_expr.replace('cos(', 'cos(')
+            unicode_expr = unicode_expr.replace('tan(', 'tan(')
+            
+            # Convert fractions (basic patterns)
+            unicode_expr = unicode_expr.replace('1/2', '½')
+            unicode_expr = unicode_expr.replace('1/3', '1/3')
+            unicode_expr = unicode_expr.replace('1/4', '¼')
+            unicode_expr = unicode_expr.replace('2/3', '2/3')
+            unicode_expr = unicode_expr.replace('3/4', '¾')
+            
+            return unicode_expr
+            
+        except Exception as e:
+            logger.error(f"Error converting to Unicode format: {str(e)}")
+            return expression
     
     def convert_to_text_format(self, expression) -> str:
         """
@@ -572,7 +625,7 @@ class ProfessionalLaTeXRenderer:
                 # Constants (proper LaTeX format)
                 r'\\pi': r'\\pi',
                 r'\\e': r'e',
-                r'\\infty': r'\\infty',
+                r'integrate': r'∫',
                 r'\\mathrm{e}': r'e',
                 
                 # Greek letters (proper LaTeX format)

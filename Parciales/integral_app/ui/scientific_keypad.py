@@ -79,27 +79,74 @@ class ScientificKeypad:
         frame = ttk.LabelFrame(parent, text="🔣 Símbolos Unicode", padding=5)
         frame.grid(row=0, column=0, columnspan=2, padx=5, pady=5, sticky="nsew")
         
-        # Símbolos matemáticos Unicode esenciales - CONSISTENTE
+        # Símbolos matemáticos Unicode esenciales - MEJORADO con símbolos faltantes
         unicode_symbols = [
-            ('∫', 'int '), ('∬', 'int '), ('∭', 'int '),
-            ('∂', 'partial '), ('∇', 'nabla '), ('∞', 'infinity '),
-            ('∑', 'sum '), ('∏', 'product '), ('√', 'sqrt('),
-            ('±', '±'), ('≈', '~='), ('≠', '!='),
-            ('≤', '<='), ('≥', '>='), ('∈', 'in '),
-            ('∉', 'notin '), ('⊂', 'subset '), ('⊃', 'superset '),
-            ('∧', 'and '), ('∨', 'or '), ('→', '-> '),
-            ('↔', '<-> '), ('⇒', '=> '), ('⇔', '<=> '),
-            ('∀', 'forall '), ('∃', 'exists '), ('∅', 'empty_set '),
-            ('ℕ', 'Natural '), ('ℤ', 'Integer '), ('ℝ', 'Real '),
-            ('ℚ', 'Rational '), ('ℂ', 'Complex '), ('π', 'pi '),
-            ('θ', 'theta '), ('α', 'alpha '), ('β', 'beta '),
-            ('γ', 'gamma '), ('δ', 'delta '), ('ε', 'epsilon '),
-            ('λ', 'lambda '), ('μ', 'mu '), ('σ', 'sigma '),
-            ('φ', 'phi '), ('ω', 'omega '), ('Δ', 'Delta '),
-            ('Θ', 'Theta '), ('Λ', 'Lambda '), ('Σ', 'Sigma '),
-            ('Φ', 'Phi '), ('Ω', 'Omega '), ('Γ', 'Gamma '),
-            ('x²', 'x**2'), ('x³', 'x**3'), ('x⁴', 'x**4'), ('x⁵', 'x**5'),
-            ('²', '**2'), ('³', '**3'), ('⁴', '**4'), ('⁵', '**5')
+            # Integrales y cálculo
+            ('', 'int '), ('', 'int '), ('', 'int '),
+            ('', 'partial '), ('', 'nabla '), ('', 'infinity '),
+            ('', 'sum '), ('', 'product '), ('', 'sqrt('),
+            ('', 'sqrt('), ('', 'incremento '),
+            
+            # Operadores relacionales
+            ('±', '±'), ('', '~='), ('', '!='),
+            ('', '<='), ('', '>='), ('', '~= '),
+            ('', '!= '), ('', 'identico '),
+            ('', '<= '), ('', '>= '),
+            
+            # Conjuntos y lógica
+            ('', 'in '), ('', 'notin '), ('', 'subset '),
+            ('', 'superset '), ('', 'and '), ('', 'or '),
+            ('', 'empty_set '), ('', 'contains '),
+            ('', 'not_contains '),
+            
+            # Flechas e implicaciones
+            ('', '-> '), ('', '<-> '), ('', '<- '),
+            ('', 'arriba '), ('', 'abajo '), ('', '=> '),
+            ('', '<=> '), ('', '<= '), ('', 'mapeo_a '),
+            ('', 'mapeo_desde '),
+            
+            # Cuantificadores
+            ('', 'forall '), ('', 'exists '), ('', 'not_exists '),
+            
+            # Conjuntos numéricos
+            ('', 'Natural '), ('', 'Integer '), ('', 'Real '),
+            ('', 'Rational '), ('', 'Complex '), ('', 'Primos '),
+            ('', 'Imaginarios '),
+            
+            # Letras griegas minúsculas
+            ('', 'theta '), ('', 'alpha '), ('', 'beta '),
+            ('', 'gamma '), ('', 'delta '), ('', 'epsilon '),
+            ('', 'lambda '), ('', 'mu '), ('', 'sigma '),
+            ('', 'phi '), ('', 'omega '), ('', 'omicron '),
+            ('', 'stigma '),
+            
+            # Letras griegas mayúsculas
+            ('', 'Delta '), ('', 'Theta '), ('', 'Lambda '),
+            ('', 'Sigma '), ('', 'Phi '), ('', 'Omega '),
+            ('', 'Gamma '), ('', 'Omicron '),
+            
+            # Superíndices y subíndices
+            ('', '**0'), ('', '**1'), ('', '**2'), ('', '**3'),
+            ('x²', 'x**2'), ('x³', 'x**3'), ('x', 'x**4'), ('x', 'x**5'),
+            ('', '**6'), ('', '**7'), ('', '**8'), ('', '**9'),
+            ('', '_0'), ('', '_1'), ('', '_2'), ('', '_3'),
+            ('', '_4'), ('', '_5'), ('', '_6'), ('', '_7'),
+            ('', '_8'), ('', '_9'),
+            
+            # Fracciones y operaciones
+            ('×', '*'), ('÷', '/'), ('±', '+-'), ('', '-+'),
+            ('', '/'), ('', '1/3'), ('', '2/3'),
+            ('', '1/4'), ('', '3/4'), ('', '1/5'),
+            ('', '2/5'), ('', '3/5'), ('', '4/5'),
+            ('', '1/6'), ('', '5/6'), ('', '1/8'),
+            ('', '3/8'), ('', '1/'),
+            
+            # Símbolos especiales
+            ('', 'pi '), ('', 'angulo '), ('', 'angulo_medido '),
+            ('', 'tilde '), ('', 'igual_tilde '),
+            ('', 'diferente_def '), ('', 'aprox_def '),
+            ('', 'real_igual '), ('', 'aleph_cero '),
+            ('', 'aleph_uno '), ('', 'aleph_dos ')
         ]
         
         # Crear botones con símbolos Unicode

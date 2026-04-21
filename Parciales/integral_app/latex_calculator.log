@@ -478,3 +478,172 @@ INFO:ui.professional_main_window:Visual LaTeX step 6 rendering completed success
 INFO:ui.professional_main_window:Visual LaTeX step 7 rendering completed successfully
 INFO:data.template_manager:Saved 14 templates to data/templates.json
 INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.7.1 available
+INFO:__main__:+ NumPy 1.24.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: integrate(4*x**3 + 7, x)
+INFO:core.microsoft_math_engine:Successfully parsed: integrate(4*x**3 + 7, x) -> x**4 + 7*x
+INFO:core.integrator:Integrating: x**4 + 7*x with method: auto
+INFO:core.integrator:Integration successful: x**2*(2*x**3 + 35)/10
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: 'integrate(4*x**3 + 7, x)'
+INFO:core.microsoft_math_engine:Parsing natural math: integrate(4*x**3 + 7, x)
+INFO:core.microsoft_math_engine:Successfully parsed: integrate(4*x**3 + 7, x) -> x**4 + 7*x
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 6 visualizaciones LaTeX
+ERROR:ui.professional_main_window:Error creando visualización step_1: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_2: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_3: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_4: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_5: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_6: name 'plt' is not defined
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.7.1 available
+INFO:__main__:+ NumPy 1.24.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:data.template_manager:Saved 14 templates to data/templates.json
+INFO:data.template_manager:Saved 14 templates to data/templates.json
+ERROR:ui.professional_main_window:Error inserting template expression: can only concatenate str (not "int") to str
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.7.1 available
+INFO:__main__:+ NumPy 1.24.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+ERROR:ui.professional_main_window:Error adjusting window size: '_tkinter.tkapp' object has no attribute 'winfo_minsize'
+INFO:data.template_manager:Saved 14 templates to data/templates.json
+INFO:data.template_manager:Saved 14 templates to data/templates.json
+ERROR:ui.professional_main_window:Error inserting template expression: can only concatenate str (not "int") to str
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.7.1 available
+INFO:__main__:+ NumPy 1.24.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.7.1 available
+INFO:__main__:+ NumPy 1.24.3 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.enhanced_result_display:Resultado principal mostrado exitosamente
+INFO:ui.enhanced_result_display:Pasos mostrados: 7
+INFO:ui.enhanced_result_display:Verificación mostrada exitosamente
+INFO:ui.professional_main_window:Enhanced result display completed successfully
+INFO:ui.professional_main_window:plot_function called with: 'x**2 + 3*x + 2'
+INFO:ui.professional_main_window:Attempting to parse function: 'x**2 + 3*x + 2'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Parse successful: x**2 + 3*x + 2
+ERROR:ui.professional_main_window:Error adjusting window size: '_tkinter.tkapp' object has no attribute 'winfo_minsize'

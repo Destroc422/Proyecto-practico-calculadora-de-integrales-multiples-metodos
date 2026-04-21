@@ -1094,18 +1094,21 @@ class ProfessionalIntegralCalculator:
         """Insert template expression into the input field"""
         try:
             # Get current cursor position
-            current_text = self.input_text.get()
-            cursor_pos = self.input_text.index(tk.INSERT)
+            current_text = self.editor_text.get("1.0", tk.END).strip()
+            cursor_pos = self.editor_text.index(tk.INSERT)
             
             # Insert template at cursor position
-            self.input_text.insert(cursor_pos, template_expression)
+            self.editor_text.insert(cursor_pos, template_expression)
             
             # Set focus back to input
-            self.input_text.focus_set()
+            self.editor_text.focus_set()
             
             # Update cursor position after insertion
             new_cursor_pos = cursor_pos + len(template_expression)
-            self.input_text.mark_set(tk.INSERT, new_cursor_pos)
+            self.editor_text.mark_set(tk.INSERT, new_cursor_pos)
+            
+            # Update current function
+            self.current_function = self.editor_text.get("1.0", tk.END).strip()
             
             logger.info(f"Template expression inserted: {template_expression}")
             
@@ -1946,54 +1949,8 @@ class ProfessionalIntegralCalculator:
             self.result_text.insert("1.0", result_text)
             self.result_text.config(state='disabled')
             
-            # Update steps tab with LaTeX rendering if available
-            if hasattr(result, 'steps') and result.steps:
-                self.steps_text.config(state='normal')
-                self.steps_text.delete("1.0", tk.END)
-                
-                steps_text = "Pasos del Cálculo\n"
-                steps_text += "=" * 50 + "\n\n"
-                
-                for i, step in enumerate(result.steps, 1):
-                    try:
-                        # Debug: mostrar información del paso
-                        logger.info(f"Processing step {i}: {type(step)} - {step}")
-                        
-                        # Acceder al contenido del paso (step es un diccionario)
-                        if isinstance(step, dict):
-                            # Obtener contenido LaTeX del paso
-                            latex_content = step.get('latex', step.get('content', ''))
-                            logger.info(f"Step {i} latex_content: {latex_content}")
-                            
-                            if latex_content and ('\\int' in latex_content or '\\frac' in latex_content or '\\sqrt' in latex_content or 'x' in latex_content):
-                                # Agregar placeholder para el paso
-                                steps_text += f"[Paso {i} - Operación Matemática]\n"
-                                
-                                # Store step for visual rendering
-                                if not hasattr(self, 'latex_steps'):
-                                    self.latex_steps = {}
-                                self.latex_steps[f"step_{i}"] = latex_content
-                                
-                                # Trigger visual rendering after text is set
-                                self.root.after(100 + (i * 50), lambda step_idx=i: self._render_visual_latex_step(step_idx))
-                            else:
-                                # Si no es LaTeX matemático, mostrar el contenido como texto
-                                step_content = step.get('content', latex_content or str(step))
-                                if step_content and step_content != '':
-                                    steps_text += f"{step_content}\n\n"
-                        else:
-                            # Si step no es diccionario, mostrar como texto
-                            step_str = str(step)
-                            if step_str and step_str != '':
-                                steps_text += f"{step_str}\n\n"
-                        
-                    except Exception as e:
-                        # Si hay error, mostrar el paso como texto fallback
-                        logger.error(f"Error rendering step {i}: {str(e)}")
-                        steps_text += f"[Step {i} - Error en renderizado]\n\n"
-                
-                self.steps_text.insert("1.0", steps_text)
-                self.steps_text.config(state='disabled')
+            # Update steps tab with fixed LaTeX rendering
+            self._display_result_steps_fixed(result)
             
             # Update verification tab with LaTeX rendering
             self._display_verification_result(result)
@@ -2015,6 +1972,431 @@ class ProfessionalIntegralCalculator:
             messagebox.showerror("Error", f"No se pudo mostrar el resultado: {str(e)}")
             self.update_status("Error al mostrar resultado", '#e74c3c')
     
+    def _display_result_steps_fixed(self, result):
+        """Display calculation steps with fixed LaTeX rendering and Unicode support"""
+        try:
+            logger.info("Iniciando visualización corregida de pasos")
+            
+            # Clear existing content
+            self.steps_text.config(state='normal')
+            self.steps_text.delete("1.0", tk.END)
+            
+            if not hasattr(result, 'steps') or not result.steps:
+                logger.info("No hay pasos para mostrar")
+                self.steps_text.insert("1.0", "No hay pasos disponibles para mostrar.")
+                self.steps_text.config(state='disabled')
+                return
+            
+            # Create professional header
+            self._create_steps_header_fixed()
+            
+            # Process each step with robust error handling
+            for i, step in enumerate(result.steps, 1):
+                try:
+                    logger.info(f"Procesando paso {i}: {type(step)}")
+                    
+                    # Extract step content
+                    step_content = self._extract_step_content_fixed(step)
+                    if not step_content:
+                        continue
+                    
+                    # Render step with fixed LaTeX
+                    self._render_step_fixed(i, step_content)
+                    
+                except Exception as e:
+                    logger.error(f"Error procesando paso {i}: {e}")
+                    self._render_error_step_fixed(i, str(e))
+            
+            # Configure text widget
+            self.steps_text.config(state='disabled')
+            
+            # Trigger LaTeX visualizations after delay
+            self.root.after(100, lambda: self._render_latex_visualizations_fixed())
+            
+            logger.info("Visualización corregida de pasos completada")
+            
+        except Exception as e:
+            logger.error(f"Error en visualización corregida: {e}")
+            self._render_fallback_steps_fixed(result)
+    
+    def _create_steps_header_fixed(self):
+        """Create professional header for steps section"""
+        header_text = "Pasos del Cálculo - Visualización Profesional\n"
+        header_text += "=" * 60 + "\n\n"
+        header_text += "Cada paso se muestra con formato LaTeX y tipología Unicode\n"
+        header_text += "-" * 40 + "\n\n"
+        
+        self.steps_text.insert("end", header_text)
+        
+        # Configure tags for formatting
+        self.steps_text.tag_configure("header", font=("Arial", 14, "bold"), foreground="#2c3e50")
+        self.steps_text.tag_add("header", "1.0", "1.end")
+        self.steps_text.tag_configure("subtitle", font=("Arial", 11, "italic"), foreground="#7f8c8d")
+        self.steps_text.tag_add("subtitle", "2.0", "4.end")
+    
+    def _extract_step_content_fixed(self, step):
+        """Extract step content with robust handling"""
+        try:
+            if isinstance(step, dict):
+                latex_content = step.get('latex', '')
+                content = step.get('content', '')
+                description = step.get('description', '')
+                
+                # Prioritize LaTeX, then content, then description
+                if latex_content:
+                    return {'latex': latex_content, 'type': 'latex'}
+                elif content:
+                    return {'content': content, 'type': 'content'}
+                elif description:
+                    return {'content': description, 'type': 'description'}
+                else:
+                    return None
+            else:
+                # If not dict, use as content
+                step_str = str(step).strip()
+                if step_str:
+                    return {'content': step_str, 'type': 'content'}
+                else:
+                    return None
+                    
+        except Exception as e:
+            logger.error(f"Error extrayendo contenido: {e}")
+            return None
+    
+    def _render_step_fixed(self, step_number, step_data):
+        """Render individual step with fixed LaTeX handling"""
+        try:
+            # Insert step title
+            step_title = f"Paso {step_number}: Operación Matemática\n"
+            self.steps_text.insert("end", step_title, "step_title")
+            
+            # Process based on content type
+            if step_data['type'] == 'latex':
+                self._render_latex_step_fixed(step_number, step_data['latex'])
+            else:
+                self._render_text_step_fixed(step_number, step_data['content'])
+            
+            # Insert separator
+            self.steps_text.insert("end", "\n" + "-" * 50 + "\n\n", "separator")
+            
+            # Configure tags
+            self.steps_text.tag_configure("step_title", font=("Arial", 12, "bold"), foreground="#3498db")
+            self.steps_text.tag_configure("separator", font=("Arial", 10), foreground="#bdc3c7")
+            
+        except Exception as e:
+            logger.error(f"Error renderizando paso {step_number}: {e}")
+            self._render_error_step_fixed(step_number, str(e))
+    
+    def _render_latex_step_fixed(self, step_number, latex_content):
+        """Render LaTeX step with robust error handling"""
+        try:
+            # Clean LaTeX to prevent parsing errors
+            cleaned_latex = self._clean_latex_content_fixed(latex_content)
+            
+            # Insert placeholder for LaTeX visualization
+            placeholder = f"[LaTeX Step {step_number}]\n"
+            self.steps_text.insert("end", placeholder, "latex_placeholder")
+            
+            # Store for visual rendering
+            if not hasattr(self, 'fixed_latex_steps'):
+                self.fixed_latex_steps = {}
+            
+            self.fixed_latex_steps[f"step_{step_number}"] = {
+                'original': latex_content,
+                'cleaned': cleaned_latex,
+                'placeholder': placeholder
+            }
+            
+            # Configure tag
+            self.steps_text.tag_configure("latex_placeholder", 
+                                        font=("Courier", 11), 
+                                        foreground="#e74c3c",
+                                        background="#fdf2f2")
+            
+        except Exception as e:
+            logger.error(f"Error renderizando LaTeX paso {step_number}: {e}")
+            # Fallback to text
+            enhanced_content = self._apply_unicode_enhancements_fixed(latex_content)
+            self.steps_text.insert("end", f"Contenido: {enhanced_content}\n", "content")
+    
+    def _render_text_step_fixed(self, step_number, content):
+        """Render text step with Unicode enhancements"""
+        try:
+            # Apply Unicode enhancements
+            enhanced_content = self._apply_unicode_enhancements_fixed(content)
+            
+            self.steps_text.insert("end", f"Contenido: {enhanced_content}\n", "content")
+            self.steps_text.tag_configure("content", font=("Arial", 11), foreground="#2c3e50")
+            
+        except Exception as e:
+            logger.error(f"Error renderizando texto paso {step_number}: {e}")
+            self.steps_text.insert("end", f"Contenido: {content}\n", "content")
+    
+    def _render_error_step_fixed(self, step_number, error_msg):
+        """Render step with error"""
+        error_text = f"Paso {step_number}: Error en renderizado\n"
+        error_text += f"Error: {error_msg}\n"
+        
+        self.steps_text.insert("end", error_text, "error")
+        self.steps_text.tag_configure("error", font=("Arial", 11), foreground="#e74c3c")
+    
+    def _clean_latex_content_fixed(self, latex_text):
+        """Clean LaTeX content to prevent parsing errors"""
+        if not latex_text:
+            return ""
+        
+        try:
+            # Basic cleaning
+            cleaned = latex_text.replace('\\\\', '\\')
+            cleaned = cleaned.replace('\\right', 'right')
+            cleaned = cleaned.replace('\right', 'right')
+            cleaned = cleaned.replace('\\rright', 'right')
+            cleaned = cleaned.replace('\\r', '')
+            cleaned = cleaned.replace('\r', '')
+            cleaned = cleaned.replace('\n', ' ')
+            cleaned = cleaned.replace('\t', ' ')
+            cleaned = cleaned.strip()
+            
+            # Advanced cleaning for problematic patterns
+            import re
+            cleaned = re.sub(r'\\r[a-zA-Z]*', '', cleaned)
+            cleaned = re.sub(r'\\rright', 'right', cleaned)
+            cleaned = re.sub(r'\\right[^a-zA-Z]', 'right', cleaned)
+            cleaned = re.sub(r'right[)}\]>]', lambda m: m.group(0)[-1], cleaned)
+            
+            # Clean problematic LaTeX commands
+            cleaned = re.sub(r'\\text\{([^}]+)\}', r'\1', cleaned)
+            cleaned = re.sub(r'\\[a-zA-Z]+\{([^}]+)\}', r'\1', cleaned)
+            cleaned = re.sub(r'\\[a-zA-Z]+', '', cleaned)
+            
+            # Clean special characters
+            cleaned = re.sub(r'[{}]', '', cleaned)
+            cleaned = re.sub(r'\s+', ' ', cleaned)
+            
+            return cleaned.strip()
+            
+        except Exception as e:
+            logger.error(f"Error limpiando LaTeX: {e}")
+            return latex_text
+    
+    def _apply_unicode_enhancements_fixed(self, text):
+        """Apply Unicode enhancements to text"""
+        if not text:
+            return ""
+        
+        try:
+            # Common Unicode mappings
+            unicode_map = {
+                'x^2': 'x²',
+                'x^3': 'x³',
+                'x^4': 'x sup4',
+                'x^5': 'x sup5',
+                'integral': 'integral',
+                'fraccion': 'fracción',
+                'raiz': 'raíz',
+                'sen': 'sen',
+                'cos': 'cos',
+                'tan': 'tan',
+                'sqrt': 'raíz',
+                'sum': 'suma',
+                'prod': 'producto',
+                'lim': 'límite',
+                'infinito': 'infinito',
+                'alpha': 'alpha',
+                'beta': 'beta',
+                'gamma': 'gamma',
+                'delta': 'delta',
+                'theta': 'theta',
+                'lambda': 'lambda',
+                'mu': 'mu',
+                'pi': 'pi',
+                'sigma': 'sigma',
+                'phi': 'phi',
+                'omega': 'omega'
+            }
+            
+            enhanced = text
+            for latex, unicode_sym in unicode_map.items():
+                enhanced = enhanced.replace(latex, unicode_sym)
+            
+            return enhanced
+            
+        except Exception as e:
+            logger.error(f"Error aplicando Unicode: {e}")
+            return text
+    
+    def _render_latex_visualizations_fixed(self):
+        """Render all LaTeX visualizations after text loading"""
+        try:
+            if not hasattr(self, 'fixed_latex_steps'):
+                return
+            
+            logger.info(f"Renderizando {len(self.fixed_latex_steps)} visualizaciones LaTeX")
+            
+            for step_key, step_data in self.fixed_latex_steps.items():
+                try:
+                    self._create_latex_visualization_fixed(step_key, step_data)
+                except Exception as e:
+                    logger.error(f"Error renderizando visualización {step_key}: {e}")
+            
+        except Exception as e:
+            logger.error(f"Error en renderizado de visualizaciones: {e}")
+    
+    def _create_latex_visualization_fixed(self, step_key, step_data):
+        """Create LaTeX visualization for a step"""
+        try:
+            # Create matplotlib figure
+            fig, ax = plt.subplots(1, 1, figsize=(12, 2.5))
+            fig.patch.set_facecolor('#ffffff')
+            ax.set_facecolor('#ffffff')
+            ax.set_axis_off()
+            
+            # Prepare LaTeX
+            latex_content = step_data['cleaned']
+            final_latex = self._prepare_latex_for_rendering_fixed(latex_content)
+            
+            if final_latex:
+                try:
+                    # Render LaTeX
+                    ax.text(0.05, 0.5, final_latex,
+                           transform=ax.transAxes,
+                           fontsize=14,
+                           color='#2c3e50',
+                           ha='left', va='center')
+                except Exception as latex_error:
+                    logger.warning(f"LaTeX falló para {step_key}: {latex_error}")
+                    # Fallback to Unicode
+                    unicode_text = self._apply_unicode_enhancements_fixed(latex_content)
+                    ax.text(0.05, 0.5, unicode_text,
+                           transform=ax.transAxes,
+                           fontsize=12,
+                           color='#2c3e50',
+                           ha='left', va='center')
+            
+            # Add decorations
+            self._add_step_decorations_fixed(ax, step_key)
+            
+            # Create canvas
+            canvas_frame = ttk.Frame(self.steps_text.master)
+            canvas = FigureCanvasTkAgg(fig, canvas_frame)
+            canvas.draw()
+            canvas.get_tk_widget().pack(fill='x', padx=10, pady=5)
+            
+            # Replace placeholder
+            self._replace_placeholder_fixed(step_key, canvas_frame)
+            
+            # Store for cleanup
+            if not hasattr(self, 'step_canvases_fixed'):
+                self.step_canvases_fixed = {}
+            if not hasattr(self, 'step_figures_fixed'):
+                self.step_figures_fixed = {}
+            
+            self.step_canvases_fixed[step_key] = canvas
+            self.step_figures_fixed[step_key] = fig
+            
+            logger.info(f"Visualización LaTeX creada para {step_key}")
+            
+        except Exception as e:
+            logger.error(f"Error creando visualización {step_key}: {e}")
+    
+    def _prepare_latex_for_rendering_fixed(self, latex_text):
+        """Prepare LaTeX for matplotlib rendering"""
+        if not latex_text:
+            return ""
+        
+        # Clean again
+        cleaned = self._clean_latex_content_fixed(latex_text)
+        
+        # Add $ symbols if needed
+        if cleaned.startswith('$') and cleaned.endswith('$') and len(cleaned) > 2:
+            return cleaned
+        elif '$' in cleaned:
+            clean_text = cleaned.replace('$', '').strip()
+            if clean_text and not clean_text.isspace():
+                return f'${clean_text}$'
+        else:
+            if cleaned and not cleaned.isspace():
+                return f'${cleaned}$'
+        
+        return ""
+    
+    def _add_step_decorations_fixed(self, ax, step_key):
+        """Add decorations to step"""
+        try:
+            # Extract step number
+            step_number = step_key.split('_')[-1] if '_' in step_key else '1'
+            
+            # Create badge
+            import matplotlib.patches as patches
+            circle = patches.Circle((0.95, 0.5), 0.08,
+                                   transform=ax.transAxes,
+                                   facecolor='#3498db',
+                                   edgecolor='#2c3e50',
+                                   linewidth=2)
+            ax.add_patch(circle)
+            
+            # Add number
+            ax.text(0.95, 0.5, step_number,
+                   transform=ax.transAxes,
+                   fontsize=10, fontweight='bold',
+                   color='white',
+                   ha='center', va='center')
+            
+            # Subtle separator
+            ax.axhline(y=0.1, color='#bdc3c7', linestyle='--', alpha=0.3)
+            
+        except Exception as e:
+            logger.error(f"Error añadiendo decoraciones: {e}")
+    
+    def _replace_placeholder_fixed(self, step_key, canvas_frame):
+        """Replace placeholder with visualization"""
+        try:
+            if not hasattr(self, 'fixed_latex_steps'):
+                return
+            
+            step_data = self.fixed_latex_steps[step_key]
+            placeholder = step_data['placeholder']
+            
+            # Find and replace placeholder
+            content = self.steps_text.get("1.0", tk.END)
+            if placeholder in content:
+                # Find position
+                start_pos = content.find(placeholder)
+                if start_pos != -1:
+                    line_start = content[:start_pos].count('\n') + 1
+                    line_end = line_start
+                    
+                    # Replace
+                    self.steps_text.delete(f"{line_start}.0", f"{line_end}.0")
+                    self.steps_text.window_create(f"{line_start}.0", window=canvas_frame)
+            
+        except Exception as e:
+            logger.error(f"Error reemplazando placeholder {step_key}: {e}")
+    
+    def _render_fallback_steps_fixed(self, result):
+        """Fallback rendering if everything fails"""
+        try:
+            self.steps_text.config(state='normal')
+            self.steps_text.delete("1.0", tk.END)
+            
+            fallback_text = "Pasos del Cálculo (Modo Simplificado)\n"
+            fallback_text += "=" * 40 + "\n\n"
+            
+            if hasattr(result, 'steps') and result.steps:
+                for i, step in enumerate(result.steps, 1):
+                    if isinstance(step, dict):
+                        content = step.get('content', step.get('latex', str(step)))
+                    else:
+                        content = str(step)
+                    
+                    fallback_text += f"Paso {i}:\n{content}\n\n"
+            
+            self.steps_text.insert("1.0", fallback_text)
+            self.steps_text.config(state='disabled')
+            
+        except Exception as e:
+            logger.error(f"Error en fallback: {e}")
+
     def _display_verification_result(self, result):
         """Display verification result with LaTeX rendering"""
         try:
@@ -2228,26 +2610,60 @@ class ProfessionalIntegralCalculator:
                 # Remove axes for clean display
                 ax.set_axis_off()
                 
-                # Render LaTeX expression - much smaller like results
+                # Enhanced LaTeX rendering with Unicode support and corruption handling
                 latex_text = step_expression.replace('\\\\', '\\')
                 
-                # Check if LaTeX already has $ symbols to avoid duplication
-                if latex_text.startswith('$') and latex_text.endswith('$'):
-                    # LaTeX already has $ symbols, use as is
+                # Clean corrupted characters that cause ParseException
+                latex_text = latex_text.replace('\\right', 'right')
+                latex_text = latex_text.replace('\right', 'right')
+                latex_text = latex_text.replace('\\rright', 'right')
+                latex_text = latex_text.replace('\\r', '')
+                latex_text = latex_text.replace('ight', 'right')
+                latex_text = latex_text.replace('\r', '')
+                latex_text = latex_text.replace('\n', ' ')
+                latex_text = latex_text.strip()
+                
+                # Additional cleaning for problematic LaTeX patterns
+                latex_text = latex_text.replace('\\r', '')
+                latex_text = latex_text.replace('\\rright', 'right')
+                latex_text = latex_text.replace('\\right', 'right')
+                latex_text = latex_text.replace('right)', ')')
+                latex_text = latex_text.replace('right]', ']')
+                latex_text = latex_text.replace('right}', '}')
+                latex_text = latex_text.replace('right>', '>')
+                
+                # Apply Unicode formatting for better display
+                latex_text = self._enhance_latex_with_unicode(latex_text)
+                
+                # Enhanced $ symbol management with better validation
+                if latex_text.startswith('$') and latex_text.endswith('$') and len(latex_text) > 2:
+                    # LaTeX already properly formatted with $ symbols
                     final_latex = latex_text
                 elif '$' in latex_text:
-                    # LaTeX contains $ symbols but not properly formatted, clean it
-                    final_latex = latex_text.replace('$', '').strip()
-                    final_latex = f'${final_latex}$'
+                    # LaTeX contains $ symbols, clean and reformat properly
+                    clean_text = latex_text.replace('$', '').strip()
+                    if clean_text and not clean_text.isspace():
+                        final_latex = f'${clean_text}$'
+                    else:
+                        logger.warning(f"Empty LaTeX after cleaning $ symbols: {step_expression}")
+                        return
                 else:
-                    # LaTeX doesn't have $ symbols, add them
-                    final_latex = f'${latex_text}$'
+                    # LaTeX doesn't have $ symbols, add them if content is valid
+                    if latex_text and not latex_text.isspace():
+                        final_latex = f'${latex_text}$'
+                    else:
+                        logger.warning(f"Empty LaTeX content: {step_expression}")
+                        return
                 
-                # Additional validation to prevent malformed LaTeX
-                if not final_latex.strip() or final_latex.strip() == '$$':
-                    # Skip rendering if LaTeX is empty or malformed
-                    logger.warning(f"Skipping rendering of malformed LaTeX: {step_expression}")
+                # Comprehensive validation to prevent malformed LaTeX
+                if not final_latex.strip() or final_latex.strip() == '$$' or len(final_latex) < 3:
+                    logger.warning(f"Skipping rendering of malformed LaTeX: {step_expression} -> {final_latex}")
                     return
+                
+                # Additional validation for common LaTeX issues
+                if '\\int' in final_latex and 'dx' not in final_latex:
+                    # Add missing differential for integrals
+                    final_latex = final_latex.replace('\\int', '\\int ') + ' dx'
                 
                 try:
                     ax.text(0.5, 0.5, final_latex, 
@@ -2300,6 +2716,92 @@ class ProfessionalIntegralCalculator:
                 self.steps_text.config(state='disabled')
             except:
                 pass
+    
+    def _enhance_latex_with_unicode(self, latex_text: str) -> str:
+        """
+        Enhance LaTeX text with Unicode symbols for better display
+        
+        Args:
+            latex_text: Original LaTeX text
+            
+        Returns:
+            Enhanced LaTeX text with Unicode symbols
+        """
+        try:
+            enhanced_text = latex_text
+            
+            # Convert common LaTeX symbols to Unicode equivalents
+            unicode_mappings = {
+                r'\int': 'integral',
+                r'\sum': 'sumatoria',
+                r'\prod': 'producto',
+                r'\infty': 'infinito',
+                r'\alpha': 'alpha',
+                r'\beta': 'beta',
+                r'\gamma': 'gamma',
+                r'\delta': 'delta',
+                r'\theta': 'theta',
+                r'\lambda': 'lambda',
+                r'\mu': 'mu',
+                r'\pi': 'pi',
+                r'\sigma': 'sigma',
+                r'\phi': 'phi',
+                r'\psi': 'psi',
+                r'\omega': 'omega',
+                r'\sqrt': 'raiz',
+                r'\frac': 'fraccion',
+                r'\partial': 'parcial',
+                r'\nabla': 'nabla',
+                r'\times': '×',
+                r'\div': '÷',
+                r'\pm': '±',
+                r'\mp': '±',
+                r'\leq': 'leq',
+                r'\geq': 'geq',
+                r'\neq': 'neq',
+                r'\approx': 'aprox',
+                r'\equiv': 'equiv',
+                r'\in': 'in',
+                r'\notin': 'notin',
+                r'\subset': 'subset',
+                r'\supset': 'supset',
+                r'\cup': 'union',
+                r'\cap': 'interseccion',
+                r'\emptyset': 'vacio',
+                r'\mathbb{R}': 'R',
+                r'\mathbb{Z}': 'Z',
+                r'\mathbb{Q}': 'Q',
+                r'\mathbb{N}': 'N',
+                r'\mathbb{C}': 'C'
+            }
+            
+            # Apply Unicode mappings
+            for latex_symbol, unicode_symbol in unicode_mappings.items():
+                enhanced_text = enhanced_text.replace(latex_symbol, unicode_symbol)
+            
+            # Handle superscripts and subscripts
+            enhanced_text = enhanced_text.replace('^2', '²')
+            enhanced_text = enhanced_text.replace('^3', '³')
+            enhanced_text = enhanced_text.replace('^4', '³')
+            enhanced_text = enhanced_text.replace('^5', '³')
+            
+            # Handle mathematical operators
+            enhanced_text = enhanced_text.replace('*', '×')
+            enhanced_text = enhanced_text.replace(' and ', ' y ')
+            enhanced_text = enhanced_text.replace(' or ', ' o ')
+            
+            # Clean up any remaining LaTeX commands
+            enhanced_text = enhanced_text.replace('\\text', '')
+            enhanced_text = enhanced_text.replace('{', '')
+            enhanced_text = enhanced_text.replace('}', '')
+            enhanced_text = enhanced_text.replace('\\left', '')
+            enhanced_text = enhanced_text.replace('\\right', '')
+            
+            return enhanced_text.strip()
+            
+        except Exception as e:
+            logger.error(f"Error enhancing LaTeX with Unicode: {str(e)}")
+            return latex_text
     
     def _display_calculation_error(self, error_msg):
         """Display calculation error"""
@@ -3178,7 +3680,10 @@ Para más información, visite la documentación en línea o contacte al soporte
         """Plot current function with professional styling"""
         try:
             function_text = self.editor_text.get("1.0", tk.END).strip()
+            logger.info(f"plot_function called with: '{function_text}'")
+            
             if not function_text:
+                logger.warning("Empty function text in plot_function")
                 messagebox.showwarning("Gráfica", "No hay función para graficar")
                 return
             
@@ -3208,12 +3713,14 @@ Para más información, visite la documentación en línea o contacte al soporte
                     return
             else:
                 # Regular function parsing
+                logger.info(f"Attempting to parse function: '{function_text}'")
                 try:
                     parsed_func = self.parser.parse(function_text)
+                    logger.info(f"Parse successful: {parsed_func}")
                     display_text = function_text
                 except Exception as parse_err:
-                    messagebox.showerror("Error de Parsing", f"No se pudo parsear la función:\n{str(parse_err)}")
                     logger.error(f"Parse error in plot_function: {parse_err}")
+                    messagebox.showerror("Error de Parsing", f"No se pudo parsear la función:\n{str(parse_err)}")
                     return
             
             variable = self.symbols['x'].get()
@@ -3233,8 +3740,28 @@ Para más información, visite la documentación en línea o contacte al soporte
             f = sp.lambdify(var_symbol, parsed_func, 'numpy')
             y = f(x)
             
-            # Handle potential infinities
-            mask = np.isfinite(y)
+            # Handle potential infinities with robust validation
+            try:
+                mask = np.isfinite(y)
+            except (TypeError, ValueError) as e:
+                logger.warning(f"Standard isfinite failed in plot_function: {e}, using robust fallback")
+                # Robust fallback: manual check for finite values
+                mask = []
+                for i, val in enumerate(y):
+                    try:
+                        if isinstance(val, (int, float, np.number)) and not isinstance(val, bool):
+                            if isinstance(val, np.number):
+                                mask.append(np.isfinite(val))
+                            else:
+                                import math
+                                mask.append(math.isfinite(val))
+                        else:
+                            mask.append(False)
+                    except (TypeError, ValueError, AttributeError):
+                        mask.append(False)
+                
+                mask = np.array(mask, dtype=bool)
+            
             if not np.any(mask):
                 messagebox.showerror("Error", "La función no tiene valores finitos en el rango especificado")
                 return
@@ -3289,8 +3816,28 @@ Para más información, visite la documentación en línea o contacte al soporte
                         x_fill = np.linspace(lower, upper, 100)
                         y_fill = f(x_fill)
                         
-                        # Handle infinities in fill area
-                        mask_fill = np.isfinite(y_fill)
+                        # Handle infinities in fill area with robust validation
+                        try:
+                            mask_fill = np.isfinite(y_fill)
+                        except (TypeError, ValueError) as e:
+                            logger.warning(f"Standard isfinite failed in fill area: {e}, using robust fallback")
+                            # Robust fallback: manual check for finite values
+                            mask_fill = []
+                            for i, val in enumerate(y_fill):
+                                try:
+                                    if isinstance(val, (int, float, np.number)) and not isinstance(val, bool):
+                                        if isinstance(val, np.number):
+                                            mask_fill.append(np.isfinite(val))
+                                        else:
+                                            import math
+                                            mask_fill.append(math.isfinite(val))
+                                    else:
+                                        mask_fill.append(False)
+                                except (TypeError, ValueError, AttributeError):
+                                    mask_fill.append(False)
+                            
+                            mask_fill = np.array(mask_fill, dtype=bool)
+                        
                         if np.any(mask_fill):
                             self.ax.fill_between(x_fill[mask_fill], 0, y_fill[mask_fill], 
                                               alpha=0.3, color=color)
@@ -3322,8 +3869,28 @@ Para más información, visite la documentación en línea o contacte al soporte
             f = sp.lambdify(var_symbol, parsed_func, 'numpy')
             y = f(x)
             
-            # Handle potential infinities
-            mask = np.isfinite(y)
+            # Handle potential infinities with robust validation
+            try:
+                mask = np.isfinite(y)
+            except (TypeError, ValueError) as e:
+                logger.warning(f"Standard isfinite failed in plot_function: {e}, using robust fallback")
+                # Robust fallback: manual check for finite values
+                mask = []
+                for i, val in enumerate(y):
+                    try:
+                        if isinstance(val, (int, float, np.number)) and not isinstance(val, bool):
+                            if isinstance(val, np.number):
+                                mask.append(np.isfinite(val))
+                            else:
+                                import math
+                                mask.append(math.isfinite(val))
+                        else:
+                            mask.append(False)
+                    except (TypeError, ValueError, AttributeError):
+                        mask.append(False)
+                
+                mask = np.array(mask, dtype=bool)
+            
             if not np.any(mask):
                 messagebox.showerror("Error", "La función no tiene valores finitos en el rango especificado")
                 return
@@ -3378,8 +3945,28 @@ Para más información, visite la documentación en línea o contacte al soporte
                         x_fill = np.linspace(lower, upper, 100)
                         y_fill = f(x_fill)
                         
-                        # Handle infinities in fill area
-                        mask_fill = np.isfinite(y_fill)
+                        # Handle infinities in fill area with robust validation
+                        try:
+                            mask_fill = np.isfinite(y_fill)
+                        except (TypeError, ValueError) as e:
+                            logger.warning(f"Standard isfinite failed in fill area: {e}, using robust fallback")
+                            # Robust fallback: manual check for finite values
+                            mask_fill = []
+                            for i, val in enumerate(y_fill):
+                                try:
+                                    if isinstance(val, (int, float, np.number)) and not isinstance(val, bool):
+                                        if isinstance(val, np.number):
+                                            mask_fill.append(np.isfinite(val))
+                                        else:
+                                            import math
+                                            mask_fill.append(math.isfinite(val))
+                                    else:
+                                        mask_fill.append(False)
+                                except (TypeError, ValueError, AttributeError):
+                                    mask_fill.append(False)
+                            
+                            mask_fill = np.array(mask_fill, dtype=bool)
+                        
                         if np.any(mask_fill):
                             self.ax.fill_between(x_fill[mask_fill], 0, y_fill[mask_fill], 
                                               alpha=0.3, color=color)
