@@ -3263,3 +3263,526 @@ ERROR:ui.professional_main_window:Error creando visualización step_5: name 'plt
 ERROR:ui.professional_main_window:Error creando visualización step_6: name 'plt' is not defined
 ERROR:ui.professional_main_window:Error creando visualización step_7: name 'plt' is not defined
 INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: 'x**2 + 3*x + 2'
+INFO:ui.professional_main_window:Attempting to parse function: 'x**2 + 3*x + 2'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Parse successful: x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+ERROR:ui.professional_main_window:Error creando visualización step_1: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_2: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_3: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_4: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_5: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_6: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_7: name 'plt' is not defined
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:core.integrator:Integrating: 2*x**3/3 + 3*x**2/2 - x with method: auto
+INFO:core.integrator:Integration successful: x**2*(x**2 + 3*x - 3)/6
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫ (2x² + 3x - 1) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+ERROR:ui.professional_main_window:Error creando visualización step_1: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_2: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_3: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_4: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_5: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_6: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_7: name 'plt' is not defined
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+INFO:core.integrator:Integrating: -2*x**3/3 + x**2/2 + 5*x*x4 with method: auto
+INFO:core.integrator:Integration successful: x**2*(-x**2 + x + 15*x4)/6
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫ (5x⁴ - 2x² + x) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+WARNING:ui.professional_main_window:Standard isfinite failed in plot_function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe'', using robust fallback
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+ERROR:ui.professional_main_window:Error creando visualización step_1: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_2: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_3: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_4: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_5: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_6: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_7: name 'plt' is not defined
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:core.integrator:Integrating: 2*x**3/3 + 3*x**2/2 - x with method: auto
+INFO:core.integrator:Integration successful: x**2*(x**2 + 3*x - 3)/6
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫ (2x² + 3x - 1) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+ERROR:ui.professional_main_window:Error creando visualización step_1: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_2: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_3: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_4: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_5: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_6: name 'plt' is not defined
+ERROR:ui.professional_main_window:Error creando visualización step_7: name 'plt' is not defined
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+ERROR:__main__:Fatal error: unindent does not match any outer indentation level (professional_main_window.py, line 258)
+ERROR:__main__:Full traceback:
+ERROR:__main__:Traceback (most recent call last):
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\main.py", line 107, in main
+    from ui.professional_main_window import ProfessionalIntegralCalculator
+  File "C:\Users\capit\OneDrive\Documents\GitHub\Proyecto-practico-calculadora-de-integrales-multiples-metodos\Parciales\integral_app\ui\professional_main_window.py", line 258
+    def insert_unicode_symbol(self, symbol: str, symbol_name: str):
+                                                                   ^
+IndentationError: unindent does not match any outer indentation level
+
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:core.professional_unicode_methods:Inicializados 25 métodos Unicode profesionales
+INFO:core.professional_unicode_methods:Professional Unicode Methods inicializado
+INFO:core.unicode_profile_manager:Unicode Profile Manager inicializado
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+INFO:core.integrator:Integrating: -2*x**3/3 + x**2/2 + 5*x*x4 with method: auto
+INFO:core.integrator:Integration successful: x**2*(-x**2 + x + 15*x4)/6
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫ (5x⁴ - 2x² + x) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+WARNING:ui.professional_main_window:Standard isfinite failed in plot_function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe'', using robust fallback
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_1
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_2
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_3
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_4
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_5
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_6
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_7
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:core.integrator:Integrating: 2*x**3/3 + 3*x**2/2 - x with method: auto
+INFO:core.integrator:Integration successful: x**2*(x**2 + 3*x - 3)/6
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫ (2x² + 3x - 1) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x² + 3x - 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x² + 3x - 1) dx -> 2*x**3/3 + 3*x**2/2 - x
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_1
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_2
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_3
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_4
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_5
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_6
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_7
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (x² + 1)/(x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (x² + 1)/(x) dx -> x**2/2 + log(x)
+INFO:core.integrator:Integrating: x**2/2 + log(x) with method: auto
+INFO:core.integrator:Integration successful: x*(x**2/6 + log(x) - 1)
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫ (x² + 1)/(x) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (x² + 1)/(x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (x² + 1)/(x) dx -> x**2/2 + log(x)
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_1
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_2
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_3
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_4
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_5
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_6
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_7
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:core.professional_unicode_methods:Inicializados 25 métodos Unicode profesionales
+INFO:core.professional_unicode_methods:Professional Unicode Methods inicializado
+INFO:core.unicode_profile_manager:Unicode Profile Manager inicializado
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: 'x**2 + 3*x + 2'
+INFO:ui.professional_main_window:Attempting to parse function: 'x**2 + 3*x + 2'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Parse successful: x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_1
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_2
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_3
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_4
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_5
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_6
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_7
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:core.professional_unicode_methods:Inicializados 25 métodos Unicode profesionales
+INFO:core.professional_unicode_methods:Professional Unicode Methods inicializado
+INFO:core.unicode_profile_manager:Unicode Profile Manager inicializado
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: x**2 + 3*x + 2
+INFO:core.microsoft_math_engine:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:core.integrator:Integrating: x**2 + 3*x + 2 with method: auto
+INFO:core.integrator:Integration successful: x*(2*x**2 + 9*x + 12)/6
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: 'x**2 + 3*x + 2'
+INFO:ui.professional_main_window:Attempting to parse function: 'x**2 + 3*x + 2'
+INFO:core.parser:Parsing expression: x**2 + 3*x + 2
+INFO:core.parser:Cleaned expression: x**2 + 3*x + 2
+INFO:core.parser:Successfully parsed: x**2 + 3*x + 2 -> x**2 + 3*x + 2
+INFO:ui.professional_main_window:Parse successful: x**2 + 3*x + 2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_1
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_2
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_3
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_4
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_5
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_6
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_7
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:core.professional_unicode_methods:Inicializados 25 métodos Unicode profesionales
+INFO:core.professional_unicode_methods:Professional Unicode Methods inicializado
+INFO:core.unicode_profile_manager:Unicode Profile Manager inicializado
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+INFO:core.integrator:Integrating: -2*x**3/3 + x**2/2 + 5*x*x4 with method: auto
+INFO:core.integrator:Integration successful: x**2*(-x**2 + x + 15*x4)/6
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 7: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫ (5x⁴ - 2x² + x) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (5x⁴ - 2x² + x) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (5x⁴ - 2x² + x) dx -> -2*x**3/3 + x**2/2 + 5*x*x4
+WARNING:ui.professional_main_window:Standard isfinite failed in plot_function: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe'', using robust fallback
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_1
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_2
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_3
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_4
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_5
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_6
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_7
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x)(x² + 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x)(x² + 1) dx -> x**4/2 + x**2
+INFO:core.integrator:Integrating: x**4/2 + x**2 with method: auto
+INFO:core.integrator:Integration successful: x**5/10 + x**3/3
+INFO:ui.professional_main_window:Iniciando visualización corregida de pasos
+INFO:ui.professional_main_window:Procesando paso 1: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 2: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 3: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 4: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 5: <class 'dict'>
+INFO:ui.professional_main_window:Procesando paso 6: <class 'dict'>
+INFO:ui.professional_main_window:Visualización corregida de pasos completada
+INFO:ui.professional_main_window:plot_function called with: '∫ (2x)(x² + 1) dx'
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x)(x² + 1) dx
+INFO:core.microsoft_math_engine:Successfully parsed: ∫ (2x)(x² + 1) dx -> x**4/2 + x**2
+INFO:ui.professional_main_window:Visual LaTeX rendering completed successfully
+INFO:ui.professional_main_window:Renderizando 7 visualizaciones LaTeX
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_1
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_2
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_3
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_4
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_5
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_6
+INFO:ui.professional_main_window:Visualización LaTeX creada para step_7
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:core.professional_unicode_methods:Inicializados 25 métodos Unicode profesionales
+INFO:core.professional_unicode_methods:Professional Unicode Methods inicializado
+INFO:core.unicode_profile_manager:Unicode Profile Manager inicializado
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:core.microsoft_math_engine:Parsing natural math: ∫ (2x)(x² + 1) dxin
+ERROR:core.microsoft_math_engine:Error parsing natural math: Sympify of expression 'could not parse 'integrate((2*x)*(x**2 + 1), x)in'' failed, because of exception being raised:
+SyntaxError: invalid syntax (<string>, line 1)
+INFO:__main__:Application closed normally
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:core.professional_unicode_methods:Inicializados 25 métodos Unicode profesionales
+INFO:core.professional_unicode_methods:Professional Unicode Methods inicializado
+INFO:core.unicode_profile_manager:Unicode Profile Manager inicializado
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================
+INFO:__main__:==================================================
+INFO:__main__:Starting LaTeX Integral Calculator - Professional Rendering...
+INFO:__main__:==================================================
+INFO:__main__:+ Tkinter available
+INFO:__main__:+ Matplotlib 3.10.8 available
+INFO:__main__:+ NumPy 2.4.4 available
+INFO:__main__:+ SymPy 1.14.0 available
+INFO:__main__:+ LaTeX rendering available
+INFO:core.professional_unicode_methods:Inicializados 25 métodos Unicode profesionales
+INFO:core.professional_unicode_methods:Professional Unicode Methods inicializado
+INFO:core.unicode_profile_manager:Unicode Profile Manager inicializado
+INFO:__main__:+ All imports successful
+INFO:__main__:Creating LaTeX calculator instance...
+INFO:ui.professional_main_window:DPI scaling factor: 1.334646962233169
+INFO:ui.professional_main_window:Font scaling: 0.80x, DPI: 1.33x
+INFO:ui.professional_main_window:Screen setup: 1536x864 -> Window: 1280x720
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:graph.plotter:Professional plotter initialized successfully
+INFO:ui.latex_renderer:Professional LaTeX renderer initialized successfully
+INFO:utils.validators:ExpressionValidator initialized successfully
+INFO:core.microsoft_math_engine:Microsoft Math Engine initialized
+INFO:data.template_manager:Loaded 14 templates from data/templates.json
+INFO:ui.template_browser:Loaded 14 templates
+INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initialized successfully
+INFO:__main__:+ LaTeX calculator created successfully
+INFO:__main__:+ Application ready
+INFO:__main__:==================================================

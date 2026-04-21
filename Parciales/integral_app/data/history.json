@@ -514,5 +514,47 @@
     "type": "Automático",
     "date": "2026-04-20 23:31:07",
     "timestamp": 1776745867.907894
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-21 09:48:16",
+    "timestamp": 1776782896.602024
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-21 09:49:17",
+    "timestamp": 1776782957.619048
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-21 09:50:11",
+    "timestamp": 1776783011.723182
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-21 09:55:48",
+    "timestamp": 1776783348.093726
+  },
+  {
+    "function": "integrate(4*x**3 + 7, x)",
+    "type": "Automático",
+    "date": "2026-04-21 09:56:29",
+    "timestamp": 1776783389.859745
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-21 10:13:58",
+    "timestamp": 1776784438.946274
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-21 10:17:05",
+    "timestamp": 1776784625.450473
   }
 ]

@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-04-21T10:06:33.542466",
+  "integration_type": "unicode_pulcritud",
+  "integrations": [
+    "LaTeX renderer con pulcritud Unicode profesional",
+    "Microsoft Math Engine con pulcritud Unicode profesional",
+    "Professional Main Window con pulcritud Unicode profesional",
+    "Enhanced LaTeX Renderer con pulcritud Unicode elegante"
+  ],
+  "unicode_methods_stats": {
+    "total_methods": 22,
+    "methods_by_style": {
+      "professional": 21,
+      "elegant": 1,
+      "technical": 0,
+      "academic": 0
+    },
+    "methods_by_category": {
+      "relations": 3,
+      "functions": 7,
+      "powers": 3,
+      "constants": 2,
+      "integrals": 2,
+      "fractions": 3,
+      "operators": 2
+    },
+    "cache_size": 0,
+    "available_styles": [
+      "professional",
+      "elegant",
+      "technical",
+      "academic"
+    ]
+  }
+}

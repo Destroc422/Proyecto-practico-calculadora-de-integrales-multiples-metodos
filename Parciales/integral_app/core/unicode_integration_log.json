@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-04-21T09:58:50.581778",
+  "integrations": [
+    "LaTeX renderer integrado con perfiles Unicode",
+    "Microsoft Math Engine integrado con perfiles Unicode",
+    "Professional Main Window integrado con perfiles Unicode",
+    "Enhanced LaTeX Renderer integrado con perfiles Unicode",
+    "Sistema de teclado integrado con perfiles Unicode"
+  ],
+  "unicode_manager_stats": {
+    "total_symbols": 28,
+    "total_profiles": 6,
+    "active_profile": "display",
+    "cache_size": 0,
+    "categories": {
+      "integrals": 4,
+      "derivatives": 0,
+      "operators": 4,
+      "functions": 7,
+      "constants": 2,
+      "greek": 0,
+      "arrows": 0,
+      "relations": 3,
+      "sets": 0,
+      "logic": 0,
+      "fractions": 5,
+      "superscripts": 3,
+      "subscripts": 0,
+      "special": 0
+    },
+    "symbols_by_category": {
+      "integrals": [
+        "integral",
+        "definite_integral",
+        "double_integral",
+        "triple_integral"
+      ],
+      "derivatives": [],
+      "operators": [
+        "multiply",
+        "divide",
+        "plus_minus",
+        "infinity"
+      ],
+      "functions": [
+        "sin",
+        "cos",
+        "tan",
+        "sqrt",
+        "ln",
+        "log",
+        "exp"
+      ],
+      "constants": [
+        "pi",
+        "e"
+      ],
+      "greek": [],
+      "arrows": [],
+      "relations": [
+        "equals",
+        "not_equals",
+        "approx"
+      ],
+      "sets": [],
+      "logic": [],
+      "fractions": [
+        "fraction_1_2",
+        "fraction_1_3",
+        "fraction_2_3",
+        "fraction_1_4",
+        "fraction_3_4"
+      ],
+      "superscripts": [
+        "superscript_2",
+        "superscript_3",
+        "superscript_n"
+      ],
+      "subscripts": [],
+      "special": []
+    }
+  }
+}

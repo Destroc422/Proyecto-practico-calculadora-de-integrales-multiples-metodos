@@ -36,19 +36,6 @@ from data.history_manager import HistoryManager
 
 logger = logging.getLogger(__name__)
 
-# Importar métodos Unicode profesionales para máxima pulcritud
-from core.professional_unicode_methods import (
-    get_professional_unicode, apply_professional_style, apply_elegant_style,
-    apply_technical_style, apply_academic_style, UnicodeStyle
-)
-
-# Importar gestor de perfiles Unicode
-from core.unicode_profile_manager import (
-    get_unicode_manager, convert_to_display, convert_to_latex, 
-    convert_to_input, convert_to_calculation, convert_to_export, convert_to_print,
-    set_profile, SymbolContext, SymbolCategory
-)
-
 
 class ProfessionalIntegralCalculator:
     """Ultra-modern professional integral calculator with Wolfram-grade interface"""
@@ -122,118 +109,11 @@ class ProfessionalIntegralCalculator:
             self.current_zoom_level = 1.0
             self.pan_start = None
             
-            # Section references for navigation
-            self.input_section = None
-            self.keypad_section = None
-            self.results_section = None
-            self.graph_section = None
-            self.status_bar = None
-            
         except Exception as e:
             logger.error(f"Error initializing components: {str(e)}")
             messagebox.showerror("Error", "No se pudieron inicializar los componentes")
             raise
-
     
-    
-    def setup_unicode_profiles(self):
-        """Setup Unicode profile management"""
-        try:
-            self.unicode_manager = get_unicode_manager()
-            
-            # Establecer perfil inicial según el contexto
-            set_profile('display')
-            
-            # Añadir atajos de teclado para cambiar perfiles
-            self.root.bind('<Control-Alt-U>', lambda e: self.toggle_unicode_profile())
-            self.root.bind('<Control-Alt-D>', lambda e: set_profile('display'))
-            self.root.bind('<Control-Alt-L>', lambda e: set_profile('latex'))
-            self.root.bind('<Control-Alt-I>', lambda e: set_profile('input'))
-            
-            logger.info("Unicode profiles setup completed")
-            
-        except Exception as e:
-            logger.error(f"Error setting up Unicode profiles: {e}")
-    
-    def toggle_unicode_profile(self):
-        """Toggle between Unicode profiles"""
-        try:
-            current_profile = self.unicode_manager.get_active_profile()
-            if current_profile:
-                profiles = list(self.unicode_manager.profiles.keys())
-                current_index = profiles.index(current_profile.name)
-                next_index = (current_index + 1) % len(profiles)
-                next_profile = profiles[next_index]
-                
-                set_profile(next_profile)
-                self.update_status(f"Perfil Unicode: {next_profile}", "#3498db")
-                
-                # Actualizar visualización actual si hay resultado
-                if hasattr(self, 'current_result') and self.current_result:
-                    self._display_result(self.current_result)
-                
-        except Exception as e:
-            logger.error(f"Error toggling Unicode profile: {e}")
-    
-    def convert_expression_context(self, expression: str, context: SymbolContext) -> str:
-        """Convert expression using Unicode profiles"""
-        try:
-            return self.unicode_manager.convert_expression(expression, context)
-        except Exception as e:
-            logger.error(f"Error converting expression: {e}")
-            return expression
-    
-    def get_unicode_symbols_for_category(self, category: SymbolCategory):
-        """Get Unicode symbols for a specific category"""
-        try:
-            return self.unicode_manager.get_symbols_by_category(category)
-        except Exception as e:
-            logger.error(f"Error getting symbols for category: {e}")
-            return []
-
-
-    def apply_unicode_pulcritud(self, expression: str, style: str = 'professional') -> str:
-        """Aplica pulcritud Unicode profesional a expresiones"""
-        try:
-            unicode_methods = get_professional_unicode()
-            
-            if style == 'professional':
-                return apply_professional_style(expression)
-            elif style == 'elegant':
-                return apply_elegant_style(expression)
-            elif style == 'technical':
-                return apply_technical_style(expression)
-            elif style == 'academic':
-                return apply_academic_style(expression)
-            else:
-                return apply_professional_style(expression)
-                
-        except Exception as e:
-            logger.error(f"Error aplicando pulcritud Unicode: {e}")
-            return expression
-    
-    def format_result_with_pulcritud(self, result: str) -> str:
-        """Formatea resultado con pulcritud Unicode profesional"""
-        return self.apply_unicode_pulcritud(result, 'professional')
-    
-    def format_steps_with_pulcritud(self, steps: list) -> list:
-        """Formatea pasos con pulcritud Unicode elegante"""
-        formatted_steps = []
-        for step in steps:
-            if isinstance(step, str):
-                formatted_step = self.apply_unicode_pulcritud(step, 'elegant')
-                formatted_steps.append(formatted_step)
-            elif isinstance(step, dict) and 'expression' in step:
-                step['expression'] = self.apply_unicode_pulcritud(step['expression'], 'elegant')
-                formatted_steps.append(step)
-            else:
-                formatted_steps.append(step)
-        return formatted_steps
-    
-    def format_verification_with_pulcritud(self, verification: str) -> str:
-        """Formatea verificación con pulcritud Unicode académica"""
-        return self.apply_unicode_pulcritud(verification, 'academic')
-
     def setup_professional_ui(self):
         """Setup ultra-modern professional user interface"""
         try:
@@ -254,27 +134,6 @@ class ProfessionalIntegralCalculator:
             logger.error(f"Error setting up professional UI: {str(e)}")
             messagebox.showerror("Error", "No se pudo configurar la interfaz profesional")
             raise
-    
-    def insert_unicode_symbol(self, symbol: str, symbol_name: str):
-        """Insert Unicode symbol into input field"""
-        try:
-            if hasattr(self, 'input_field'):
-                current_text = self.input_field.get()
-                cursor_pos = self.input_field.index(tk.INSERT)
-                
-                # Insertar símbolo
-                new_text = current_text[:cursor_pos] + symbol + current_text[cursor_pos:]
-                self.input_field.delete(0, tk.END)
-                self.input_field.insert(0, new_text)
-                
-                # Mover cursor después del símbolo
-                self.input_field.icursor(cursor_pos + len(symbol))
-                
-                # Actualizar estado
-                self.update_status(f"Símbolo insertado: {symbol_name} ({symbol})", "#27ae60")
-                
-        except Exception as e:
-            logger.error(f"Error inserting Unicode symbol: {e}")
     
     def create_professional_toolbar(self):
         """Create Wolfram-grade professional toolbar"""
@@ -2386,10 +2245,6 @@ class ProfessionalIntegralCalculator:
     def _create_latex_visualization_fixed(self, step_key, step_data):
         """Create LaTeX visualization for a step"""
         try:
-            # Import matplotlib components
-            import matplotlib.pyplot as plt
-            from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-            
             # Create matplotlib figure
             fig, ax = plt.subplots(1, 1, figsize=(12, 2.5))
             fig.patch.set_facecolor('#ffffff')
@@ -4395,86 +4250,6 @@ Para más información, visite la documentación en línea o contacte al soporte
                 current_count = int(current_text.split(": ")[1]) if ": " in current_text else 0
                 new_count = current_count + 1
                 self.calc_counter.config(text=f"Cálculos: {new_count}")
-        except Exception as e:
-            logger.error(f"Error incrementing counter: {str(e)}")
-    def enhance_navigation_flow(self):
-        """Enhance navigation flow between sections"""
-        try:
-            # Auto-switch to results tab after calculation
-            if hasattr(self, 'results_notebook'):
-                self.results_notebook.select(0)  # Select first tab (Result)
-            
-            # Auto-focus input field after template insertion
-            if hasattr(self, 'input_field'):
-                self.input_field.focus_set()
-            
-            # Add keyboard shortcuts
-            self.root.bind('<Control-Return>', lambda e: self.calculate_integral())
-            self.root.bind('<Control-l>', lambda e: self.clear_all())
-            self.root.bind('<Control-1>', lambda e: self.switch_to_result_tab())
-            self.root.bind('<Control-2>', lambda e: self.switch_to_steps_tab())
-            self.root.bind('<Control-3>', lambda e: self.switch_to_verification_tab())
-            
-            logger.info("Navigation flow enhanced successfully")
-            
-        except Exception as e:
-            logger.error(f"Error enhancing navigation flow: {e}")
-    
-    def switch_to_result_tab(self):
-        """Switch to result tab"""
-        try:
-            if hasattr(self, 'results_notebook'):
-                self.results_notebook.select(0)
-        except Exception as e:
-            logger.error(f"Error switching to result tab: {e}")
-    
-    def switch_to_steps_tab(self):
-        """Switch to steps tab"""
-        try:
-            if hasattr(self, 'results_notebook'):
-                self.results_notebook.select(1)
-        except Exception as e:
-            logger.error(f"Error switching to steps tab: {e}")
-    
-    def switch_to_verification_tab(self):
-        """Switch to verification tab"""
-        try:
-            if hasattr(self, 'results_notebook'):
-                self.results_notebook.select(2)
-        except Exception as e:
-            logger.error(f"Error switching to verification tab: {e}")
-    
-    def clear_all(self):
-        """Clear all input and results"""
-        try:
-            if hasattr(self, 'input_field'):
-                self.input_field.delete(0, tk.END)
-            
-            if hasattr(self, 'result_text'):
-                self.result_text.config(state='normal')
-                self.result_text.delete(1.0, tk.END)
-                self.result_text.config(state='disabled')
-            
-            if hasattr(self, 'steps_text'):
-                self.steps_text.config(state='normal')
-                self.steps_text.delete(1.0, tk.END)
-                self.steps_text.config(state='disabled')
-            
-            if hasattr(self, 'verify_text'):
-                self.verify_text.config(state='normal')
-                self.verify_text.delete(1.0, tk.END)
-                self.verify_text.config(state='disabled')
-            
-            # Focus back to input
-            if hasattr(self, 'input_field'):
-                self.input_field.focus_set()
-            
-            logger.info("All fields cleared successfully")
-            
-        except Exception as e:
-            logger.error(f"Error clearing all fields: {e}")
-
-
         except Exception as e:
             logger.error(f"Error incrementing calc counter: {str(e)}")
     

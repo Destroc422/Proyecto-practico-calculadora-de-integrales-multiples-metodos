@@ -10,13 +10,6 @@ import logging
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from typing import Optional
 
-# Import enhanced renderer
-try:
-    from core.enhanced_latex_renderer import EnhancedLaTeXRenderer
-except ImportError:
-    EnhancedLaTeXRenderer = None
-    logging.warning("Enhanced LaTeX Renderer not available")
-
 # Configure matplotlib for professional rendering
 matplotlib.rcParams.update({
     'font.size': 14,
@@ -31,19 +24,6 @@ matplotlib.rcParams.update({
 })
 
 logger = logging.getLogger(__name__)
-
-# Importar métodos Unicode profesionales para máxima pulcritud
-from core.professional_unicode_methods import (
-    get_professional_unicode, apply_professional_style, apply_elegant_style,
-    apply_technical_style, apply_academic_style, UnicodeStyle
-)
-
-# Importar gestor de perfiles Unicode
-from core.unicode_profile_manager import (
-    get_unicode_manager, convert_to_display, convert_to_latex, 
-    convert_to_input, convert_to_calculation, set_profile,
-    SymbolContext
-)
 
 
 class ProfessionalLaTeXRenderer:

@@ -70,7 +70,6 @@ class ScientificKeypad:
         self.create_operations_section(keypad_frame)
         self.create_functions_section(keypad_frame)
         self.create_advanced_section(keypad_frame)
-        self.create_integrals_section(keypad_frame)
         self.create_greek_section(keypad_frame)
         self.create_fractions_section(keypad_frame)
     
@@ -82,7 +81,7 @@ class ScientificKeypad:
         # Símbolos matemáticos Unicode esenciales - MEJORADO con símbolos faltantes
         unicode_symbols = [
             # Integrales y cálculo
-            ('', 'int '), ('', 'int '), ('', 'int '),
+            ('', 'integral('), ('', 'integral('), ('', 'integral('),
             ('', 'partial '), ('', 'nabla '), ('', 'infinity '),
             ('', 'sum '), ('', 'product '), ('', 'sqrt('),
             ('', 'sqrt('), ('', 'incremento '),
@@ -272,18 +271,18 @@ class ScientificKeypad:
         
         # Funciones avanzadas con símbolos Unicode - CONSISTENTE
         advanced = [
-            ('lim', 'limit('), ('lim→', 'limit('), ('lim←', 'limit('), ('lim∞', 'limit('),
-            ('d/dx', 'diff('), ('∂/∂x', 'diff('), ('∫', 'int '), ('∬', 'int '),
-            ('∑', 'sum('), ('∏', 'product('), ('∪', 'union '), ('∩', 'intersection '),
-            ('⊕', 'oplus '), ('⊗', 'otimes '), ('⊖', 'ominus '), ('⊙', 'odot '),
-            ('→', '-> '), ('←', '<- '), ('↔', '<-> '), ('⇒', '=> '),
-            ('∀', 'forall '), ('∃', 'exists '), ('∄', 'nexists '), ('∴', 'therefore '),
-            ('∵', 'because '), ('∈', 'in '), ('∉', 'notin '), ('⊂', 'subset '),
-            ('⊆', 'subseteq '), ('⊃', 'superset '), ('⊇', 'superseteq '), ('≡', '=='),
-            ('≈', '~='), ('≠', '!='), ('≤', '<='), ('≥', '>='),
-            ('≪', '<<'), ('≫', '>>'), ('∝', 'propto '), ('∥', 'parallel '),
-            ('∫x²', 'int x**2 dx'), ('∫x³', 'int x**3 dx'), ('∫x⁴', 'int x**4 dx'), ('∫x⁵', 'int x**5 dx'),
-            ('∑x²', 'sum x**2'), ('∑x³', 'sum x**3'), ('∏x²', 'product x**2'), ('∏x³', 'product x**3')
+            ('lim', 'limit('), ('lim', 'limit('), ('lim', 'limit('), ('lim', 'limit('),
+            ('d/dx', 'diff('), ('/x', 'diff('), ('', 'integral('), ('', 'integral('),
+            ('', 'sum('), ('', 'product('), ('', 'union '), ('', 'intersection '),
+            ('', 'oplus '), ('', 'otimes '), ('', 'ominus '), ('', 'odot '),
+            ('', '-> '), ('', '<- '), ('', '<-> '), ('', '=> '),
+            ('', 'forall '), ('', 'exists '), ('', 'nexists '), ('', 'therefore '),
+            ('', 'because '), ('', 'in '), ('', 'notin '), ('', 'subset '),
+            ('', 'subseteq '), ('', 'superset '), ('', 'superseteq '), ('', '=='),
+            ('', '~='), ('', '!='), ('', '<='), ('', '>='),
+            ('', '<<'), ('', '>>'), ('', 'propto '), ('', 'parallel '),
+            ('x²', 'integral(x**2, x)'), ('x³', 'integral(x**3, x)'), ('x', 'integral(x**4, x)'), ('x', 'integral(x**5, x)'),
+            ('x²', 'sum x**2'), ('x³', 'sum x**3'), ('x²', 'product x**2'), ('x³', 'product x**3')
         ]
         
         for i, (text, insert) in enumerate(advanced):
@@ -310,15 +309,15 @@ class ScientificKeypad:
         
         # Integrales básicas con símbolos Unicode - MEJORADO
         basic_integrals = [
-            ('∫', 'int '), ('∬', 'integral '), ('∭', 'integral '),
-            ('∮', 'int '), ('∯', 'int '), ('∰', 'int '),
+            ('', 'integral('), ('', 'integral('), ('', 'integral('),
+            ('', 'integral('), ('', 'integral('), ('', 'integral('),
             ('dx', ' dx'), ('dy', ' dy'), ('dz', ' dz'),
-            ('dt', ' dt'), ('dθ', ' dtheta '), ('dφ', ' dphi '),
-            ('0→1', '0 to 1 int '), ('0→2', '0 to 2 int '), ('a→b', 'a to b int '),
-            ('-∞→∞', '-infinity to infinity int '), ('0→∞', '0 to infinity int '),
-            ('∫₀¹', '0 to 1 int '), ('∫₀²', '0 to 2 int '), ('∫ₐᵇ', 'a to b int '),
-            ('∫f(x)', 'int f(x) dx'), ('∫g(x)', 'int g(x) dx'), ('∫h(x)', 'int h(x) dx'),
-            ('∫[a,b]', 'int from a to b '), ('∫[0,1]', 'int from 0 to 1 '), ('∫[−∞,∞]', 'int from -infinity to infinity ')
+            ('dt', ' dt'), ('d', ' dtheta '), ('d', ' dphi '),
+            ('0->1', '0 to 1 integral('), ('0->2', '0 to 2 integral('), ('a->b', 'a to b integral('),
+            ('-->', '-infinity to infinity integral('), ('0->', '0 to infinity integral('),
+            ('', '0 to 1 integral('), ('', '0 to 2 integral('), ('', 'a to b integral('),
+            ('f(x)', 'integral(f(x), x)'), ('g(x)', 'integral(g(x), x)'), ('h(x)', 'integral(h(x), x)'),
+            ('[a,b]', 'integral from a to b '), ('[0,1]', 'integral from 0 to 1 '), ('[,-,]', 'integral from -infinity to infinity ')
         ]
         
         for i, (text, insert) in enumerate(basic_integrals):
@@ -613,12 +612,19 @@ class ScientificKeypad:
                 # Insertar integral con formato correcto
                 current_text = self.math_editor.get_text()
                 if current_text.strip():
-                    self.math_editor.insert_symbol(' int ')
+                    self.math_editor.insert_symbol('integral(')
                 else:
-                    self.math_editor.insert_symbol('int ')
-            elif symbol in ['integral ', 'triple_integral ', 'contour_integral ', 'surface_integral ', 'volume_integral ']:
-                # Todas las integrales usan el mismo formato
-                self.math_editor.insert_symbol('int ')
+                    self.math_editor.insert_symbol('integral(')
+            elif symbol == 'integral(':
+                # Insertar símbolo Unicode real de integral
+                current_text = self.math_editor.get_text()
+                if current_text.strip():
+                    self.math_editor.insert_symbol('integral(')
+                else:
+                    self.math_editor.insert_symbol('integral(')
+            elif symbol in ['integral(', 'triple_integral ', 'contour_integral ', 'surface_integral ', 'volume_integral ']:
+                # Todas las integrales usan el formato Unicode real
+                self.math_editor.insert_symbol('integral(')
             # Manejo especial para fracciones con potencias
             elif symbol == '(x**2+1)/x':
                 self.math_editor.insert_symbol('(x**2+1)/x')

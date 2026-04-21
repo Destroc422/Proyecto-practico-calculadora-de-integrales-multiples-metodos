@@ -11,6 +11,19 @@ import unicodedata
 
 logger = logging.getLogger(__name__)
 
+# Importar métodos Unicode profesionales para máxima pulcritud
+from core.professional_unicode_methods import (
+    get_professional_unicode, apply_professional_style, apply_elegant_style,
+    apply_technical_style, apply_academic_style, UnicodeStyle
+)
+
+# Importar gestor de perfiles Unicode
+from core.unicode_profile_manager import (
+    get_unicode_manager, convert_to_display, convert_to_latex, 
+    convert_to_input, convert_to_calculation, set_profile,
+    SymbolContext
+)
+
 
 class MicrosoftMathEngine:
     """
@@ -853,7 +866,17 @@ def get_expression_info(self, expression: str) -> Dict[str, Any]:
         }
         return explanations.get(method, 'Método no especificado')
     
-    def _verify_integral_solution(self, original_expr: sp.Expr, result_expr: sp.Expr, var: sp.Symbol) -> Dict[str, Any]:
+    
+    def _convert_to_unicode(self, expression: str) -> str:
+        """Convert expression to Unicode format with professional pulcritud"""
+        try:
+            from core.professional_unicode_methods import apply_professional_style
+            return apply_professional_style(expression)
+        except Exception as e:
+            logger.error(f"Error converting to Unicode: {e}")
+            return expression
+
+def _verify_integral_solution(self, original_expr: sp.Expr, result_expr: sp.Expr, var: sp.Symbol) -> Dict[str, Any]:
         """Verify the integral solution by differentiation"""
         try:
             # Differentiate the result

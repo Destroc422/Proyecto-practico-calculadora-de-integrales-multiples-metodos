@@ -36,12 +36,6 @@ from data.history_manager import HistoryManager
 
 logger = logging.getLogger(__name__)
 
-# Importar métodos Unicode profesionales para máxima pulcritud
-from core.professional_unicode_methods import (
-    get_professional_unicode, apply_professional_style, apply_elegant_style,
-    apply_technical_style, apply_academic_style, UnicodeStyle
-)
-
 # Importar gestor de perfiles Unicode
 from core.unicode_profile_manager import (
     get_unicode_manager, convert_to_display, convert_to_latex, 
@@ -133,6 +127,8 @@ class ProfessionalIntegralCalculator:
             logger.error(f"Error initializing components: {str(e)}")
             messagebox.showerror("Error", "No se pudieron inicializar los componentes")
             raise
+            # Setup Unicode profiles
+            self.setup_unicode_profiles()
 
     
     
@@ -191,50 +187,7 @@ class ProfessionalIntegralCalculator:
             logger.error(f"Error getting symbols for category: {e}")
             return []
 
-
-    def apply_unicode_pulcritud(self, expression: str, style: str = 'professional') -> str:
-        """Aplica pulcritud Unicode profesional a expresiones"""
-        try:
-            unicode_methods = get_professional_unicode()
-            
-            if style == 'professional':
-                return apply_professional_style(expression)
-            elif style == 'elegant':
-                return apply_elegant_style(expression)
-            elif style == 'technical':
-                return apply_technical_style(expression)
-            elif style == 'academic':
-                return apply_academic_style(expression)
-            else:
-                return apply_professional_style(expression)
-                
-        except Exception as e:
-            logger.error(f"Error aplicando pulcritud Unicode: {e}")
-            return expression
-    
-    def format_result_with_pulcritud(self, result: str) -> str:
-        """Formatea resultado con pulcritud Unicode profesional"""
-        return self.apply_unicode_pulcritud(result, 'professional')
-    
-    def format_steps_with_pulcritud(self, steps: list) -> list:
-        """Formatea pasos con pulcritud Unicode elegante"""
-        formatted_steps = []
-        for step in steps:
-            if isinstance(step, str):
-                formatted_step = self.apply_unicode_pulcritud(step, 'elegant')
-                formatted_steps.append(formatted_step)
-            elif isinstance(step, dict) and 'expression' in step:
-                step['expression'] = self.apply_unicode_pulcritud(step['expression'], 'elegant')
-                formatted_steps.append(step)
-            else:
-                formatted_steps.append(step)
-        return formatted_steps
-    
-    def format_verification_with_pulcritud(self, verification: str) -> str:
-        """Formatea verificación con pulcritud Unicode académica"""
-        return self.apply_unicode_pulcritud(verification, 'academic')
-
-    def setup_professional_ui(self):
+def setup_professional_ui(self):
         """Setup ultra-modern professional user interface"""
         try:
             # Create main container with professional styling
@@ -254,6 +207,15 @@ class ProfessionalIntegralCalculator:
             logger.error(f"Error setting up professional UI: {str(e)}")
             messagebox.showerror("Error", "No se pudo configurar la interfaz profesional")
             raise
+    
+    def get_keypad_unicode_symbols(self, category: SymbolCategory):
+        """Get Unicode symbols for keypad from profile manager"""
+        try:
+            symbols = get_symbols_by_category(category)
+            return [(s.unicode, s.name) for s in symbols if s.unicode]
+        except Exception as e:
+            logger.error(f"Error getting keypad symbols: {e}")
+            return []
     
     def insert_unicode_symbol(self, symbol: str, symbol_name: str):
         """Insert Unicode symbol into input field"""
@@ -275,8 +237,8 @@ class ProfessionalIntegralCalculator:
                 
         except Exception as e:
             logger.error(f"Error inserting Unicode symbol: {e}")
-    
-    def create_professional_toolbar(self):
+
+def create_professional_toolbar(self):
         """Create Wolfram-grade professional toolbar"""
         try:
             # Modern toolbar with rounded corners and shadows
