@@ -3786,3 +3786,4 @@ INFO:ui.professional_main_window:Professional Integral Calculator v4.0 initializ
 INFO:__main__:+ LaTeX calculator created successfully
 INFO:__main__:+ Application ready
 INFO:__main__:==================================================
+INFO:__main__:Application closed normally
