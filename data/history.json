@@ -370,5 +370,35 @@
     "type": "Automático",
     "date": "2026-04-21 10:55:05",
     "timestamp": 1776786905.49178
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-22 07:12:30",
+    "timestamp": 1776859950.425689
+  },
+  {
+    "function": "∫ (√x) dx",
+    "type": "Automático",
+    "date": "2026-04-22 07:13:21",
+    "timestamp": 1776860001.128036
+  },
+  {
+    "function": "x**2 + 3*x + 2",
+    "type": "Automático",
+    "date": "2026-04-22 09:12:41",
+    "timestamp": 1776867161.578332
+  },
+  {
+    "function": "∫ (x² + 1)/(x) dx",
+    "type": "Automático",
+    "date": "2026-04-22 09:13:45",
+    "timestamp": 1776867225.300978
+  },
+  {
+    "function": "∫ (2x)(x² + 1) dx",
+    "type": "Automático",
+    "date": "2026-04-23 14:20:48",
+    "timestamp": 1776972048.092638
   }
 ]
